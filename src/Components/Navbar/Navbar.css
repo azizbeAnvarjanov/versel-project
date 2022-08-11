@@ -127,10 +127,8 @@
 
 .navigation li a {
     color: red;
-    font-weight: 700;
     width: 100%;
     display: inline-block;
-    font-size: 1.1em;
     transition: .5s;
 }
 

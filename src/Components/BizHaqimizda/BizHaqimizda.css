@@ -379,6 +379,12 @@ body.active
 
 @media (max-width: 550px) {
 
+
+    .banner
+    {
+        height: 70vh;
+    }
+
     .footer-box
     {
         display: flex;
@@ -407,12 +413,14 @@ body.active
 
     .header h1
     {
-        font-size: 2em;
+        font-size: 1.5em;
+        color: red;
     }
 
     .header p
     {
         font-size: 1em;
+        font-weight: 400;
     }
 
 
@@ -436,6 +444,11 @@ body.active
         right: 20px;
     }
 
+    .closeBtn svg
+    {
+        width: 18px;
+    }
+
     .video-box
     {
         height: auto;
@@ -449,13 +462,28 @@ body.active
 
     .galereya h1
     {
-        font-size: 1em;
+        font-size: 1.5em;
+        color: red;
     }
 
     .banner h1,h2
     {
         font-size: 1.5em;
         text-align: center;
+    }
+
+
+    .bizhaqimizda-text h1
+    {
+        font-size: 1.5em;
+        margin: 20px 0;
+        color: red;
+    }
+
+    
+    .bizhaqimizda-text p
+    {
+        font-weight: 400;
     }
 }
 
