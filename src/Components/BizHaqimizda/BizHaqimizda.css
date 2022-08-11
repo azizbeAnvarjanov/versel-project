@@ -1,0 +1,479 @@
+
+
+/* banner =========================== */
+
+
+
+
+.banner
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background: url(../../imgs/bizhaqimizda.jpg);
+    background-size: cover;
+    position: relative;
+    color: var(--fff);
+    padding: 20px 3%;
+}
+
+.banner::before
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--rgbaBG);
+}
+
+
+.banner h1, h2 
+{
+    z-index: 1;
+    font-size: 4em;
+}
+
+
+
+
+
+
+
+
+
+/* banner =========================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header =========================== */
+
+
+.header
+{
+    width: 100%;
+    height: auto;
+    padding: 30px 3%;
+}
+
+
+.header h1
+{
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+.header p
+{
+    margin: 20px 0;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+
+/* header =========================== */
+
+
+
+
+
+/* / video box ======================== */
+
+.video-box
+{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.video-box video
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-box .play-btn
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--fff);
+    font-size: 5em;
+    cursor: pointer;
+    transition: .5s;
+}
+
+
+
+
+/* / video box ======================== */
+
+
+
+
+
+.galereya
+{
+    width: 100%;
+    position: relative;
+    padding: 30px 3%;
+    position: relative;
+}
+
+
+
+.galereya h1 
+{
+    font-size: 2.5em;
+}
+
+
+.galereya-box
+{
+    margin-top: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+
+.imgs
+{
+    height: 40vh;
+    background: var(--000);
+    cursor: pointer;
+}
+
+.imgs img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+.img-preview
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: var(--rgbaBG);
+    backdrop-filter: blur(20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+
+
+.img-preview.active
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+body.active
+{
+    overflow: hidden;
+}
+
+
+.img-preview img
+{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    transform: scale(1.5);
+    transition: .5s;
+}
+
+
+
+
+.closeBtn
+{
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    background: var(--fff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 2em;
+    cursor: pointer;
+    transform: scale(0);
+    transition: .5s;
+}
+
+
+
+.img-preview.active img,
+.img-preview.active .closeBtn
+{
+    transform: scale(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1020px) {
+    .header p
+    {
+        font-size: 1.2em;
+        line-height: 30px;
+    }
+
+    .galereya-box
+    {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+
+
+@media (max-width: 870px) {
+
+    .footer-box div
+    {
+        margin: 0 30px;
+    }
+
+    .btn-up
+    {
+        position: absolute;
+        left: 70%;
+    }
+    .footer-box h1
+    {
+        font-size: 1.2em;
+    }
+  
+}
+
+
+
+
+
+
+@media (max-width: 780px) {
+
+    .nav-top-info
+    {
+        display: none;
+    }
+    .nav-top-info span
+    {
+        padding: 10px 20px;
+        border-bottom: 1px solid var(--border-color);
+        width: 100%;
+    }
+
+    .nav-top-info span:last-child
+    {
+        border-bottom: none;
+    }
+
+    .phone-univer
+    {
+        border-right: none;
+        border-left: none;
+    }
+
+    
+
+    .btn-up
+    {
+        left: 90%;
+    }
+
+    .contact-info a i 
+    {
+        width: 40px;
+        height: 40px;
+        font-size: 1.4em;
+    }
+    
+
+
+    .galereya-box
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+
+@media (max-width: 720px) {
+    .banner h1, h2
+    {
+        font-size: 3em;
+    }
+
+    .contact-info a i
+    {
+        font-size: 1em;
+    }
+}
+
+
+
+
+
+@media (max-width: 550px) {
+
+    .footer-box
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-box div
+    {
+        margin: 20px 0;
+    }
+
+    .nav
+    {
+        padding: 20px;
+    }
+    .navbar-brand h1
+    {
+        font-size: 1.2em;
+    }
+
+
+    .banner h1,h2
+    {
+        font-size: 2em;
+    }
+
+    .header h1
+    {
+        font-size: 2em;
+    }
+
+    .header p
+    {
+        font-size: 1em;
+    }
+
+
+    .imgs
+    {
+        height: 20vh;
+    }
+
+    .img-preview img
+    {
+        width: 95%;
+        height: 40%;
+    }
+
+    .closeBtn
+    {
+        width: 30px;
+        height: 30px;
+        font-size: 1.5em;
+        top: 20px;
+        right: 20px;
+    }
+
+    .video-box
+    {
+        height: auto;
+    }
+    .video-box video
+    {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .galereya h1
+    {
+        font-size: 1em;
+    }
+
+    .banner h1,h2
+    {
+        font-size: 1.5em;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

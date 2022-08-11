@@ -1,0 +1,551 @@
+
+
+
+.btn {
+    color: var(--fff);
+    background: var(--gb-color);
+    padding: 9px 10px;
+    margin: 10px 0;
+    font-weight: 600;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn:hover {
+    opacity: .8;
+}
+
+
+/* header ================================== */
+
+
+header {
+    width: 100%;
+    height: 120vh;
+    position: relative;
+    transition: .5s;
+}
+
+
+
+
+
+header .img::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: var(--rgbaBG);
+}
+
+
+header .img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+}
+
+.img.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+.img h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -280%);
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: .5s;
+    font-size: 4em;
+    color: red;
+}
+
+.img h4 {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -280%);
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: .5s;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: red;
+}
+
+.img.active h1,
+.img.active h4 {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+
+
+
+
+
+/* header ================================== */
+
+
+
+
+
+/* biz haqimizda ============================= */
+
+.biz-haqimizda {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 3%;
+    position: relative;
+    z-index: 2;
+}
+
+.bizhaqimizda-text
+{
+    width: 50%;
+}
+
+.bizhaqimzida-img
+{
+    width: 50%;
+}
+
+.bizhaqimzida-img img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.biz-haqimizda p {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+.biz-haqimizda a
+{
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+
+
+/* biz haqimizda ============================= */
+
+
+
+
+
+
+
+
+/* impuls box =================================== */
+.impuls
+{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.impuls-box
+{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    margin: 0 10px;
+    text-align: center;
+    padding: 10px;
+    background: red;
+    color: #fff;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(235, 8, 8, 0.699);
+}
+
+
+.img-impuls-box
+{
+    border-radius: 7px;
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+}
+
+.impuls-box img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* impuls box =================================== */
+
+
+
+
+
+
+
+
+/* accordion ===================== */
+
+
+
+
+
+.accordion-box
+{
+    display: flex;
+}
+
+
+
+.left-menu
+{
+    padding: 20px;
+    width: 100%;
+}
+
+.left-menu h2
+{
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.right-menu
+{
+    padding: 20px;
+}
+
+
+.accordion-section
+{
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 50px 3%;
+    background: var(--kulrang);
+}
+
+
+
+
+.accordion-section .first
+{
+    font-size: 3em;
+    margin-bottom: 30px;
+    color: red;
+}
+
+
+.accord-box
+{
+    width: 100%;
+    margin: 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+
+.accordion
+{
+    width: 100%;
+    height: 10vh;
+    margin: 5px auto;
+    background: var(--gb-color);
+    overflow: hidden;
+    transition: .5s;
+    color: var(--fff);
+    z-index: 999;
+    border-radius: 5px;
+}
+
+.accordion:first-child .savol-div
+{
+    border: none;
+}
+
+.accordion.active
+{
+    height: auto;
+}
+
+.plus svg
+{
+    transform: rotate(180deg);
+}
+
+.accordion.active .plus svg
+{
+    transform: rotate(0deg);
+}
+
+.savol-div
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    padding: 0 40px;
+}
+
+.savol-div h1
+{
+    font-size: 1.7em}
+
+
+.accordion.active .savol-div
+{
+    color: var(--fff);
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.918);
+}
+
+
+.savol-div .plus
+{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plus svg
+{
+    font-size: 2em;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.preview
+{
+    padding: 20px;
+    height: auto;
+    overflow-y: auto;
+}
+
+
+.preview p
+{
+    font-size: 1em;
+    font-weight: 600;
+    transform: translateY(-100px);
+    opacity: 0;
+    transition-delay: 10s;
+    transition: 1s;
+}
+
+.accordion.active .preview p
+{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+/* accordion ===================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+    .biz-haqimizda
+    {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .bizhaqimizda-text
+    {
+        width: 100%;
+    }
+
+    .bizhaqimzida-img
+    {
+        width: 100%;
+    }
+
+    .accordion-box
+    {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 870px) {
+    header
+    {
+        height: 100vh !important;
+    }
+
+    .impuls
+    {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+  
+}
+
+@media (max-width: 780px) {
+  
+
+    .img h1
+    {
+        font-size: 3em;
+    }
+
+
+
+
+    header
+    {
+        height: 80vh;
+    }
+
+    .img h4
+    {
+        top: 43%;
+        letter-spacing: 1px;
+        font-size: 1em;
+    }
+
+    .img:nth-child(2) h1
+    {
+        font-size: 1.5em;
+    }
+
+
+
+}
+
+
+
+
+
+
+@media (max-width: 520px) {
+
+    .img h1
+    {
+        font-size: 2em;
+    }
+
+    .hamkorlar
+    {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .hamkor-box
+    {
+        width: 150px;
+        margin: 0 auto;
+    }
+
+    .first
+    {
+        font-size: 1.5em !important;
+        text-align: center;
+    }
+
+    .savol-div
+    {
+        padding: 0 15px;
+    }
+
+    .right-menu
+    {
+        padding: 0;
+    }
+   
+   
+}
