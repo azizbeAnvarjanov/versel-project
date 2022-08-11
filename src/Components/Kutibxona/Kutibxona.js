@@ -1,4 +1,5 @@
 import React from 'react';
+import './Kutibxona.css';
 
 import db from "../Firebase/Firebase";
 import { onSnapshot, collection } from "firebase/firestore";
@@ -17,6 +18,9 @@ function Kutibxona() {
 
     return (
         <>
+            <div className='banner-books'>
+                <h1>Impuls Institut Kutibxonasi</h1>
+            </div>
             <div className='boosks'>
                 {
                     bookdata.map(el => (

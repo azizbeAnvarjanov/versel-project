@@ -127,6 +127,7 @@
 
 .navigation li a {
     color: red;
+    font-weight: 800;
     width: 100%;
     display: inline-block;
     transition: .5s;
@@ -308,6 +309,11 @@
     .navbar-brand h1
     {
         font-size: 1.2em !important;
+    }
+
+
+    .navigation li a {
+        font-weight: 300;
     }
    
 

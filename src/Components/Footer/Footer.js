@@ -57,7 +57,6 @@ function Footer() {
 
                 <div className="footer-copyryter">
                     <div className="btn-up" onClick={upBtnF}><IoIosArrowUp /></div>
-                    <p>Copyright © 2018 Your Company | Design: Tooplate</p>
                 </div>
             </footer>   
         </>

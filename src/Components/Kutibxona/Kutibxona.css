@@ -1,0 +1,32 @@
+.banner-books
+{
+    width: 100%;
+    height: 100vh;
+    background: url(../../imgs/books-img.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    font-size: 2em;
+    position: relative;
+    z-index: 2;
+}   
+
+.banner-books h1
+{
+    z-index: 2;
+    color: red;
+}
+
+.banner-books::after
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.589);
+}
+
