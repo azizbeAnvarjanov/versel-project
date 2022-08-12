@@ -7,11 +7,6 @@ import bizhaqimizdaImg from '../../imgs/bizhaqimizda img1.png'
 import impuls1Img from '../../imgs/impuls1.jpg'
 import impuls2Img from '../../imgs/impuls2.jpg'
 import impuls3Img from '../../imgs/impuls3.jpg'
-import hamkorImg1 from '../../imgs/hamkor1.png'
-import hamkorImg2 from '../../imgs/hamkor2.png'
-import hamkorImg3 from '../../imgs/hamkor3.png'
-import hamkorImg4 from '../../imgs/hamkor4.png'
-import hamkorImg5 from '../../imgs/hamkor5.png'
 import './BoshSahifa.css'
 import { Link } from 'react-router-dom';
 
