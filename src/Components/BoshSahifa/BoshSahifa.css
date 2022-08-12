@@ -574,5 +574,15 @@ header .img {
         height: 70vh;
     }
 
+
+    .img h1
+    {
+        font-size: 1em;
+    }
+
+    .img:nth-child(2) h1, h4    
+    {
+        font-size: 1em;
+    }
    
 }

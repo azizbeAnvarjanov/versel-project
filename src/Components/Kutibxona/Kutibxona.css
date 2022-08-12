@@ -44,13 +44,13 @@
 .book
 {
     height: 60vh;
-    background: rgb(228, 220, 220);
+    background: rgb(255, 254, 254);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     border-radius: 2px;
     padding: 10px;
-    box-shadow: 0 2px 10px rgb(163, 138, 138);
+    box-shadow: 0 2px 10px rgba(163, 138, 138, 0.534);
 }
 
 .book .book-img
@@ -256,11 +256,12 @@
 
     .book-info
     {
-        width: 95%;
+        width: 100%;
         flex-direction: column;
-        height: 95%;
+        height: 100%;
         overflow-y: scroll;
         align-items: flex-start;
+        border-radius: 0;
     }
 
     .banner-books
@@ -275,7 +276,18 @@
 
     .input input
     {
-        width: 80%;
+        width: 70%;
+    }
+
+    .close_popup
+    {
+        background: #fff;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        border: 2px solid red;
     }
 
 }
