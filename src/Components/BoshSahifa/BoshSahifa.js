@@ -40,7 +40,10 @@ function BoshSahifa() {
     function accordion(e) {
         document.querySelectorAll('.accordion')
         .forEach(el => el.classList.remove('active'));
-        e.target.parentElement.classList.add('active')
+        if (e.target.tagName === 'H1') {
+            e.target.parentElement.parentElement.classList.add("active");
+        }
+        e.target.parentElement.classList.add('active');
     }
 
   
