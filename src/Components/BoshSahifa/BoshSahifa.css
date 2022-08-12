@@ -335,7 +335,8 @@ header .img {
 
 .savol-div h1
 {
-    font-size: 1.7em}
+    font-size: 1.1em;
+}
 
 
 .accordion.active .savol-div
@@ -373,7 +374,7 @@ header .img {
 .preview p
 {
     font-size: 1em;
-    font-weight: 600;
+    font-weight:400;
     transform: translateY(-100px);
     opacity: 0;
     transition-delay: 10s;
@@ -580,7 +581,7 @@ header .img {
         font-size: 1em;
     }
 
-    .img:nth-child(2) h1, h4    
+    .img:nth-child(2) h1, h2
     {
         font-size: 1em;
     }

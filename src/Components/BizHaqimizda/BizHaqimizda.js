@@ -41,50 +41,45 @@ function BizHaqimizda() {
         <div className="header">
           <h1>Impuls Tibbiyo Instituti</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam at
-            veniam tempore facilis amet repellendus dolore et cupiditate ducimus
-            dolores maxime id voluptates debitis provident voluptate, deleniti
-            rem aspernatur! Ullam accusamus libero, praesentium officia cum eius
-            quia eaque expedita consectetur eos harum dignissimos qui quisquam
-            soluta magni aliquam ipsum perspiciatis iusto autem cumque,
-            voluptate eligendi? Dolore excepturi dolorem fuga quis. Provident
-            praesentium consectetur eligendi recusandae odio amet id saepe
-            sequi.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-            deleniti commodi aperiam harum error architecto iste maiores
-            molestiae, doloremque quasi sint asperiores inventore earum
-            voluptas, minus porro excepturi fuga velit amet? Similique eos
-            officiis facere quidem voluptatum sunt, dignissimos id.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-            deleniti commodi aperiam harum error architecto iste maiores
-            molestiae, doloremque quasi sint asperiores inventore earum
-            voluptas, minus porro excepturi fuga velit amet? Similique eos
-            officiis facere quidem voluptatum sunt, dignissimos id.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-            deleniti commodi aperiam harum error architecto iste maiores
-            molestiae, doloremque quasi sint asperiores inventore earum
-            voluptas, minus porro excepturi fuga velit amet? Similique eos
-            officiis facere quidem voluptatum sunt, dignissimos id.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-            deleniti commodi aperiam harum error architecto iste maiores
-            molestiae, doloremque quasi sint asperiores inventore earum
-            voluptas, minus porro excepturi fuga velit amet? Similique eos
-            officiis facere quidem voluptatum sunt, dignissimos id.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-            deleniti commodi aperiam harum error architecto iste maiores
-            molestiae, doloremque quasi sint asperiores inventore earum
-            voluptas, minus porro excepturi fuga velit amet? Similique eos
-            officiis facere quidem voluptatum sunt, dignissimos id.
+            Impuls universiteti Oʻzbekiston Vazirlar Mahkamasining 2019-yil
+            15-fevraldagi qaroriga asosan tashkil etilgan. Universitetimiz oʻz
+            oldiga mintaqadagi yetakchi oliy taʼlim muassasasi boʻlish maqsadini
+            amalga oshirish va Oʻzbekiston taraqqiyotiga hissa qoʻshishni maqsad
+            qilgan. geografik joylashuvimizning ahamiyatini bilamiz va
+            tushunamiz.
+            <br />
+            <br />
+            Universitetimizning vazifasi: Mamlakatga zarur boʻlgan sohalarda
+            yetarli miqdordagi odamlarni oʻqitish, professional kadrlar
+            tayyorlash boʻyicha yechimlar taklif qilish, yangi taʼlim
+            texnologiyalarini ishlab chiqarish, taʼlim va tarbiya tamoyillarini
+            ishlab chiqish. Impuls universiteti turli mamlakatlardan kelgan
+            talabalarga xalqaro miqyosda tan olingan standartlarda ta’lim
+            beradi. Universitet fundamental, tibbiy, aniq va gumanitar fanlar
+            bo‘yicha yuqori malakali mutaxassislar tayyorlaydi. Tibbiyot
+            Doktori Dasturiga qo'shimcha ravishda, Magistrlik dasturi yuqori
+            malakali xalqaro miqyosda tan olingan akademik xodimlar tomonidan
+            taklif etiladi.
+            <br />
+            <br />
+            O‘quv jarayoni yetakchi xalqaro ilmiy-tadqiqot muassasalari,
+            jumladan, tibbiyot yo‘nalishidagi Gachon universiteti (Janubiy
+            Koreya) va xorijda mehnat qilayotgan yurtdoshlarimiz bilan
+            hamkorlikda olib borilmoqda. O‘qish ingliz tilida bo‘lib, 6 yil
+            davom etadi (2 yil tayyorgarlik kursi, 4 yil tibbiyot fakultetida
+            tibbiy kurs). Bitiruvchilarga oliy ma'lumot to'g'risidagi diplom
+            beriladi. Tadqiqot, kashfiyot va haqiqatni izlash universitetning
+            muhim xususiyatlari hisoblanadi.
+            <br />
+            <br />
+            Impuls universiteti bu mas’uliyatni yaxshi biladi va o‘zini talabalar
+            va professor-o‘qituvchilar birgalikda samarali va samarali tadqiqot
+            olib borishlari mumkin bo‘lgan intellektual muhitni yaratishga
+            bag‘ishlaydi. Universitet o'z talabalariga eng zamonaviy va eng
+            sifatli ta'limni taklif qilishni maqsad qilgan. Universitetimizda
+            ushbu uzoq ta’lim yo‘liga qadam qo‘ygan har bir talaba o‘z bilimlari
+            bilan to‘liq ta’minlangan va to‘liq ta’minlangan shaxs sifatida
+            bitiradi.
           </p>
         </div>
 
