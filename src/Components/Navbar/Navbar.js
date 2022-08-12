@@ -12,6 +12,12 @@ function Navbar() {
         nav ? setNav(false) : setNav(true);
     }
 
+    function changePages() {
+        nav ? setNav(false) : setNav(true);
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
 
 
 
@@ -52,16 +58,16 @@ function Navbar() {
 
             <ul className={nav ? "navigation active" : "navigation"}>
               <li>
-                <Link onClick={changeClass} to="/">Bosh Sahifa</Link>
+                <Link onClick={changePages} to="/">Bosh Sahifa</Link>
               </li>
               <li>
-                <Link onClick={changeClass} to="/bizhaqimizda">Biz Haqimizda</Link>
+                <Link onClick={changePages} to="/bizhaqimizda">Biz Haqimizda</Link>
               </li>
               <li>
-                <Link onClick={changeClass} to="/kutibxona">Kutibxona</Link>
+                <Link onClick={changePages} to="/kutibxona">Kutibxona</Link>
               </li>
               <li>
-                <Link onClick={changeClass} to="/aloqa">Aloqa</Link>
+                <Link onClick={changePages} to="/aloqa">Aloqa</Link>
               </li>
             </ul>
           </div>
