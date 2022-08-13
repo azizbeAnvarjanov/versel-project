@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
-import Img1 from '../../imgs/slider1.jpg'
-import Img2 from '../../imgs/slider2.jpg'
+import Img1 from '../../imgs/yangi.jpg'
+import Img2 from '../../imgs/yangui 2.jpg'
 import Img3 from '../../imgs/slider3.jpg'
 import bizhaqimizdaImg from '../../imgs/bizhaqimizda img1.png'
 import impuls1Img from '../../imgs/impuls1.jpg'
@@ -35,6 +35,13 @@ function BoshSahifa() {
             slider(currSlide);
         }, 6000);
     }, []);
+
+
+    function upBtnF() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
 
 
     function accordion(e) {
@@ -90,7 +97,7 @@ function BoshSahifa() {
               darslar amaliyotga asoslangan holda bo'ladi , bu esa davlat
               oliygohlaridan tubdan farq qiladi.
             </p>
-            <Link to="/bizhaqimizda" className="btn">
+            <Link onClick={upBtnF} to="/bizhaqimizda" className="btn">
               Biz haqimizda batafsil
             </Link>
           </div>

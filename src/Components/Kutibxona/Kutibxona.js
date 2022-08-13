@@ -9,47 +9,85 @@ import { GrClose } from "react-icons/gr";
 
 function Kutibxona() {
 
-    const [bookdata, setBookData] = useState([]);
+  const [bookdata, setBookData] = useState([]);
 
-    useEffect(() => {
-        onSnapshot(collection(db, "books"), (snapshot) => {
-            setBookData(snapshot.docs.map((doc) => doc.data()));
-        });
-    }, []);
 
-     function getBook(e) {
-       let indexBook = e.target.parentElement.parentElement.id;
-       let obj = {
-         name: bookdata[indexBook].book_name,
-         imgSrc: bookdata[indexBook].img,
-         link: bookdata[indexBook].link,
-         avtor: bookdata[indexBook].avtor,
-         year: bookdata[indexBook].year,
-         qr: bookdata[indexBook].qr,
-       };
+  useEffect(() => {
+      onSnapshot(collection(db, "books"), (snapshot) => {
+          setBookData(snapshot.docs.map((doc) => doc.data()));
+      });
+  }, []);
 
-       let book_img = document.querySelector('.gl-book-img');
-       let qr_img = document.querySelector('.qr_img');
-       let name = document.querySelector('.name')
-       let avtor = document.querySelector('.avtor')
-       let year = document.querySelector('.year')
-       let button = document.querySelector('.button');
-        
-       
-       book_img.src = obj.imgSrc;
-       qr_img.src = obj.qr;
-       name.innerHTML = "Kitob: " + obj.name;
-       avtor.innerHTML = "Avtor: " + obj.avtor;
-       year.innerHTML = "Chop etilgan yil: " + obj.year;
-       button.href = obj.link;
+    
+  const [bookdata2, setBookData2] = useState([]);
 
-       let parentBox = document.querySelector(".book-popup");
-       parentBox.style.display = "grid";
-     }
 
-     function removePop() {
+  useEffect(() => {
+    onSnapshot(collection(db, "anatomiya"), (snapshot) => {
+      setBookData2(snapshot.docs.map((doc) => doc.data()));
+    });
+  }, []);
+
+  console.log(bookdata2);
+  
+
+    function getBook(e) {
+      let indexBook = e.target.parentElement.parentElement.id;
+      let obj = {
+        name: bookdata[indexBook].book_name,
+        imgSrc: bookdata[indexBook].img,
+        link: bookdata[indexBook].link,
+        avtor: bookdata[indexBook].avtor,
+        year: bookdata[indexBook].year,
+        qr: bookdata[indexBook].qr,
+      };
+
+      let book_img = document.querySelector('.gl-book-img');
+      let qr_img = document.querySelector('.qr_img');
+      let name = document.querySelector('.name')
+      let avtor = document.querySelector('.avtor')
+      let year = document.querySelector('.year')
+      let button = document.querySelector('.button');
+      
+      
+      book_img.src = obj.imgSrc;
+      qr_img.src = obj.qr;
+      name.innerHTML = "Kitob: " + obj.name;
+      avtor.innerHTML = "Avtor: " + obj.avtor;
+      year.innerHTML = "Chop etilgan yil: " + obj.year;
+      button.href = obj.link;
+
+      let parentBox = document.querySelector(".book-popup");
+      parentBox.style.display = "grid";
+    }
+
+    function removePop() {
         document.querySelector(".book-popup").style.display = 'none';
-     }
+    }
+
+
+
+  function search(e) {
+
+    let items = document.querySelectorAll(".title");
+
+
+    let searchValue = e.target.value.toLowerCase();
+    
+
+    items.forEach((el) => {
+      let item = el.textContent.toLowerCase();
+
+      item.includes(searchValue)
+        ? (el.parentElement.parentElement.style.display = "flex")
+        : (el.parentElement.parentElement.style.display = "none");
+    });
+
+  }
+
+
+
+
 
     return (
       <>
@@ -57,10 +95,10 @@ function Kutibxona() {
           <h1>Impuls Institut Kutibxonasi</h1>
         </div>
         <div className="books_box">
-            <div className="input">
-                <input type="text" />
-                <button>Search</button>
-            </div>
+          <div className="input">
+            <input onInput={search} type="text" />
+            <button>Search</button>
+          </div>
           <div className="books">
             {bookdata.map((el) => (
               <div key={el.id} id={el.id} className="book">

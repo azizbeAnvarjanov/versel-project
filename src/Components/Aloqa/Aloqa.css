@@ -1,0 +1,189 @@
+.banner-aloqa
+{
+    width: 100%;
+    height: 100vh;
+    background: url(../../imgs/aloqa\ img.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10%;
+    font-size: 1.7em;
+    color: red;
+}
+
+
+.form-div
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background: #ebebeb;
+}
+
+form
+{
+    width: 60%;
+    background: #fff;
+    height: 80vh;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px;
+}
+
+.left-form-menu
+{
+    width: 30%;
+    background: red;
+    height: 80vh;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 30px;
+    color: #fff;
+}
+
+
+.left-form-menu h1
+{
+    margin-bottom: 10px;
+}
+
+
+.left-form-menu p
+{
+    margin-bottom: 20px;
+}
+
+
+.left-form-menu ul li
+{
+    list-style: disc;
+    margin-bottom: 20px;
+}
+
+.left-form-menu ul
+{
+    padding: 20px;
+    
+}
+
+
+form input
+{
+    width: 100%;
+    border: none;
+    border: 2px solid transparent;
+    border-bottom: 2px solid red;
+    outline: none;
+    padding: 7px;
+    margin: 10px 0;
+    transition: .5s;
+}
+
+form input:focus,
+form textarea:focus
+{
+    border: 2px solid red;
+}
+
+
+form input::placeholder,
+form textarea::placeholder
+{
+    color: red;
+    font-weight: 600;
+}
+
+form textarea
+{
+    width: 100%;
+    border: 2px solid transparent;
+    border-bottom: 2px solid red;
+    height: 25vh;
+    padding: 10px;
+    outline: none;
+    transition: .5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 726px) {
+    .banner-aloqa
+    {
+        padding-right: 0;
+        justify-content: center;
+        background-position: left;
+    }
+    .banner-aloqa h1
+    {
+        font-size: 1.5em;
+    }
+
+
+    .form-div
+    {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-form-menu
+    {
+        width: 100%;
+        border-radius: 10px;
+        height: auto;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    form
+    {
+        width: 100%;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
+}
+
+
+@media (max-width: 520px) {
+    .banner-aloqa
+    {
+        padding-right: 0;
+        justify-content: center;
+        background-position: left;
+    }
+    .banner-aloqa h1
+    {
+        font-size: 1em;
+    }
+
+    .form-div
+    {
+        padding: 10px;
+    }
+
+    .left-form-menu h1
+    {
+        font-size: 1.3em;
+    }
+    
+    form h1
+    {
+        font-size: 1.3em;
+    }
+}

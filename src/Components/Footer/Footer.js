@@ -49,9 +49,10 @@ function Footer() {
                     </div>
                     <div className="sections-info">
                         <h1>Sahifalarimiz</h1>
-                        <Link to="/bizhaqimizda">Biz Haqimizda</Link>
-                        <Link to="/kutibxona">Kutibxona</Link>
-                        <Link to="/aloqa">Aloqa</Link>
+                        <Link onClick={upBtnF} to="/">Bosh Sahifa</Link>
+                        <Link onClick={upBtnF} to="/bizhaqimizda">Biz Haqimizda</Link>
+                        <Link onClick={upBtnF} to="/kutibxona">Kutibxona</Link>
+                        <Link onClick={upBtnF} to="/aloqa">Aloqa</Link>
                     </div>
                 </div>
 

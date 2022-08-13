@@ -310,7 +310,7 @@ header .img {
 
 .accordion.active
 {
-    height: auto;
+    height: min-content;
 }
 
 .plus svg
@@ -336,6 +336,7 @@ header .img {
 .savol-div h1
 {
     font-size: 1.1em;
+    cursor: default;
 }
 
 
