@@ -128,7 +128,7 @@ header .img {
     padding: 20px 3%;
     position: relative;
     z-index: 2;
-    overflow: hidden;
+    overflow:  ;
 }
 
 .bizhaqimizda-text
@@ -186,6 +186,7 @@ header .img {
     justify-content: space-between;
     gap: 20px;
     padding: 20px;
+    overflow: hidden;
 }
 
 
