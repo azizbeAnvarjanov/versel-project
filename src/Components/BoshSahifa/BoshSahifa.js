@@ -15,6 +15,20 @@ import { IoIosArrowDown } from 'react-icons/io'
 import { motion } from 'framer-motion';
 
 
+const TextAnimation = {
+  hidden: {
+    y: 100,
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    y: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.2 },
+  }),
+};
+
+
+
 function BoshSahifa() {
 
     
@@ -87,10 +101,26 @@ function BoshSahifa() {
           </div>
         </motion.header>
 
-        <div className="biz-haqimizda reveal section" id="bizHaqimizda">
+        <motion.div
+          className="biz-haqimizda reveal section"
+          id="bizHaqimizda"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ amount: 0.6 }}
+        >
           <div className="bizhaqimizda-text">
-            <h1 className="reveal-text">Impuls Tibbiyot Instituti</h1>
-            <p className="reveal-text">
+            <motion.h1
+              className="reveal-text"
+              custom={0}
+              variants={TextAnimation}
+            >
+              Impuls Tibbiyot Instituti
+            </motion.h1>
+            <motion.p
+              custom={1}
+              variants={TextAnimation}
+              className="reveal-text"
+            >
               IMPULS instituti faqat tibbiyot sohasida ta'lim berishga
               mo'ljallangan . IMPULS instituti O'zbekistonda joylashgan bo'lib ,
               Yevropa va Osiyodagi tibbiyot oliygohlari standartlarini o'zida
@@ -108,25 +138,41 @@ function BoshSahifa() {
               Zamonaviy o'qitish tizimi deyilishiga sabab bizning institutda 80%
               darslar amaliyotga asoslangan holda bo'ladi , bu esa davlat
               oliygohlaridan tubdan farq qiladi.
-            </p>
+            </motion.p>
             <Link onClick={upBtnF} to="/bizhaqimizda" className="btn">
               Biz haqimizda batafsil
             </Link>
           </div>
-          <div className="bizhaqimzida-img">
+          <motion.div
+            className="bizhaqimzida-img"
+            initial={{ y: 200, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ amount: 0.6 }}
+          >
             <img src={bizhaqimizdaImg} alt="" />
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
-        <div className="impuls">
-          <div className="impuls-box">
+        <motion.div className="impuls">
+          <motion.div
+            className="impuls-box"
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ amount: 0.5 }}
+          >
             <div className="img-impuls-box">
               <img src={impuls1Img} alt="" />
             </div>
             <h1>IMPULS</h1>
             <p>medical institute bilan jahon bilimlar eshigini oching.</p>
-          </div>
-          <div className="impuls-box">
+          </motion.div>
+
+          <motion.div
+            className="impuls-box"
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ amount: 0.5 }}
+          >
             <div className="img-impuls-box">
               <img src={impuls2Img} alt="" />
             </div>
@@ -135,8 +181,14 @@ function BoshSahifa() {
               standartdagi tibbiyot instituti endi Namanganda sen biz bilan
               bo'lishing kerak.
             </p>
-          </div>
-          <div className="impuls-box">
+          </motion.div>
+
+          <motion.div
+            className="impuls-box"
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ amount: 0.5 }}
+          >
             <div className="img-impuls-box">
               <img src={impuls3Img} alt="" />
             </div>
@@ -145,8 +197,8 @@ function BoshSahifa() {
               ilk bor davlat xususiy sherikchilik asosida raqamli ibbiyot
               instituti.
             </p>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
         <div className="accordion-section">
           <h1 className="first">- Ko'p Beriladigan Savollar -</h1>
