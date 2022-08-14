@@ -6,6 +6,8 @@ import { onSnapshot, collection } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { GrClose } from "react-icons/gr";
 
+import img from '../../imgs/aloqa img.jpg';
+
 
 function Kutibxona() {
 
@@ -19,16 +21,7 @@ function Kutibxona() {
   }, []);
 
     
-  const [bookdata2, setBookData2] = useState([]);
 
-
-  useEffect(() => {
-    onSnapshot(collection(db, "anatomiya"), (snapshot) => {
-      setBookData2(snapshot.docs.map((doc) => doc.data()));
-    });
-  }, []);
-
-  console.log(bookdata2);
   
 
     function getBook(e) {
@@ -86,6 +79,21 @@ function Kutibxona() {
   }
 
 
+    const [tabClass, setTabClass] = useState(1);
+
+    const tabs = (number) => {
+        setTabClass(number);
+    }
+
+
+  const [bookdata2, setBookData2] = useState([]);
+
+
+  useEffect(() => {
+    onSnapshot(collection(db, "anatomiya"), (snapshot) => {
+      setBookData2(snapshot.docs.map((doc) => doc.data()));
+    });
+  }, []);
 
 
 
@@ -99,26 +107,53 @@ function Kutibxona() {
             <input onInput={search} type="text" />
             <button>Search</button>
           </div>
-          <div className="books">
-            {bookdata.map((el) => (
-              <div key={el.id} id={el.id} className="book">
-                <div className="book-img">
-                  <img src={el.img} alt="" />
-                </div>
-                <div className="book-title">
-                  <p className="title" onClick={getBook}>
-                    {el.book_name}
-                  </p>
-                </div>
-              </div>
-            ))}
+          <div className="buttons">
+              <span className={ tabClass === 1 ? 'active' : '' } onClick={() => tabs(1)}>Adabiy Kitoblar</span>
+              <span className={ tabClass === 2 ? 'active' : '' } onClick={() => tabs(2)}>Ilmiy Kitoblar</span>
           </div>
+          <div className="books">
+            <div className={tabClass === 1 ? 'adabiy-kitoblar active' : 'adabiy-kitoblar' }>
+
+              {
+                bookdata.map((el) => (
+                  <div key={el.id} id={el.id} className="book">
+                    <div className="book-img">
+                      <img src={el.img} alt="" />
+                    </div>
+                    <div className="book-title">
+                      <p className="title" onClick={getBook}>
+                        {el.book_name}
+                      </p>
+                    </div>
+                  </div>
+                ))
+              }
+
+              </div>
+            <div className={tabClass === 2 ? 'ilmiy-kitoblar active' : 'ilmiy-kitoblar' }>
+                {
+                bookdata2.map((el) => (
+                    <div key={el.id} id={el.id} className="book">
+                      <div className="book-img">
+                        <img src={el.img} alt="" />
+                      </div>
+                      <div className="book-title">
+                        <p className="title" onClick={getBook}>
+                          {el.book_name}
+                        </p>
+                      </div>
+                    </div>
+                  ))
+                }
+              </div>
+          </div>
+
         </div>
+      
 
         <div className="book-popup">
           <div className="book-info">
             <div className="close_popup" onClick={removePop}>
-              {" "}
               <GrClose />
             </div>
 
@@ -143,3 +178,20 @@ function Kutibxona() {
 }
 
 export default Kutibxona;
+
+
+// {
+//   bookdata.map((el) => (
+//     <div key={el.id} id={el.id} className="book">
+//       <div className="book-img">
+//         <img src={el.img} alt="" />
+//       </div>
+//       <div className="book-title">
+//         <p className="title" onClick={getBook}>
+//           {el.book_name}
+//         </p>
+//       </div>
+//     </div>
+//   ));
+// }
+
