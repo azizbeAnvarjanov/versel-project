@@ -19,6 +19,7 @@
     position: relative;
     color: var(--fff);
     padding: 20px 3%;
+    overflow: hidden;
 }
 
 

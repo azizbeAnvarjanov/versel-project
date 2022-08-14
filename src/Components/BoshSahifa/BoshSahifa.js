@@ -12,6 +12,7 @@ import { Link } from 'react-router-dom';
 
 import { IoIosArrowDown } from 'react-icons/io'
 
+import { motion } from 'framer-motion';
 
 
 function BoshSahifa() {
@@ -57,7 +58,18 @@ function BoshSahifa() {
 
     return (
       <>
-        <header id="boshSahifa">
+        <motion.header
+          id="boshSahifa"
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+          }}
+          exit={{
+            opacity: 0,
+          }}
+        >
           <div className="img imgs-0 active">
             <img src={Img1} alt=""></img>
             <h4>Maktabni bitirmasdan</h4>
@@ -73,7 +85,7 @@ function BoshSahifa() {
             <h4>Impuls Tibbiyot Instituti</h4>
             <h1>Tayorlov kurslarida o'qing</h1>
           </div>
-        </header>
+        </motion.header>
 
         <div className="biz-haqimizda reveal section" id="bizHaqimizda">
           <div className="bizhaqimizda-text">

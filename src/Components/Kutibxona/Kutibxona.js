@@ -6,8 +6,8 @@ import { onSnapshot, collection } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { GrClose } from "react-icons/gr";
 
-import img from '../../imgs/aloqa img.jpg';
 
+import { motion } from "framer-motion";
 
 function Kutibxona() {
 
@@ -24,7 +24,7 @@ function Kutibxona() {
 
   
 
-    function getBook(e) {
+    function getBook(e, bookdata) {
       let indexBook = e.target.parentElement.parentElement.id;
       let obj = {
         name: bookdata[indexBook].book_name,
@@ -36,7 +36,6 @@ function Kutibxona() {
       };
 
       let book_img = document.querySelector('.gl-book-img');
-      let qr_img = document.querySelector('.qr_img');
       let name = document.querySelector('.name')
       let avtor = document.querySelector('.avtor')
       let year = document.querySelector('.year')
@@ -44,7 +43,6 @@ function Kutibxona() {
       
       
       book_img.src = obj.imgSrc;
-      qr_img.src = obj.qr;
       name.innerHTML = "Kitob: " + obj.name;
       avtor.innerHTML = "Avtor: " + obj.avtor;
       year.innerHTML = "Chop etilgan yil: " + obj.year;
@@ -99,57 +97,78 @@ function Kutibxona() {
 
     return (
       <>
-        <div className="banner-books">
+        <motion.div
+          className="banner-books"
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+          }}
+          exit={{
+            opacity: 0,
+          }}
+        >
           <h1>Impuls Institut Kutibxonasi</h1>
-        </div>
+        </motion.div>
         <div className="books_box">
           <div className="input">
             <input onInput={search} type="text" />
             <button>Search</button>
           </div>
           <div className="buttons">
-              <span className={ tabClass === 1 ? 'active' : '' } onClick={() => tabs(1)}>Adabiy Kitoblar</span>
-              <span className={ tabClass === 2 ? 'active' : '' } onClick={() => tabs(2)}>Ilmiy Kitoblar</span>
+            <span
+              className={tabClass === 1 ? "active" : ""}
+              onClick={() => tabs(1)}
+            >
+              Adabiy Kitoblar
+            </span>
+            <span
+              className={tabClass === 2 ? "active" : ""}
+              onClick={() => tabs(2)}
+            >
+              Ilmiy Kitoblar
+            </span>
           </div>
           <div className="books">
-            <div className={tabClass === 1 ? 'adabiy-kitoblar active' : 'adabiy-kitoblar' }>
-
-              {
-                bookdata.map((el) => (
-                  <div key={el.id} id={el.id} className="book">
-                    <div className="book-img">
-                      <img src={el.img} alt="" />
-                    </div>
-                    <div className="book-title">
-                      <p className="title" onClick={getBook}>
-                        {el.book_name}
-                      </p>
-                    </div>
-                  </div>
-                ))
+            <div
+              className={
+                tabClass === 1 ? "adabiy-kitoblar active" : "adabiy-kitoblar"
               }
-
-              </div>
-            <div className={tabClass === 2 ? 'ilmiy-kitoblar active' : 'ilmiy-kitoblar' }>
-                {
-                bookdata2.map((el) => (
-                    <div key={el.id} id={el.id} className="book">
-                      <div className="book-img">
-                        <img src={el.img} alt="" />
-                      </div>
-                      <div className="book-title">
-                        <p className="title" onClick={getBook}>
-                          {el.book_name}
-                        </p>
-                      </div>
-                    </div>
-                  ))
-                }
-              </div>
+            >
+              {bookdata.map((el) => (
+                <div key={el.id} id={el.id} className="book">
+                  <div className="book-img">
+                    <img src={el.img} alt="" />
+                  </div>
+                  <div className="book-title">
+                    <p className="title" onClick={(e) => getBook(e, bookdata)}>
+                      {el.book_name}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div
+              className={
+                tabClass === 2 ? "ilmiy-kitoblar active" : "ilmiy-kitoblar"
+              }
+            >
+              {bookdata2.map((el) => (
+                <div key={el.id} id={el.id} className="book">
+                  <div className="book-img">
+                    <img src={el.img} alt="" />
+                  </div>
+                  <div className="book-title">
+                    <p className="title" onClick={(e) => getBook(e, bookdata2)}>
+                      {el.book_name}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
-
         </div>
-      
 
         <div className="book-popup">
           <div className="book-info">
@@ -167,9 +186,6 @@ function Kutibxona() {
               <a target="_blank" className="button" href="#">
                 O'qish
               </a>
-              <div className="qr">
-                <img className="qr_img" src="${obj.qr}"></img>
-              </div>
             </div>
           </div>
         </div>

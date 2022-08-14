@@ -11,7 +11,7 @@ import galleryImg6 from '../../imgs/binoni ichi rasmlar/6.jpg'
 import galleryImg7 from '../../imgs/binoni ichi rasmlar/7.jpg'
 import galleryImg8 from '../../imgs/binoni ichi rasmlar/8.jpg'
 
-
+import { motion } from "framer-motion";
 
 function BizHaqimizda() {
 
@@ -33,10 +33,22 @@ function BizHaqimizda() {
 
     return (
       <>
-        <div className="banner" id="home">
+        <motion.div
+          className="banner"
+          id="home"
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+          }}
+          exit={{
+            opacity: 0,
+          }}
+        >
           <h1>Impuls Tibbiyo Institutiga</h1>
           <h2>Hush Kelibsiz</h2>
-        </div>
+        </motion.div>
 
         <div className="header">
           <h1>Impuls Tibbiyo Instituti</h1>
@@ -72,14 +84,14 @@ function BizHaqimizda() {
             muhim xususiyatlari hisoblanadi.
             <br />
             <br />
-            Impuls universiteti bu mas’uliyatni yaxshi biladi va o‘zini talabalar
-            va professor-o‘qituvchilar birgalikda samarali va samarali tadqiqot
-            olib borishlari mumkin bo‘lgan intellektual muhitni yaratishga
-            bag‘ishlaydi. Universitet o'z talabalariga eng zamonaviy va eng
-            sifatli ta'limni taklif qilishni maqsad qilgan. Universitetimizda
-            ushbu uzoq ta’lim yo‘liga qadam qo‘ygan har bir talaba o‘z bilimlari
-            bilan to‘liq ta’minlangan va to‘liq ta’minlangan shaxs sifatida
-            bitiradi.
+            Impuls universiteti bu mas’uliyatni yaxshi biladi va o‘zini
+            talabalar va professor-o‘qituvchilar birgalikda samarali va samarali
+            tadqiqot olib borishlari mumkin bo‘lgan intellektual muhitni
+            yaratishga bag‘ishlaydi. Universitet o'z talabalariga eng zamonaviy
+            va eng sifatli ta'limni taklif qilishni maqsad qilgan.
+            Universitetimizda ushbu uzoq ta’lim yo‘liga qadam qo‘ygan har bir
+            talaba o‘z bilimlari bilan to‘liq ta’minlangan va to‘liq
+            ta’minlangan shaxs sifatida bitiradi.
           </p>
         </div>
 
