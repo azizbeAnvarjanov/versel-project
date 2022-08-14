@@ -270,6 +270,7 @@ header .img {
     position: relative;
     padding: 50px 3%;
     background: var(--kulrang);
+    overflow: hidden;
 }
 
 

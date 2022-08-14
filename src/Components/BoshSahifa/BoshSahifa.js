@@ -106,7 +106,7 @@ function BoshSahifa() {
           id="bizHaqimizda"
           initial="hidden"
           whileInView="visible"
-          viewport={{ amount: 0.6 }}
+          viewport={{ amount: 0.2 }}
         >
           <div className="bizhaqimizda-text">
             <motion.h1
@@ -147,7 +147,7 @@ function BoshSahifa() {
             className="bizhaqimzida-img"
             initial={{ y: 200, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ amount: 0.6 }}
+            viewport={{ amount: 0.2 }}
           >
             <img src={bizhaqimizdaImg} alt="" />
           </motion.div>
@@ -158,7 +158,7 @@ function BoshSahifa() {
             className="impuls-box"
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
-            viewport={{ amount: 0.5 }}
+            viewport={{ amount: 0.2 }}
           >
             <div className="img-impuls-box">
               <img src={impuls1Img} alt="" />
@@ -171,7 +171,7 @@ function BoshSahifa() {
             className="impuls-box"
             initial={{ y: 100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ amount: 0.5 }}
+            viewport={{ amount: 0.2 }}
           >
             <div className="img-impuls-box">
               <img src={impuls2Img} alt="" />
@@ -187,7 +187,7 @@ function BoshSahifa() {
             className="impuls-box"
             initial={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
-            viewport={{ amount: 0.5 }}
+            viewport={{ amount: 0.2 }}
           >
             <div className="img-impuls-box">
               <img src={impuls3Img} alt="" />
@@ -204,7 +204,7 @@ function BoshSahifa() {
           <motion.h1
             initial={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
-            viewport={{ amount: 0.5 }}
+            viewport={{ amount: 0.2 }}
             className="first"
           >
             - Ko'p Beriladigan Savollar -
@@ -213,7 +213,7 @@ function BoshSahifa() {
             <motion.div
               initial={{ y: 100, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
-              viewport={{ amount: 0.5 }}
+              viewport={{ amount: 0.2 }}
               className="left-menu"
             >
               <p>
@@ -228,7 +228,7 @@ function BoshSahifa() {
             <motion.div
               initial={{ y: 100, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
-              viewport={{ amount: 0.5 }}
+              viewport={{ amount: 0.2}}
               className="right-menu"
               onClick={accordion}
             >
