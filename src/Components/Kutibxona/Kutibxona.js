@@ -137,7 +137,14 @@ function Kutibxona() {
               }
             >
               {bookdata.map((el) => (
-                <div key={el.id} id={el.id} className="book">
+                <motion.div
+                  initial={{ y: 100, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  viewport={{ amount: 0.2 }}
+                  key={el.id}
+                  id={el.id}
+                  className="book"
+                >
                   <div className="book-img">
                     <img src={el.img} alt="" />
                   </div>
@@ -146,7 +153,7 @@ function Kutibxona() {
                       {el.book_name}
                     </p>
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
             <div
@@ -155,7 +162,14 @@ function Kutibxona() {
               }
             >
               {bookdata2.map((el) => (
-                <div key={el.id} id={el.id} className="book">
+                <motion.div
+                  initial={{ y: 100, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  viewport={{ amount: 0.2 }}
+                  key={el.id}
+                  id={el.id}
+                  className="book"
+                >
                   <div className="book-img">
                     <img src={el.img} alt="" />
                   </div>
@@ -164,7 +178,7 @@ function Kutibxona() {
                       {el.book_name}
                     </p>
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>

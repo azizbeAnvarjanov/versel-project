@@ -73,6 +73,7 @@ function Aloqa() {
                   className="form-control"
                   placeholder="Ismingiz"
                   name="name"
+                  required  
                 />
               </div>
               <div className="col-8 form-group pt-2 mx-auto">
@@ -81,6 +82,7 @@ function Aloqa() {
                   className="form-control"
                   placeholder="Email pochtangiz"
                   name="email"
+                  required
                 />
               </div>
               <div className="col-8 form-group pt-2 mx-auto">
@@ -89,6 +91,7 @@ function Aloqa() {
                   className="form-control"
                   placeholder="Mavzu"
                   name="subject"
+                  required
                 />
               </div>
               <div className="col-8 form-group pt-2 mx-auto">
@@ -99,13 +102,14 @@ function Aloqa() {
                   rows="8"
                   placeholder="Habaringiz"
                   name="message"
+                  required
                 ></textarea>
               </div>
               <div className="col-8 pt-3 mx-auto">
                 <input
                   type="submit"
                   className="btn btn-info"
-                  value="Send Message"
+                  value="Yuborish"
                 ></input>
               </div>
             </div>
