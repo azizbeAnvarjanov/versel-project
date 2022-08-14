@@ -201,9 +201,21 @@ function BoshSahifa() {
         </motion.div>
 
         <div className="accordion-section">
-          <h1 className="first">- Ko'p Beriladigan Savollar -</h1>
+          <motion.h1
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ amount: 0.5 }}
+            className="first"
+          >
+            - Ko'p Beriladigan Savollar -
+          </motion.h1>
           <div className="accordion-box">
-            <div className="left-menu">
+            <motion.div
+              initial={{ y: 100, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ amount: 0.5 }}
+              className="left-menu"
+            >
               <p>
                 Impuls universiteti o'qitish, o'rganish va tadqiqot sohasida
                 mukammallikka intiladi. Impuls universiteti va uning asoschisi
@@ -212,8 +224,14 @@ function BoshSahifa() {
                 O‘zbekistonda, balki Markaziy Osiyoda ham eng yaxshi ta’lim va
                 tadqiqot muhitini yaratishdir.
               </p>
-            </div>
-            <div className="right-menu" onClick={accordion}>
+            </motion.div>
+            <motion.div
+              initial={{ y: 100, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ amount: 0.5 }}
+              className="right-menu"
+              onClick={accordion}
+            >
               <div className="accord-box">
                 <div className="accordion active">
                   <div className="savol-div">
@@ -338,7 +356,7 @@ function BoshSahifa() {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </>
