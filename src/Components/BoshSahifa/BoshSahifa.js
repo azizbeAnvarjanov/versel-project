@@ -23,7 +23,7 @@ const TextAnimation = {
   visible: (custom) => ({
     y: 0,
     opacity: 1,
-    transition: { delay: custom * 0.2 },
+    transition: { delay: custom * 0.2 , duration: 0.7},
   }),
 };
 
@@ -147,6 +147,7 @@ function BoshSahifa() {
             className="bizhaqimzida-img"
             initial={{ y: 200, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8 }}
             viewport={{ amount: 0.2 }}
           >
             <img src={bizhaqimizdaImg} alt="" />
@@ -159,6 +160,7 @@ function BoshSahifa() {
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ amount: 0.2 }}
+            transition={{ duration: 0.8 }}
           >
             <div className="img-impuls-box">
               <img src={impuls1Img} alt="" />
@@ -172,6 +174,7 @@ function BoshSahifa() {
             initial={{ y: 100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ amount: 0.2 }}
+            transition={{ duration: 0.8 }}
           >
             <div className="img-impuls-box">
               <img src={impuls2Img} alt="" />
@@ -188,6 +191,7 @@ function BoshSahifa() {
             initial={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ amount: 0.2 }}
+            transition={{ duration: 0.8 }}
           >
             <div className="img-impuls-box">
               <img src={impuls3Img} alt="" />
@@ -205,6 +209,7 @@ function BoshSahifa() {
             initial={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ amount: 0.2 }}
+            transition={{ duration: 0.8 }}
             className="first"
           >
             - Ko'p Beriladigan Savollar -
@@ -214,6 +219,7 @@ function BoshSahifa() {
               initial={{ y: 100, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ amount: 0.2 }}
+              transition={{ duration: 0.8 }}
               className="left-menu"
             >
               <p>
@@ -228,7 +234,8 @@ function BoshSahifa() {
             <motion.div
               initial={{ y: 100, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
-              viewport={{ amount: 0.2}}
+              viewport={{ amount: 0.2 }}
+              transition={{ duration: 0.8 }}
               className="right-menu"
               onClick={accordion}
             >
