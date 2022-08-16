@@ -1,12 +1,14 @@
 import React from 'react';
 import { useEffect } from 'react';
-import Img1 from '../../imgs/yangi.jpg'
-import Img2 from '../../imgs/yangui 2.jpg'
-import Img3 from '../../imgs/slider3.jpg'
-import bizhaqimizdaImg from '../../imgs/bizhaqimizda img1.png'
-import impuls1Img from '../../imgs/impuls1.jpg'
-import impuls2Img from '../../imgs/impuls2.jpg'
-import impuls3Img from '../../imgs/impuls3.jpg'
+import Img1 from '../../imgs/yangi.jpg';
+import Img2 from '../../imgs/yangui 2.jpg';
+import Img3 from '../../imgs/slider3.jpg';
+import bizhaqimizdaImg from '../../imgs/bizhaqimizda img1.png';
+import impuls1Img from '../../imgs/111111.jpg';
+import impuls2Img from '../../imgs/Medical-Students.jpg';
+import impuls3Img from '../../imgs/Which-Type-of-Investment-Has-the-Highest-Risk-900x531.png';
+
+import logoImg from '../../imgs/logo.png';
 import './BoshSahifa.css'
 import { Link } from 'react-router-dom';
 
@@ -163,6 +165,9 @@ function BoshSahifa() {
             transition={{ duration: 0.8 }}
           >
             <div className="img-impuls-box">
+              <div className="img-logo">
+                <img src={logoImg} alt="" />
+              </div>
               <img src={impuls1Img} alt="" />
             </div>
             <h1>IMPULS</h1>
@@ -177,6 +182,9 @@ function BoshSahifa() {
             transition={{ duration: 0.8 }}
           >
             <div className="img-impuls-box">
+              <div className="img-logo">
+                <img src={logoImg} alt="" />
+              </div>
               <img src={impuls2Img} alt="" />
             </div>
             <h1>Xalqaro</h1>
@@ -194,6 +202,9 @@ function BoshSahifa() {
             transition={{ duration: 0.8 }}
           >
             <div className="img-impuls-box">
+              <div className="img-logo">
+                <img src={logoImg} alt="" />
+              </div>
               <img src={impuls3Img} alt="" />
             </div>
             <h1>Namanganda</h1>
@@ -244,7 +255,8 @@ function BoshSahifa() {
                   <div className="savol-div">
                     <h1>Diplomingiz O'zbekistonda tan olinadimi ?</h1>
                     <div className="plus">
-                      <IoIosArrowDown />
+                      <span></span>
+                      <span></span>
                     </div>
                   </div>
                   <div className="preview ">
@@ -258,7 +270,8 @@ function BoshSahifa() {
                   <div className="savol-div">
                     <h1>Shartnoma toʻlovi qancha?</h1>
                     <div className="plus">
-                      <IoIosArrowDown />
+                      <span></span>
+                      <span></span>
                     </div>
                   </div>
                   <div className="preview">
@@ -272,7 +285,8 @@ function BoshSahifa() {
                   <div className="savol-div">
                     <h1>Mashgʻulotlar qaysi tillarda olib boriladi?</h1>
                     <div className="plus">
-                      <IoIosArrowDown />
+                      <span></span>
+                      <span></span>
                     </div>
                   </div>
                   <div className="preview">
@@ -286,7 +300,8 @@ function BoshSahifa() {
                   <div className="savol-div">
                     <h1>Stipendiyalar bormi?</h1>
                     <div className="plus">
-                      <IoIosArrowDown />
+                      <span></span>
+                      <span></span>
                     </div>
                   </div>
                   <div className="preview">
@@ -301,7 +316,8 @@ function BoshSahifa() {
                   <div className="savol-div">
                     <h1>Qabul uchun qanday hujjatlar kerak?</h1>
                     <div className="plus">
-                      <IoIosArrowDown />
+                      <span></span>
+                      <span></span>
                     </div>
                   </div>
                   <div className="preview">
@@ -324,7 +340,8 @@ function BoshSahifa() {
                   <div className="savol-div">
                     <h1>Tayyorgarlik kurslarida nimalar o'tiladi</h1>
                     <div className="plus">
-                      <IoIosArrowDown />
+                      <span></span>
+                      <span></span>
                     </div>
                   </div>
                   <div className="preview">
@@ -344,7 +361,8 @@ function BoshSahifa() {
                   <div className="savol-div">
                     <h1>Talabalarga nimalarni taklif qilayapmiz?</h1>
                     <div className="plus">
-                      <IoIosArrowDown />
+                      <span></span>
+                      <span></span>
                     </div>
                   </div>
                   <div className="preview">
