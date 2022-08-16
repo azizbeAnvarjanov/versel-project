@@ -117,7 +117,7 @@ function Kutibxona() {
             opacity: 0,
           }}
         >
-          <h1>Impuls Institut Kutibxonasi</h1>
+          <h1>{t("kutibxona_banner_h1")}</h1>
         </motion.div>
         <div className="books_box">
           <div className="input">
