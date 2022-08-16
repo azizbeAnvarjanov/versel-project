@@ -129,13 +129,13 @@ function Kutibxona() {
               className={tabClass === 1 ? "active" : ""}
               onClick={() => tabs(1)}
             >
-              Adabiy Kitoblar
+              {t("adabiy_kitoblar")}
             </span>
             <span
               className={tabClass === 2 ? "active" : ""}
               onClick={() => tabs(2)}
             >
-              Ilmiy Kitoblar
+              {t("ilmiy_kitoblar")}
             </span>
           </div>
           <div className="books">
@@ -220,18 +220,4 @@ function Kutibxona() {
 export default Kutibxona;
 
 
-// {
-//   bookdata.map((el) => (
-//     <div key={el.id} id={el.id} className="book">
-//       <div className="book-img">
-//         <img src={el.img} alt="" />
-//       </div>
-//       <div className="book-title">
-//         <p className="title" onClick={getBook}>
-//           {el.book_name}
-//         </p>
-//       </div>
-//     </div>
-//   ));
-// }
 

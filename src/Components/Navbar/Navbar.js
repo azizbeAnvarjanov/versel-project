@@ -115,7 +115,10 @@ function Navbar() {
                   <div className={lng ? "languages active" : "languages"}>
                     {languages.map((lng) => (
                       <span
-                        onClick={() => i18next.changeLanguage(lng.language)}
+                        onClick={() => {
+                          i18next.changeLanguage(lng.language);
+                          changeClass();
+                        }}
                         key={lng.id}
                       >
                         {lng.language}
