@@ -336,4 +336,16 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.548);
     }
 
+    .books
+    {
+        padding: 10px;
+    }
+
+    .adabiy-kitoblar,
+    .ilmiy-kitoblar
+    {
+        padding: 10px;
+        grid-template-columns: repeat(auto-fill, minmax(100% ,1fr));
+    }
+
 }
