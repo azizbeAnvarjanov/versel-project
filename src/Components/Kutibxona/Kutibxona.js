@@ -9,7 +9,15 @@ import { GrClose } from "react-icons/gr";
 
 import { motion } from "framer-motion";
 
+
+import { useTranslation } from "react-i18next";
+
+
 function Kutibxona() {
+
+  
+  const { t } = useTranslation();
+
 
   const [bookdata, setBookData] = useState([]);
 
@@ -196,9 +204,9 @@ function Kutibxona() {
               <img className="gl-book-img" src=""></img>
             </div>
             <div className="book-infos">
-              <h3 className="name">Kitob:obj.name</h3>
-              <p className="avtor">Avtor: obj.avtor</p>
-              <p className="year">Chop etilgan yil: obj.year</p>
+              <h3 className="name"></h3>
+              <p className="avtor"></p>
+              <p className="year"></p>
               <a target="_blank" className="button" href="#">
                 O'qish
               </a>

@@ -12,9 +12,10 @@ import logoImg from '../../imgs/logo.png';
 import './BoshSahifa.css'
 import { Link } from 'react-router-dom';
 
-import { IoIosArrowDown } from 'react-icons/io'
 
 import { motion } from 'framer-motion';
+
+import { useTranslation } from "react-i18next";
 
 
 const TextAnimation = {
@@ -33,6 +34,7 @@ const TextAnimation = {
 
 function BoshSahifa() {
 
+  const { t } = useTranslation();
     
     useEffect(() => {
         let imgs = document.querySelectorAll('.img');
@@ -88,18 +90,18 @@ function BoshSahifa() {
         >
           <div className="img imgs-0 active">
             <img src={Img1} alt=""></img>
-            <h4>Maktabni bitirmasdan</h4>
-            <h1>Biz bilan talaba bo'ling</h1>
+            <h4>{t("img_h4_1")}</h4>
+            <h1>{t("img_h1_1")}</h1>
           </div>
           <div className="img imgs-1">
             <img src={Img2} alt=""></img>
-            <h4>Imtihonlarni mavaffaqiyatli topshirib</h4>
-            <h1>Talabalikni oldindan naqd qilib qo'ying</h1>
+            <h4>{t("img_h4_2")}</h4>
+            <h1>{t("img_h1_2")}</h1>
           </div>
           <div className="img imgs-2">
             <img src={Img3} alt=""></img>
-            <h4>Impuls Tibbiyot Instituti</h4>
-            <h1>Tayorlov kurslarida o'qing</h1>
+            <h4>{t("img_h4_3")}</h4>
+            <h1>{t("img_h1_3")}</h1>
           </div>
         </motion.header>
 
@@ -116,33 +118,17 @@ function BoshSahifa() {
               custom={0}
               variants={TextAnimation}
             >
-              Impuls Tibbiyot Instituti
+              {t("biz_haqimzida_h1")}
             </motion.h1>
             <motion.p
               custom={1}
               variants={TextAnimation}
               className="reveal-text"
             >
-              IMPULS instituti faqat tibbiyot sohasida ta'lim berishga
-              mo'ljallangan . IMPULS instituti O'zbekistonda joylashgan bo'lib ,
-              Yevropa va Osiyodagi tibbiyot oliygohlari standartlarini o'zida
-              mujassamlashtirgan .
-              <br />
-              <br />
-              Ta'lim berishning eng zamonaviy va yangicha metodlaridan
-              foydalanadigan institutdir . IMPULS institutida talabalar ingiliz
-              tilida tibbiyot mutaxassisligini mukammal o'rganib , nafaqat
-              O'zbekistonda balki Yevropa va Osiyoda ham ishlash imkoniyatiga
-              ega bo'ladilar. Bu institut kredit modul tizimiga asoslangan holda
-              o'qitadi.
-              <br />
-              <br />
-              Zamonaviy o'qitish tizimi deyilishiga sabab bizning institutda 80%
-              darslar amaliyotga asoslangan holda bo'ladi , bu esa davlat
-              oliygohlaridan tubdan farq qiladi.
+              {t("biz_haqimizda_p")}
             </motion.p>
             <Link onClick={upBtnF} to="/bizhaqimizda" className="btn">
-              Biz haqimizda batafsil
+              {t("biz_haqimizda_btn")}
             </Link>
           </div>
           <motion.div
@@ -170,8 +156,8 @@ function BoshSahifa() {
               </div>
               <img src={impuls1Img} alt="" />
             </div>
-            <h1>IMPULS</h1>
-            <p>medical institute bilan jahon bilimlar eshigini oching.</p>
+            <h1>{t("impuls_box_h1_1")}</h1>
+            <p>{t("impuls_box_p_1")}</p>
           </motion.div>
 
           <motion.div
@@ -187,11 +173,8 @@ function BoshSahifa() {
               </div>
               <img src={impuls2Img} alt="" />
             </div>
-            <h1>Xalqaro</h1>
-            <p>
-              standartdagi tibbiyot instituti endi Namanganda sen biz bilan
-              bo'lishing kerak.
-            </p>
+            <h1>{t("impuls_box_h1_2")}</h1>
+            <p>{t("impuls_box_p_2")}</p>
           </motion.div>
 
           <motion.div
@@ -207,11 +190,8 @@ function BoshSahifa() {
               </div>
               <img src={impuls3Img} alt="" />
             </div>
-            <h1>Namanganda</h1>
-            <p>
-              ilk bor davlat xususiy sherikchilik asosida raqamli ibbiyot
-              instituti.
-            </p>
+            <h1>{t("impuls_box_h1_3")}</h1>
+            <p>{t("impuls_box_p_3")}</p>
           </motion.div>
         </motion.div>
 
@@ -223,7 +203,7 @@ function BoshSahifa() {
             transition={{ duration: 0.8 }}
             className="first"
           >
-            - Ko'p Beriladigan Savollar -
+            - {t("ko'p_beriladighan_savollar")} -
           </motion.h1>
           <div className="accordion-box">
             <motion.div
@@ -233,14 +213,7 @@ function BoshSahifa() {
               transition={{ duration: 0.8 }}
               className="left-menu"
             >
-              <p>
-                Impuls universiteti o'qitish, o'rganish va tadqiqot sohasida
-                mukammallikka intiladi. Impuls universiteti va uning asoschisi
-                talabalar, xodimlar uchun eng zamonaviy sharoitlarni yaratish
-                ustida astoydil harakat qilmoqda. Bizning maqsadimiz nafaqat
-                O‘zbekistonda, balki Markaziy Osiyoda ham eng yaxshi ta’lim va
-                tadqiqot muhitini yaratishdir.
-              </p>
+              <p>{t("accordion_section_p")}</p>
             </motion.div>
             <motion.div
               initial={{ y: 100, opacity: 0 }}
@@ -253,22 +226,55 @@ function BoshSahifa() {
               <div className="accord-box">
                 <div className="accordion active">
                   <div className="savol-div">
-                    <h1>Diplomingiz O'zbekistonda tan olinadimi ?</h1>
+                    <h1>{t("savol_1")}</h1>
                     <div className="plus">
                       <span></span>
                       <span></span>
                     </div>
                   </div>
                   <div className="preview ">
-                    <p>
-                      IMPULS Medical institutini tamomlagan talabalar diplomi
-                      nafaqat O'zbekiston, balki butun dunyoda tan olinadi.
-                    </p>
+                    <p>{t("javob_1")}</p>
                   </div>
                 </div>
                 <div className="accordion">
                   <div className="savol-div">
-                    <h1>Shartnoma toʻlovi qancha?</h1>
+                    <h1>{t("savol_2")}</h1>
+                    <div className="plus">
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div className="preview">
+                    <p>{t("javob_2")}</p>
+                  </div>
+                </div>
+                <div className="accordion">
+                  <div className="savol-div">
+                    <h1>{t("savol_3")}</h1>
+                    <div className="plus">
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div className="preview">
+                    <p>{t("javob_3")}</p>
+                  </div>
+                </div>
+                <div className="accordion">
+                  <div className="savol-div">
+                    <h1>{t("savol_4")}</h1>
+                    <div className="plus">
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div className="preview">
+                    <p>{t("javob_4")}</p>
+                  </div>
+                </div>
+                <div className="accordion">
+                  <div className="savol-div">
+                    <h1>{t("savol_5")}</h1>
                     <div className="plus">
                       <span></span>
                       <span></span>
@@ -276,108 +282,38 @@ function BoshSahifa() {
                   </div>
                   <div className="preview">
                     <p>
-                      Shartnoma toʻlovi 40000000 soʻm($4000) tashkil etadi,
-                      bundan tashqari bizda boʻlib toʻlash imkoniyati mavjud.
-                    </p>
-                  </div>
-                </div>
-                <div className="accordion">
-                  <div className="savol-div">
-                    <h1>Mashgʻulotlar qaysi tillarda olib boriladi?</h1>
-                    <div className="plus">
-                      <span></span>
-                      <span></span>
-                    </div>
-                  </div>
-                  <div className="preview">
-                    <p>
-                      Barcha mashgʻulotlar guruhga qarab o'zbek yoki ingliz
-                      tillarida o'tkaziladi.
-                    </p>
-                  </div>
-                </div>
-                <div className="accordion">
-                  <div className="savol-div">
-                    <h1>Stipendiyalar bormi?</h1>
-                    <div className="plus">
-                      <span></span>
-                      <span></span>
-                    </div>
-                  </div>
-                  <div className="preview">
-                    <p>
-                      Biz xususiy universitet bo'lganligimiz sababli, IMPULS
-                      Medical oʻz-o'zini moliyalashtiradi va talabalarga
-                      stipendiya to'lash imkoniga ega emas.
-                    </p>
-                  </div>
-                </div>
-                <div className="accordion">
-                  <div className="savol-div">
-                    <h1>Qabul uchun qanday hujjatlar kerak?</h1>
-                    <div className="plus">
-                      <span></span>
-                      <span></span>
-                    </div>
-                  </div>
-                  <div className="preview">
-                    <p>
-                      "IMPULS Medical"ga muvaffaqiyatli qabul qilinish
-                      bosqichlaridan biri hujjat topshirishdir. Buning uchun siz
-                      quyidagilarni taqdim etishingiz kerak: —Maktab
-                      attestatining asl nusxasi yoki o'rta ta'lim diplomi;
+                      {t("javob_5")}
                       <br />
-                      <span>— Pasport nusxasi (2 dona);</span>
+                      <span>{t('javob_5_span_1')}</span>
                       <br />
-                      <span>— Rasm 3x4 (6 ta).</span>
+                      <span>{t("javob_5_span_2")}</span>
                       <br />
-                      Hujjatlar PDF formatida yoki Namangan shahridagi davlat
-                      xizmatlari markazida onlayn tarzda taqdim etilishi mumkin.
+                      {t("javob_5_span_3")}
                     </p>
                   </div>
                 </div>
                 <div className="accordion">
                   <div className="savol-div">
-                    <h1>Tayyorgarlik kurslarida nimalar o'tiladi</h1>
+                    <h1>{t("savol_6")}</h1>
                     <div className="plus">
                       <span></span>
                       <span></span>
                     </div>
                   </div>
                   <div className="preview">
-                    <p>
-                      Imtihonlarni muvaffaqiyatli topshirish va "IMPULS
-                      Medical"da grant asosida taʼlim olish uchun tayyorgarlik
-                      kurslarini oʼtash kerak. Dastur 6 oy davom etadi va u
-                      ingliz tili va anatomiya fanlaridan iborat. Kursni
-                      tugatganlar uchun IELTS balli 5.0 boʻladi.
-                      <br />
-                      Bu oʻz bilimingizni oshirish va universitetdagi byudjet
-                      o'rninni egallash uchun ajoyib imkoniyatdir
-                    </p>
+                    <p>{t("javob_6")}</p>
                   </div>
                 </div>
                 <div className="accordion">
                   <div className="savol-div">
-                    <h1>Talabalarga nimalarni taklif qilayapmiz?</h1>
+                    <h1>{t("savol_7")}</h1>
                     <div className="plus">
                       <span></span>
                       <span></span>
                     </div>
                   </div>
                   <div className="preview">
-                    <p>
-                      Imtihonlarni yuqori ballga topshirganlar uchun IMPULS
-                      Medical maxsus grantlar taqdim etadi. Bizda universitetga
-                      kirish imtihonlari yaʼni, anatomiya va ingliz tili
-                      bo'yicha maxsus tayyorgarlik kurslari o'tkaziladi, ularni
-                      bitirganlarga IELTS imtihonidan oʻtish balli 5.0 etin
-                      belgilanadi ✅
-                      <br />
-                      Bularning barchasi talabalarning intilishlarini
-                      qoʻllab-quvvatlash va kelajakka boʻlgan ishonchlarini
-                      oshirish maqsadida amalga oshiriladi
-                    </p>
+                    <p>{t("javob_7")}</p>
                   </div>
                 </div>
               </div>

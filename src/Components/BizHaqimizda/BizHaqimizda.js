@@ -13,7 +13,14 @@ import galleryImg8 from '../../imgs/binoni ichi rasmlar/8.jpg'
 
 import { motion } from "framer-motion";
 
+import { useTranslation } from "react-i18next";
+
+
 function BizHaqimizda() {
+
+
+
+  const { t } = useTranslation();
 
     const [img, setImg] = useState('');
 
@@ -46,57 +53,28 @@ function BizHaqimizda() {
             opacity: 0,
           }}
         >
-          <h1>Impuls Tibbiyo Institutiga</h1>
-          <h2>Hush Kelibsiz</h2>
+          <h1>{t("banner_h1")}</h1>
+          <h2>{t("banner_h2")}</h2>
         </motion.div>
 
         <div className="header">
-          <h1>Impuls Tibbiyo Instituti</h1>
+          <h1>{t("header_h1")}</h1>
           <p>
-            Impuls universiteti Oʻzbekiston Vazirlar Mahkamasining 2019-yil
-            15-fevraldagi qaroriga asosan tashkil etilgan. Universitetimiz oʻz
-            oldiga mintaqadagi yetakchi oliy taʼlim muassasasi boʻlish maqsadini
-            amalga oshirish va Oʻzbekiston taraqqiyotiga hissa qoʻshishni maqsad
-            qilgan. geografik joylashuvimizning ahamiyatini bilamiz va
-            tushunamiz.
+            {t("header_p_1")}
             <br />
             <br />
-            Universitetimizning vazifasi: Mamlakatga zarur boʻlgan sohalarda
-            yetarli miqdordagi odamlarni oʻqitish, professional kadrlar
-            tayyorlash boʻyicha yechimlar taklif qilish, yangi taʼlim
-            texnologiyalarini ishlab chiqarish, taʼlim va tarbiya tamoyillarini
-            ishlab chiqish. Impuls universiteti turli mamlakatlardan kelgan
-            talabalarga xalqaro miqyosda tan olingan standartlarda ta’lim
-            beradi. Universitet fundamental, tibbiy, aniq va gumanitar fanlar
-            bo‘yicha yuqori malakali mutaxassislar tayyorlaydi. Tibbiyot
-            Doktori Dasturiga qo'shimcha ravishda, Magistrlik dasturi yuqori
-            malakali xalqaro miqyosda tan olingan akademik xodimlar tomonidan
-            taklif etiladi.
+            {t("header_p_2")}
             <br />
             <br />
-            O‘quv jarayoni yetakchi xalqaro ilmiy-tadqiqot muassasalari,
-            jumladan, tibbiyot yo‘nalishidagi Gachon universiteti (Janubiy
-            Koreya) va xorijda mehnat qilayotgan yurtdoshlarimiz bilan
-            hamkorlikda olib borilmoqda. O‘qish ingliz tilida bo‘lib, 6 yil
-            davom etadi (2 yil tayyorgarlik kursi, 4 yil tibbiyot fakultetida
-            tibbiy kurs). Bitiruvchilarga oliy ma'lumot to'g'risidagi diplom
-            beriladi. Tadqiqot, kashfiyot va haqiqatni izlash universitetning
-            muhim xususiyatlari hisoblanadi.
+            {t("header_p_3")}
             <br />
             <br />
-            Impuls universiteti bu mas’uliyatni yaxshi biladi va o‘zini
-            talabalar va professor-o‘qituvchilar birgalikda samarali va samarali
-            tadqiqot olib borishlari mumkin bo‘lgan intellektual muhitni
-            yaratishga bag‘ishlaydi. Universitet o'z talabalariga eng zamonaviy
-            va eng sifatli ta'limni taklif qilishni maqsad qilgan.
-            Universitetimizda ushbu uzoq ta’lim yo‘liga qadam qo‘ygan har bir
-            talaba o‘z bilimlari bilan to‘liq ta’minlangan va to‘liq
-            ta’minlangan shaxs sifatida bitiradi.
+            {t("header_p_4")}
           </p>
         </div>
 
         <div className="galereya">
-          <h1>- Institutimiznig ichki ko'rinishlari -</h1>
+          <h1>{t("gallery_h1")}</h1>
           <div className="galereya-box" onClick={gallery}>
             <div className="imgs">
               <img src={galleryImg1} alt="gallery img" />

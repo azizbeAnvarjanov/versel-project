@@ -5,28 +5,31 @@ import './Aloqa.css';
 
 import { motion } from "framer-motion";
 
+import { useTranslation } from "react-i18next";
+
 function Aloqa() {
+  const { t } = useTranslation();
 
-    const form = useRef();
+  const form = useRef();
 
-    const sendEmail = (e) => {
-         e.preventDefault();
-        
-        emailjs
-        .sendForm(
-            "service_43gjdlw",
-            "template_ez1rel5",
-            form.current,
-            "Kv5dRlnSIERbwbhD5"
-        )
-        .then(
-            (result) => {
-            console.log(result.text);
-            },
-            (error) => {
-            console.log(error.text);
-            }
-        );
+  const sendEmail = (e) => {
+        e.preventDefault();
+      
+      emailjs
+      .sendForm(
+          "service_43gjdlw",
+          "template_ez1rel5",
+          form.current,
+          "Kv5dRlnSIERbwbhD5"
+      )
+      .then(
+          (result) => {
+          console.log(result.text);
+          },
+          (error) => {
+          console.log(error.text);
+          }
+      );
 
       e.target.reset();
     }
@@ -46,41 +49,36 @@ function Aloqa() {
             opacity: 0,
           }}
         >
-          <h1>Bizga savolingiz bormi ?</h1>
+          <h1>{t("aloqa_h1")}</h1>
         </motion.div>
 
         <div className="form-div">
           <div className="left-form-menu">
-            <h1>Aloqaga chiqamiz</h1>
-            <p>
-              Bizga habaringizni qoldiring va biz sizga 24 siat ichida aloqaga
-              chiqamiz.
-            </p>
+            <h1>{t("left_menu_h1")}</h1>
+            <p>{t("left-menu_p")}</p>
             <ul>
-              <li>
-                Manzil: Namangan shahar Davlat hizmatlari binosi 22 uy 11221
-              </li>
-              <li>Email pochta: info@company.com</li>
-              <li>Telefon: + 69 239 50 15</li>
+              <li>{t("manzil")}</li>
+              <li>{t("pochta")}</li>
+              <li>{t("telefon")}</li>
             </ul>
           </div>
           <form ref={form} onSubmit={sendEmail}>
-            <h1>Habaringizni qoldiring</h1>
+            <h1>{t("habar")}</h1>
             <div className="row pt-5 mx-auto">
               <div className="col-8 form-group mx-auto">
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="Ismingiz"
+                  placeholder={t("pl_1")}
                   name="name"
-                  required  
+                  required
                 />
               </div>
               <div className="col-8 form-group pt-2 mx-auto">
                 <input
                   type="email"
                   className="form-control"
-                  placeholder="Email pochtangiz"
+                  placeholder={t("pl_2")}
                   name="email"
                   required
                 />
@@ -89,7 +87,7 @@ function Aloqa() {
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="Mavzu"
+                  placeholder={t("pl_3")}
                   name="subject"
                   required
                 />
@@ -100,7 +98,7 @@ function Aloqa() {
                   id=""
                   cols="30"
                   rows="8"
-                  placeholder="Habaringiz"
+                  placeholder={t("textarea")}
                   name="message"
                   required
                 ></textarea>
@@ -109,7 +107,7 @@ function Aloqa() {
                 <input
                   type="submit"
                   className="btn btn-info"
-                  value="Yuborish"
+                  value={t("form_btn")}
                 ></input>
               </div>
             </div>

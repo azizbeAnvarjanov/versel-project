@@ -57,7 +57,6 @@
 
 
 
-
 .nav {
     display: flex;
     justify-content: space-between;
@@ -121,6 +120,7 @@
 
 .navigation {
    display: flex;
+   align-items: center;
 }
 
 
@@ -145,12 +145,64 @@
 }
 
 
+.navbar.active .lng-box svg path
+{
+    stroke: #fff;
+}
 
 
 
 
+.lng-box svg path
+{
+    stroke: red;
+}
 
 
+.lng-box svg
+{
+    width: 25px;
+    height: 25px;
+}
+
+
+.lng-box
+{
+    position: relative;
+}
+
+
+.languages
+{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-42%);
+    background: #fff;
+    display: none;
+    flex-direction: column;
+    border-radius: 2px;
+}
+
+.languages.active
+{
+    display: flex;
+}
+
+.languages span
+{
+    width: 100%;
+    padding: 5px 10px;
+    cursor: default;
+    color: red;
+}
+
+
+.languages span:hover
+{
+    background: rgb(218, 214, 214);
+    color: #fff;
+}
 
 
 
@@ -326,4 +378,24 @@
     .contact-info a i {
     font-size: 1em;
     }   
+
+    .navigation
+    {
+        align-items: flex-start;
+    }
+
+    .lng-box svg path
+    {
+        stroke: #fff;
+    }
+
+    .languages
+    {
+        left: 100%;
+        width: 100px;
+    }
+    .language span
+    {
+        text-align: center !important;
+    }
 }

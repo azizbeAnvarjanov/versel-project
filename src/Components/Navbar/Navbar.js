@@ -2,14 +2,43 @@ import { useState } from 'react';
 import {Link} from 'react-router-dom';
 import './Navbar.css'
 
+import { GrLanguage } from 'react-icons/gr';
+
+import i18next from 'i18next';
+import { useTranslation } from 'react-i18next';
+
+
+const languages = [
+  {
+    language: 'uz',
+    id: '1'
+  },
+  {
+    language: 'ru',
+    id: '2'
+  },
+  {
+    language: 'en',
+    id: '3'
+  },
+]
+
+
+
 
 function Navbar() {
 
+  const { t } = useTranslation();
+
     const [nav, setNav] = useState(false);
     const [navbarClass, setNavbarClass] = useState(false);
+    const [lng, setLng] = useState(false);
 
     function changeClass() {
         nav ? setNav(false) : setNav(true);
+    }
+    function chnangeLanguages() {
+        lng ? setLng(false) : setLng(true);
     }
 
     function changePages() {
@@ -38,7 +67,7 @@ function Navbar() {
       <>
         <div className={navbarClass ? "navbar active" : "navbar"}>
           <div className={navbarClass ? "nav-top-info active" : "nav-top-info"}>
-            <span className="name-univer"> Impuls Tibbiyot Institut</span>
+            <span className="name-univer">{t("name_univer")}</span>
             <span className="phone-univer">+ 69 239 50 15</span>
             <span className="email-univer">
               <p>info@company.com</p>
@@ -47,7 +76,7 @@ function Navbar() {
           <div className="nav">
             <div className="navbar-brand">
               <Link onClick={upBtnF} to="/">
-                <h1>Impuls Tibbiyot Institut</h1>
+                <h1>{t("name_univer")}</h1>
               </Link>
               <div
                 className={nav ? "menu active" : "menu"}
@@ -62,23 +91,38 @@ function Navbar() {
             <ul className={nav ? "navigation active" : "navigation"}>
               <li>
                 <Link onClick={changePages} to="/">
-                  Bosh Sahifa
+                  {t("bosh_sahifa")}
                 </Link>
               </li>
               <li>
                 <Link onClick={changePages} to="/bizhaqimizda">
-                  Biz Haqimizda
+                  {t("biz_haqimizda")}
                 </Link>
               </li>
               <li>
                 <Link onClick={changePages} to="/kutibxona">
-                  Kutibxona
+                  {t("kutibxona")}
                 </Link>
               </li>
               <li>
                 <Link onClick={changePages} to="/aloqa">
-                  Aloqa
+                  {t("aloqa")}
                 </Link>
+              </li>
+              <li onClick={chnangeLanguages}>
+                <span className="lng-box">
+                  <GrLanguage />
+                  <div className={lng ? "languages active" : "languages"}>
+                    {languages.map((lng) => (
+                      <span
+                        onClick={() => i18next.changeLanguage(lng.language)}
+                        key={lng.id}
+                      >
+                        {lng.language}
+                      </span>
+                    ))}
+                  </div>
+                </span>
               </li>
             </ul>
           </div>
