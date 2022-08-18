@@ -10,15 +10,18 @@ import { useTranslation } from 'react-i18next';
 
 const languages = [
   {
-    language: 'Uz',
+    language: 'uz',
+    innerHtml: 'Uz',
     id: '1'
   },
   {
-    language: 'Ru',
+    language: 'ru',
+    innerHtml: 'Ru',
     id: '2'
   },
   {
-    language: 'En',
+    language: 'en',
+    innerHtml: 'En',
     id: '3'
   },
 ]
@@ -133,7 +136,7 @@ function Navbar() {
                         }}
                         key={lng.id}
                       >
-                        {lng.language}
+                        {lng.innerHtml}
                       </span>
                     ))}
                   </div>

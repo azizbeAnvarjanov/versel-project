@@ -123,6 +123,7 @@
     padding: 30px 3%;
     position: relative;
     color: red;
+    overflow: hidden;
 }
 
 
