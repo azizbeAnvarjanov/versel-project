@@ -13,9 +13,9 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 
-function Kutibxona() {
+  function Kutibxona() {
 
-  
+    
   const { t } = useTranslation();
 
 
@@ -28,41 +28,43 @@ function Kutibxona() {
       });
   }, []);
 
+        
+
     
 
-  
+  function getBook(e, bookdata) {
+    let indexBook = e.target.parentElement.parentElement.id;
+    console.log(indexBook);
+    
+    let obj = {
+      name: bookdata[indexBook].book_name,
+      imgSrc: bookdata[indexBook].img,
+      link: bookdata[indexBook].link,
+      avtor: bookdata[indexBook].avtor,
+      year: bookdata[indexBook].year,
+      qr: bookdata[indexBook].qr,
+    };
 
-    function getBook(e, bookdata) {
-      let indexBook = e.target.parentElement.parentElement.id;
-      let obj = {
-        name: bookdata[indexBook].book_name,
-        imgSrc: bookdata[indexBook].img,
-        link: bookdata[indexBook].link,
-        avtor: bookdata[indexBook].avtor,
-        year: bookdata[indexBook].year,
-        qr: bookdata[indexBook].qr,
-      };
+    let book_img = document.querySelector('.gl-book-img');
+    let name = document.querySelector('.name')
+    let avtor = document.querySelector('.avtor')
+    let year = document.querySelector('.year')
+    let button = document.querySelector('.button');
+    
+    
+    book_img.src = obj.imgSrc;
+    name.innerHTML = "Kitob: " + obj.name;
+    avtor.innerHTML = "Avtor: " + obj.avtor;
+    year.innerHTML = "Chop etilgan yil: " + obj.year;
+    button.href = obj.link;
 
-      let book_img = document.querySelector('.gl-book-img');
-      let name = document.querySelector('.name')
-      let avtor = document.querySelector('.avtor')
-      let year = document.querySelector('.year')
-      let button = document.querySelector('.button');
-      
-      
-      book_img.src = obj.imgSrc;
-      name.innerHTML = "Kitob: " + obj.name;
-      avtor.innerHTML = "Avtor: " + obj.avtor;
-      year.innerHTML = "Chop etilgan yil: " + obj.year;
-      button.href = obj.link;
+    let parentBox = document.querySelector(".book-popup");
+    parentBox.classList.add('active');
+  }
 
-      let parentBox = document.querySelector(".book-popup");
-      parentBox.style.display = "grid";
-    }
-
-    function removePop() {
-        document.querySelector(".book-popup").style.display = 'none';
-    }
+  function removePop() {
+      document.querySelector(".book-popup").classList.remove('active');
+  }
 
 
 
@@ -85,11 +87,11 @@ function Kutibxona() {
   }
 
 
-    const [tabClass, setTabClass] = useState(1);
+  const [tabClass, setTabClass] = useState(1);
 
-    const tabs = (number) => {
-        setTabClass(number);
-    }
+  const tabs = (number) => {
+      setTabClass(number);
+  }
 
 
   const [bookdata2, setBookData2] = useState([]);
@@ -120,12 +122,18 @@ function Kutibxona() {
           <h1>{t("kutibxona_banner_h1")}</h1>
         </motion.div>
 
-        
         <div className="books_box">
+          {/* search books box */}
+
           <div className="input">
             <input onInput={search} type="text" />
-            <button>{t('search_btn')}</button>
+            <button>{t("search_btn")}</button>
           </div>
+
+          {/* search books box */}
+
+          {/* tabs buttons */}
+
           <div className="buttons">
             <span
               className={tabClass === 1 ? "active" : ""}
@@ -140,7 +148,14 @@ function Kutibxona() {
               {t("ilmiy_kitoblar")}
             </span>
           </div>
+
+          {/* tabs buttons */}
+
+          {/* Books */}
+
           <div className="books">
+            {/* adabiy kitoblar */}
+
             <div
               className={
                 tabClass === 1 ? "adabiy-kitoblar active" : "adabiy-kitoblar"
@@ -167,6 +182,11 @@ function Kutibxona() {
                 </motion.div>
               ))}
             </div>
+
+            {/* adabiy kitoblar */}
+
+            {/* ilmiy kitoblar*/}
+
             <div
               className={
                 tabClass === 2 ? "ilmiy-kitoblar active" : "ilmiy-kitoblar"
@@ -193,7 +213,12 @@ function Kutibxona() {
                 </motion.div>
               ))}
             </div>
+
+            {/* ilmiy kitoblar*/}
           </div>
+
+          {/* Books */}
+
         </div>
 
         <div className="book-popup">
@@ -215,11 +240,6 @@ function Kutibxona() {
             </div>
           </div>
         </div>
-
-
-
-                
-
       </>
     );
 }
