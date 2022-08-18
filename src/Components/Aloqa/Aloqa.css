@@ -37,6 +37,11 @@ form
     padding: 20px;
 }
 
+form h1
+{
+    font-weight: 599;
+}
+
 .left-form-menu
 {
     width: 30%;
@@ -97,7 +102,7 @@ form input::placeholder,
 form textarea::placeholder
 {
     color: red;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 form textarea

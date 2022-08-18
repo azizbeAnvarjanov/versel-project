@@ -203,7 +203,7 @@ function BoshSahifa() {
             transition={{ duration: 0.8 }}
             className="first"
           >
-            - {t("ko'p_beriladighan_savollar")} -
+            {t("ko'p_beriladighan_savollar")}
           </motion.h1>
           <div className="accordion-box">
             <motion.div

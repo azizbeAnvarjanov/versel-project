@@ -410,8 +410,9 @@ body.active
 
     .header h1
     {
-        font-size: 1.5em;
+        font-size: 1.3em;
         color: red;
+        font-weight: 500
     }
 
     .header p
@@ -459,7 +460,7 @@ body.active
 
     .galereya h1
     {
-        font-size: 1.5em;
+        font-size: 1.2em;
         color: red;
     }
 
