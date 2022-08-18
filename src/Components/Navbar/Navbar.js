@@ -4,9 +4,10 @@ import './Navbar.css'
 
 import { GrLanguage } from 'react-icons/gr';
 
+
 import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
-
+import { useLocation } from 'react-router-dom';
 
 const languages = [
   {
@@ -47,7 +48,7 @@ function Navbar() {
         document.documentElement.scrollTop = 0;
     }
 
-
+    const location = useLocation();
 
 
     window.addEventListener('scroll', () => {

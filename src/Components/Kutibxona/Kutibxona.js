@@ -119,10 +119,12 @@ function Kutibxona() {
         >
           <h1>{t("kutibxona_banner_h1")}</h1>
         </motion.div>
+
+        
         <div className="books_box">
           <div className="input">
             <input onInput={search} type="text" />
-            <button>Search</button>
+            <button>{t('search_btn')}</button>
           </div>
           <div className="buttons">
             <span
@@ -213,6 +215,11 @@ function Kutibxona() {
             </div>
           </div>
         </div>
+
+
+
+                
+
       </>
     );
 }
