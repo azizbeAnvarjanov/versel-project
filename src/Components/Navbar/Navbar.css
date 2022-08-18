@@ -47,7 +47,7 @@
     z-index: 2;
     z-index: 1000;
     background: red;
-    padding: 10px;
+    padding: 20px !important;
 }
 
 .nav-top-info span i {
@@ -113,7 +113,7 @@
 }
 
 .navbar-brand a h1 {
-    font-size: 1em;
+    font-size: 2em;
     color: red;
 }
 
@@ -128,6 +128,11 @@
     color: #fff;
 }
 
+.lng.active
+{
+    background: red;
+    color: #fff;
+}
 
 .navigation {
    display: flex;
@@ -413,5 +418,10 @@
     .language span
     {
         text-align: center !important;
+    }
+
+    .navbar.active
+    {
+        padding: 0 !important;
     }
 }

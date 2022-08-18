@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState , useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import './Navbar.css'
 
@@ -7,7 +7,6 @@ import { GrLanguage } from 'react-icons/gr';
 
 import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
-import { useLocation } from 'react-router-dom';
 
 const languages = [
   {
@@ -48,7 +47,7 @@ function Navbar() {
         document.documentElement.scrollTop = 0;
     }
 
-    const location = useLocation();
+
 
 
     window.addEventListener('scroll', () => {
@@ -62,6 +61,16 @@ function Navbar() {
     function upBtnF() {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
+    }
+
+    useEffect(() => {
+      document.querySelectorAll(".lng")[0].classList.add('active');
+    }, []);
+
+    function changeLng(e) {
+      document.querySelectorAll('.lng')
+      .forEach(el => el.classList.remove('active'));
+      e.target.classList.add('active');
     }
 
     return (
@@ -116,9 +125,11 @@ function Navbar() {
                   <div className={lng ? "languages active" : "languages"}>
                     {languages.map((lng) => (
                       <span
-                        onClick={() => {
+                        className='lng' 
+                        onClick={(e) => {
                           i18next.changeLanguage(lng.language);
                           changeClass();
+                          changeLng(e);
                         }}
                         key={lng.id}
                       >
