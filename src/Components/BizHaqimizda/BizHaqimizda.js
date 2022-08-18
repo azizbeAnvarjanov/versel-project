@@ -11,6 +11,9 @@ import galleryImg6 from '../../imgs/binoni ichi rasmlar/6.jpg'
 import galleryImg7 from '../../imgs/binoni ichi rasmlar/7.jpg'
 import galleryImg8 from '../../imgs/binoni ichi rasmlar/8.jpg'
 
+import aboutImg_1 from '../../imgs/about 1.jpg'
+import aboutImg_2 from '../../imgs/about 2.jpg'
+
 import { motion } from "framer-motion";
 
 import { useTranslation } from "react-i18next";
@@ -53,27 +56,76 @@ function BizHaqimizda() {
             opacity: 0,
           }}
         >
-          <h1>{t("banner_h1")}</h1>
-          <h2>{t("banner_h2")}</h2>
+          <motion.h1
+            initial={{ y: 200, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ amount: 0.2 }}
+          >{t("banner_h1")}</motion.h1>
+          <motion.h2
+            initial={{ y: 200, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ amount: 0.2 }}
+          >{t("banner_h2")}</motion.h2>
         </motion.div>
 
         <div className="header">
-          <h1>{t("header_h1")}</h1>
-          <p>
-            {t("header_p_1")}
-            <br />
-            <br />
-            {t("header_p_2")}
-            <br />
-            <br />
-            {t("header_p_3")}
-            <br />
-            <br />
-            {t("header_p_4")}
-          </p>
+          <div className="left-header-menu">
+            <motion.div 
+              initial={{ y: 200, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ amount: 0.2 }}
+            >
+              <h1>{t("header_h1")}</h1>
+              <p>
+                {t("header_p_1")}
+                <br />
+                <br />
+                {t("header_p_2")}
+              </p>
+            </motion.div>
+            <motion.div 
+              initial={{ y: 200, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ amount: 0.2 }}
+              >
+              <img src={aboutImg_1} alt="" />
+            </motion.div>
+          </div>
+          <div className="right-header-menu">
+            <motion.div
+              initial={{ y: 200, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ amount: 0.2 }}
+            >
+              <img src={aboutImg_2} alt="" />
+            </motion.div>
+            <motion.div
+              initial={{ y: 200, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ amount: 0.2 }}
+            >
+              <p>
+                {t("header_p_3")}
+                <br />
+                <br />
+                {t("header_p_4")}
+              </p>
+            </motion.div>
+          </div>
         </div>
 
-        <div className="galereya">
+        <motion.div
+          initial={{ y: 200, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ amount: 0.2 }}
+          className="galereya">
           <h1>{t("gallery_h1")}</h1>
           <div className="galereya-box" onClick={gallery}>
             <div className="imgs">
@@ -108,7 +160,7 @@ function BizHaqimizda() {
               <GrClose />
             </span>
           </div>
-        </div>
+        </motion.div>
       </>
     );
 }

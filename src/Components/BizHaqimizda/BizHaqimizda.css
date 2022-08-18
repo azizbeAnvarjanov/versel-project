@@ -68,16 +68,40 @@
 
 .header h1
 {
-    font-size: 3em;
+    font-size: 2.5em;
     margin-bottom: 30px;
     color: red;
+    font-weight: 500;
 }
 
 .header p
 {
     margin: 20px 0;
     font-size: 1.2em;
-    font-weight: 500;
+    font-weight: 400;
+}
+
+
+.left-header-menu,
+.right-header-menu
+{
+    display: flex;
+    align-items: center;
+}
+
+
+.left-header-menu div,
+.right-header-menu div
+{
+    width: 50%;
+}
+
+.left-header-menu div img,
+.right-header-menu div img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
@@ -86,39 +110,6 @@
 
 
 
-
-/* / video box ======================== */
-
-.video-box
-{
-    width: 100%;
-    height: 100vh;
-    position: relative;
-}
-
-.video-box video
-{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.video-box .play-btn
-{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    color: var(--fff);
-    font-size: 5em;
-    cursor: pointer;
-    transition: .5s;
-}
-
-
-
-
-/* / video box ======================== */
 
 
 
@@ -353,6 +344,24 @@ body.active
     {
         display: grid;
         grid-template-columns: repeat(2,1fr);
+    }
+
+    .left-header-menu,
+    .right-header-menu
+    {
+        flex-direction: column;
+    }
+
+    .left-header-menu div,
+    .right-header-menu div
+    {
+        width: 100%;
+    }
+
+    .right-header-menu
+    {
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
 

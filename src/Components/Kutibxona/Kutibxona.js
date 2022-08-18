@@ -110,7 +110,14 @@ import { useTranslation } from "react-i18next";
             opacity: 0,
           }}
         >
-          <h1>{t("kutibxona_banner_h1")}</h1>
+          <motion.h1
+            initial={{ y: 200, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ amount: 0.2 }}
+          >
+            {t("kutibxona_banner_h1")}
+          </motion.h1>
         </motion.div>
 
         <div className="books_box">
@@ -169,15 +176,9 @@ import { useTranslation } from "react-i18next";
                     <p className="title" onClick={(e) => getBook(e, bookdata)}>
                       {el.book_name}
                     </p>
-                    <p className="target_avtor">
-                      {el.avtor}
-                    </p>
-                    <p className="target_link">
-                      {el.link}
-                    </p>
-                    <p className="target_year">
-                      {el.year}
-                    </p>
+                    <p className="target_avtor">{el.avtor}</p>
+                    <p className="target_link">{el.link}</p>
+                    <p className="target_year">{el.year}</p>
                   </div>
                 </motion.div>
               ))}
@@ -218,7 +219,6 @@ import { useTranslation } from "react-i18next";
           </div>
 
           {/* Books */}
-
         </div>
 
         <div className="book-popup">

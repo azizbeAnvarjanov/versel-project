@@ -105,6 +105,7 @@ function BoshSahifa() {
           </div>
         </motion.header>
 
+
         <motion.div
           className="biz-haqimizda reveal section"
           id="bizHaqimizda"

@@ -372,6 +372,8 @@ header .img {
 {
     font-size: 1.1em;
     cursor: default;
+    font-weight: 500;
+    letter-spacing: .5px;
 }
 
 
