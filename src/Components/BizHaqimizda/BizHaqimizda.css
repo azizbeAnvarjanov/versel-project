@@ -356,7 +356,7 @@ body.active
     .left-header-menu div,
     .right-header-menu div
     {
-        width: 100%;
+        width: auto;
     }
 
     .right-header-menu
