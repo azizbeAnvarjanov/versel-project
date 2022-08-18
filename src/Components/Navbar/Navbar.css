@@ -134,6 +134,11 @@
     color: #fff;
 }
 
+.lng
+{
+    text-align: center;
+}
+
 .navigation {
    display: flex;
    align-items: center;
