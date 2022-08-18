@@ -246,7 +246,12 @@
     display: inline-block;
 }
 
-
+.target_link,
+.target_avtor,
+.target_year
+{
+    display: none;
+}
 
 
 

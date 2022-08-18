@@ -33,30 +33,21 @@ import { useTranslation } from "react-i18next";
     
 
   function getBook(e, bookdata) {
-    let indexBook = e.target.parentElement.parentElement.id;
-    console.log(indexBook);
-    
-    let obj = {
-      name: bookdata[indexBook].book_name,
-      imgSrc: bookdata[indexBook].img,
-      link: bookdata[indexBook].link,
-      avtor: bookdata[indexBook].avtor,
-      year: bookdata[indexBook].year,
-      qr: bookdata[indexBook].qr,
-    };
+    let indexBook = e.target.parentElement.parentElement;
 
-    let book_img = document.querySelector('.gl-book-img');
-    let name = document.querySelector('.name')
-    let avtor = document.querySelector('.avtor')
-    let year = document.querySelector('.year')
-    let button = document.querySelector('.button');
+
+    let target_img = indexBook.querySelector('img');
+    let target_name = indexBook.querySelector('.title');
+    let target_avtor = indexBook.querySelector('.target_avtor');
+    let target_year = indexBook.querySelector('.target_year');
+    let target_link = indexBook.querySelector('.target_link');
     
-    
-    book_img.src = obj.imgSrc;
-    name.innerHTML = "Kitob: " + obj.name;
-    avtor.innerHTML = "Avtor: " + obj.avtor;
-    year.innerHTML = "Chop etilgan yil: " + obj.year;
-    button.href = obj.link;
+
+    document.querySelector(".gl-book-img").src = target_img.src;
+    document.querySelector(".name").innerHTML = "Kitob: " + target_name.innerHTML;
+    document.querySelector(".avtor").innerHTML = "Avtor: " + target_avtor.innerHTML;
+    document.querySelector(".year").innerHTML = "Chop etilgan yil: " + target_year.innerHTML;
+    document.querySelector('.button').href = target_link.innerHTML;
 
     let parentBox = document.querySelector(".book-popup");
     parentBox.classList.add('active');
@@ -177,6 +168,15 @@ import { useTranslation } from "react-i18next";
                   <div className="book-title">
                     <p className="title" onClick={(e) => getBook(e, bookdata)}>
                       {el.book_name}
+                    </p>
+                    <p className="target_avtor">
+                      {el.avtor}
+                    </p>
+                    <p className="target_link">
+                      {el.link}
+                    </p>
+                    <p className="target_year">
+                      {el.year}
                     </p>
                   </div>
                 </motion.div>
