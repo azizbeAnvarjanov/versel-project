@@ -10,15 +10,15 @@ import { useTranslation } from 'react-i18next';
 
 const languages = [
   {
-    language: 'uz',
+    language: 'Uz',
     id: '1'
   },
   {
-    language: 'ru',
+    language: 'Ru',
     id: '2'
   },
   {
-    language: 'en',
+    language: 'En',
     id: '3'
   },
 ]
