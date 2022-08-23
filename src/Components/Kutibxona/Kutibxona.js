@@ -174,7 +174,7 @@ import { useTranslation } from "react-i18next";
                   </div>
                   <div className="book-title">
                     <p className="title" onClick={(e) => getBook(e, bookdata)}>
-                      {el.book_name}
+                      {el.name}
                     </p>
                     <p className="target_avtor">{el.avtor}</p>
                     <p className="target_link">{el.link}</p>

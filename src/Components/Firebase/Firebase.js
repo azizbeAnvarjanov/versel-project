@@ -4,12 +4,13 @@ import { getFirestore } from 'firebase/firestore'
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBjbzDGoeiAOS6lOVRQxTJAp_3p16Dniyo",
-  authDomain: "impuls-2218c.firebaseapp.com",
-  projectId: "impuls-2218c",
-  storageBucket: "impuls-2218c.appspot.com",
-  messagingSenderId: "755561177837",
-  appId: "1:755561177837:web:4ba90c744cc3525b6522e4",
+  apiKey: "AIzaSyBwnZAoAj8z3Fla6ziCXfwLlxXvVjLQAV8",
+  authDomain: "books-b4672.firebaseapp.com",
+  databaseURL: "https://books-b4672-default-rtdb.firebaseio.com",
+  projectId: "books-b4672",
+  storageBucket: "books-b4672.appspot.com",
+  messagingSenderId: "464940739077",
+  appId: "1:464940739077:web:43424299cee97ececa8a6c",
 };
 
 // Initialize Firebase
