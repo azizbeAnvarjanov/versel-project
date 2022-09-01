@@ -129,25 +129,7 @@ import { useTranslation } from "react-i18next";
           </div>
 
           {/* search books box */}
-
-          {/* tabs buttons */}
-
-          <div className="buttons">
-            <span
-              className={tabClass === 1 ? "active" : ""}
-              onClick={() => tabs(1)}
-            >
-              {t("adabiy_kitoblar")}
-            </span>
-            <span
-              className={tabClass === 2 ? "active" : ""}
-              onClick={() => tabs(2)}
-            >
-              {t("ilmiy_kitoblar")}
-            </span>
-          </div>
-
-          {/* tabs buttons */}
+      
 
           {/* Books */}
 
@@ -156,7 +138,7 @@ import { useTranslation } from "react-i18next";
 
             <div
               className={
-                tabClass === 1 ? "adabiy-kitoblar active" : "adabiy-kitoblar"
+                "adabiy-kitoblar"
               }
             >
               {bookdata.map((el) => (
@@ -185,37 +167,7 @@ import { useTranslation } from "react-i18next";
             </div>
 
             {/* adabiy kitoblar */}
-
-            {/* ilmiy kitoblar*/}
-
-            <div
-              className={
-                tabClass === 2 ? "ilmiy-kitoblar active" : "ilmiy-kitoblar"
-              }
-            >
-              {bookdata2.map((el) => (
-                <motion.div
-                  initial={{ y: 100, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
-                  viewport={{ amount: 0.2 }}
-                  transition={{ duration: 0.8 }}
-                  key={el.id}
-                  id={el.id}
-                  className="book"
-                >
-                  <div className="book-img">
-                    <img src={el.img} alt="" />
-                  </div>
-                  <div className="book-title">
-                    <p className="title" onClick={(e) => getBook(e, bookdata2)}>
-                      {el.book_name}
-                    </p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-
-            {/* ilmiy kitoblar*/}
+            
           </div>
 
           {/* Books */}

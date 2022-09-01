@@ -68,14 +68,8 @@
     padding: 20px;
     left: 0;
     top: 0;
-    display: none;
 }
 
-.adabiy-kitoblar.active,
-.ilmiy-kitoblar.active
-{
-    display: grid;
-}
 
 
 
@@ -175,6 +169,7 @@
 {
     width: 300px;
     height: 80%;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.571);
 }
 
 .qr
