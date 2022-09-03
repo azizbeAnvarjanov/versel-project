@@ -1,13 +1,26 @@
 import React, { useRef } from 'react';
 import emailjs from "@emailjs/browser";
 import './Aloqa.css';
-
+import { MdDone } from 'react-icons/md';
+import { CgClose } from 'react-icons/cg';
+import { useState } from 'react';
 
 import { motion } from "framer-motion";
 
 import { useTranslation } from "react-i18next";
 
 function Aloqa() {
+
+
+
+  const [sucsess, setSucsess] = useState(false);
+
+
+  function PopupF() {
+    !sucsess ? setSucsess(true) : setSucsess(false);
+    console.log(sucsess);
+    
+  }
   const { t } = useTranslation();
 
   const form = useRef();
@@ -24,7 +37,9 @@ function Aloqa() {
       )
       .then(
           (result) => {
-          console.log(result.text);
+            if (result.text == 'OK') {
+              PopupF();
+            }
           },
           (error) => {
           console.log(error.text);
@@ -119,6 +134,13 @@ function Aloqa() {
               </div>
             </div>
           </form>
+          <div className={sucsess ? 'result-popup active' : 'result-popup'}>
+              <div className="donebtn-box">
+                <MdDone className='donebtn' />
+              </div>
+              <p>Xabaringiz yuborildi siz bilan 24 soat ichida bog'lanamiz</p>
+            <button onClick={PopupF}>Done</button>
+          </div>
         </div>
       </>
     );

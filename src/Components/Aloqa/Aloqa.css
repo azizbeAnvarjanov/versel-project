@@ -116,6 +116,62 @@ form textarea
     transition: .5s;
 }
 
+.result-popup
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    width: 50%;
+    height: 60vh;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.363);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+
+.donebtn
+{
+    color: #fff;
+    font-size: 5em;
+}
+
+.donebtn-box
+{
+    width: 160px;
+    height: 160px;
+    background: rgb(6, 236, 17);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.result-popup p
+{
+    margin: 20px 0;
+    color:rgb(6, 236, 17);
+    font-size: 1.2em;
+}
+
+.result-popup button
+{
+    background: rgb(6, 236, 17);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+
+
+.result-popup.active
+{
+    display: flex;
+}
 
 
 
@@ -164,6 +220,17 @@ form textarea
         border-top-right-radius: 0;
         border-bottom-left-radius: 10px;
     }
+
+    .result-popup
+    {
+        width: 90%;
+    }
+
+    .result-popup p 
+    {
+        font-size: 1em;
+        text-align: center;
+    }
 }
 
 
@@ -193,4 +260,6 @@ form textarea
     {
         font-size: 1.3em;
     }
+
+    
 }
