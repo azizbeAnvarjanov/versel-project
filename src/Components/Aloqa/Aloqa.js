@@ -16,15 +16,23 @@ function Aloqa() {
   const [sucsess, setSucsess] = useState(false);
 
 
-  function PopupF() {
-    !sucsess ? setSucsess(true) : setSucsess(false);
-    console.log(sucsess);
-    
-  }
+
   const { t } = useTranslation();
 
   const form = useRef();
 
+
+  function PopupF() {
+    // !sucsess ? setSucsess(true) : setSucsess(false);
+    if (!sucsess) {
+      setSucsess(true);
+      document.querySelector('.message-ok')
+        .innerHTML = t("message-ok")
+    } else {
+      setSucsess(false);
+    }
+
+  }
   const sendEmail = (e) => {
         e.preventDefault();
       
@@ -138,7 +146,7 @@ function Aloqa() {
               <div className="donebtn-box">
                 <MdDone className='donebtn' />
               </div>
-              <p>Xabaringiz yuborildi siz bilan 24 soat ichida bog'lanamiz</p>
+              <p className='message-ok'></p>
             <button onClick={PopupF}>Done</button>
           </div>
         </div>
