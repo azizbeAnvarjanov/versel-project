@@ -1,8 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from "@emailjs/browser";
 import './Aloqa.css';
-import { MdDone } from 'react-icons/md';
-import { CgClose } from 'react-icons/cg';
+import { MdDone } from 'react-icons/md';  
 import { useState } from 'react';
 
 import { motion } from "framer-motion";
@@ -38,10 +37,10 @@ function Aloqa() {
       
       emailjs
       .sendForm(
-          "service_43gjdlw",
-          "template_ez1rel5",
+          "service_ih5po9c",
+          "template_4j57zcp",
           form.current,
-          "Kv5dRlnSIERbwbhD5"
+          "uHa25MsI2MHW7-nLQ"
       )
       .then(
           (result) => {
