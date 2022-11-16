@@ -1,14 +1,17 @@
 import React from 'react';
 import { useEffect } from 'react';
-import Img1 from '../../imgs/yangi.jpg';
-import Img2 from '../../imgs/yangui 2.jpg';
-import Img3 from '../../imgs/slider3.jpg';
+// import Img1 from '../../imgs/yangi.jpg';
+// import Img2 from '../../imgs/yangui 2.jpg';
+// import Img3 from '../../imgs/slider3.jpg';
 import bizhaqimizdaImg from '../../imgs/bizhaqimizda img1.png';
 import impuls1Img from '../../imgs/111111.jpg';
 import impuls2Img from '../../imgs/Medical-Students.jpg';
 import impuls3Img from '../../imgs/Which-Type-of-Investment-Has-the-Highest-Risk-900x531.png';
 
-import logoImg from '../../imgs/logo.png';
+import logoImg from '../../imgs/new logo.png';
+
+import video from '../../video/1_encoded.mp4';
+
 import './BoshSahifa.css'
 import { Link } from 'react-router-dom';
 
@@ -88,21 +91,7 @@ function BoshSahifa() {
             opacity: 0,
           }}
         >
-          <div className="img imgs-0 active">
-            <img src={Img1} alt=""></img>
-            <h4>{t("img_h4_1")}</h4>
-            <h1>{t("img_h1_1")}</h1>
-          </div>
-          <div className="img imgs-1">
-            <img src={Img2} alt=""></img>
-            <h4>{t("img_h4_2")}</h4>
-            <h1>{t("img_h1_2")}</h1>
-          </div>
-          <div className="img imgs-2">
-            <img src={Img3} alt=""></img>
-            <h4>{t("img_h4_3")}</h4>
-            <h1>{t("img_h1_3")}</h1>
-          </div>
+          <video src={video} loop autoPlay muted ></video>
         </motion.header>
 
 

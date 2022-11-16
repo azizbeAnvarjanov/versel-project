@@ -117,7 +117,7 @@ function Aloqa() {
                   type="text"
                   className="form-control"
                   placeholder={t("pl_3")}
-                  name="subject"
+                  name="phoneNumber"
                   required
                 />
               </div>

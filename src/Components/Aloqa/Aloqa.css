@@ -10,7 +10,7 @@
     justify-content: flex-end;
     padding-right: 10%;
     font-size: 1.7em;
-    color: red;
+    color: rgb(0, 4, 255);
     overflow: hidden;
 }
 
@@ -28,7 +28,7 @@
 
 form
 {
-    color: red;
+    color: rgb(0, 4, 255);
     width: 60%;
     background: #fff;
     height: 80vh;
@@ -45,7 +45,7 @@ form h1
 .left-form-menu
 {
     width: 30%;
-    background: red;
+    background: rgb(0, 4, 255);
     height: 80vh;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -84,7 +84,7 @@ form input
     width: 100%;
     border: none;
     border: 2px solid transparent;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid rgb(0, 4, 255);
     outline: none;
     padding: 7px;
     margin: 10px 0;
@@ -94,14 +94,14 @@ form input
 form input:focus,
 form textarea:focus
 {
-    border: 2px solid red;
+    border: 2px solid rgb(0, 4, 255);
 }
 
 
 form input::placeholder,
 form textarea::placeholder
 {
-    color: red;
+    color: rgb(0, 4, 255);
     font-weight: 500;
 }
 
@@ -109,7 +109,7 @@ form textarea
 {
     width: 100%;
     border: 2px solid transparent;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid rgb(0, 4, 255);
     height: 25vh;
     padding: 10px;
     outline: none;

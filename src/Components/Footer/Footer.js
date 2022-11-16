@@ -4,7 +4,7 @@ import './Footer.css'
 import { IoIosArrowUp } from 'react-icons/io';
 import { FaPhone , FaTelegram, FaHotel} from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
-import { GrInstagram } from 'react-icons/gr'
+import { GrInstagram, GoLocation, GrLocation } from "react-icons/gr";
 
 import MapImg from '../../imgs/GoogleMapTA.jpg'
 import { useTranslation } from "react-i18next";
@@ -24,25 +24,23 @@ function Footer() {
           <div className="footer-box">
             <div className="contact-info">
               <h1>{t("footer_h1")}</h1>
-              <Link to="/">
-                <FaHotel />
-                {t("link_1")}
-              </Link>
-              <Link to="#">
-                <FaPhone />+ 69 239 50 15
-              </Link>
-              <Link to="#">
+              <Link to="/">{t("link_1")}</Link>
+              <a href="https://impulsmedical7@gmail.com">
                 <MdEmail />
-                info@company.com
-              </Link>
-              <Link to="#">
+                impulsedu1@gmail.com
+              </a>
+              <a href="https://t.me/impulsmi_uz">
                 <FaTelegram />
                 Telegram
-              </Link>
-              <Link to="https://instagram.com/aziz__7775?utm_medium=copy_link">
+              </a>
+              <a href="https://instagram.com/impulsmi_uz?igshid=YmMyMTA2M2Y=">
                 <GrInstagram />
                 Instagram
-              </Link>
+              </a>
+              <a href="Tel:+998692395015" className="phones">
+                <FaPhone />
+                <p>+998 69 239 50 15</p>
+              </a>
             </div>
             <div className="sections-info">
               <h1>{t("sahifalarimiz")}</h1>
@@ -60,7 +58,7 @@ function Footer() {
               </Link>
             </div>
             <a
-              href="https://goo.gl/maps/B2dZEB1krPrNQPVf7"
+              href="https://maps.google.com/maps?q=41.002598,71.684406&ll=41.002598,71.684406&z=16  "
               target="_blank"
               className="map"
             >
