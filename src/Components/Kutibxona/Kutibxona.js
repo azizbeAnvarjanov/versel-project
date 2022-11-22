@@ -146,7 +146,7 @@ import { useTranslation } from "react-i18next";
                   initial={{ y: 100, opacity: 0 }}
                   whileInView={{ y: 0, opacity: 1 }}
                   viewport={{ amount: 0.2 }}
-                  transition={{ duration: 0.8 }}
+                  transition={{ duration: 1.5 }}
                   key={el.id}
                   id={el.id}
                   className="book"

@@ -1,8 +1,12 @@
 import React from 'react';
 import { useEffect } from 'react';
-// import Img1 from '../../imgs/yangi.jpg';
-// import Img2 from '../../imgs/yangui 2.jpg';
-// import Img3 from '../../imgs/slider3.jpg';
+import Img1 from '../../imgs/1.jpg';
+import Img2 from '../../imgs/2.jpg';
+import Img3 from '../../imgs/3.jpg';
+import Img4 from '../../imgs/4.jpg';
+import Img5 from '../../imgs/5.jpg';
+import lit1 from '../../imgs/lit1.jpg';
+import lit2 from '../../imgs/lit2.jpg';
 import bizhaqimizdaImg from '../../imgs/bizhaqimizda img1.png';
 import impuls1Img from '../../imgs/111111.jpg';
 import impuls2Img from '../../imgs/Medical-Students.jpg';
@@ -10,7 +14,6 @@ import impuls3Img from '../../imgs/Which-Type-of-Investment-Has-the-Highest-Risk
 
 import logoImg from '../../imgs/new logo.png';
 
-import video from '../../video/1_encoded.mp4';
 
 import './BoshSahifa.css'
 import { Link } from 'react-router-dom';
@@ -79,23 +82,43 @@ function BoshSahifa() {
 
     return (
       <>
-        <motion.header
+        <header
           id="boshSahifa"
-          initial={{
-            opacity: 0,
-          }}
-          animate={{
-            opacity: 1,
-          }}
-          exit={{
-            opacity: 0,
-          }}
         >
-          <video src={video} loop autoPlay muted ></video>
-        </motion.header>
+          <div className="img imgs-0 active">
+            <h1>USMLE dasturi asosida faoliyat olib boramiz</h1>
+            <img src={Img1} alt=""></img>
+          </div>
+          <div className="img imgs-1">
+            <h1>Gibrit ta'lim - an'anaviy darslar va videoroliklar</h1>
+            <img src={Img2} alt=""></img>
+          </div>
+          <div className="img imgs-2">
+            <h1>"Work and travel Germany" dasturi</h1>
+            <img src={Img3} alt=""></img>
+          </div>
+          <div className="img imgs-2">
+            <h1>Mashg'ulotlar asosan amaliyotdan iborat</h1>
+            <img src={Img4} alt=""></img>
+          </div>
+          <div className="img imgs-2">
+            <h1>10% talaba uchun grant imkoniyati</h1>
+            <img src={Img5} alt=""></img>
+          </div>
+        </header>
+
+          <div className="litsensiya">
+            {/* <img src={litsenziya} alt="" /> */}
+            <div className="lit_1">
+              <img src={lit1} alt="" />
+            </div>
+            <div className="lit_2">
+              <img src={lit2} alt="" />
+            </div>
+          </div>
 
 
-        <motion.div
+        <div
           className="biz-haqimizda reveal section"
           id="bizHaqimizda"
           initial="hidden"
@@ -103,25 +126,25 @@ function BoshSahifa() {
           viewport={{ amount: 0.2 }}
         >
           <div className="bizhaqimizda-text">
-            <motion.h1
+            <h1
               className="reveal-text"
               custom={0}
               variants={TextAnimation}
             >
               {t("biz_haqimzida_h1")}
-            </motion.h1>
-            <motion.p
+            </h1>
+            <p
               custom={1}
               variants={TextAnimation}
               className="reveal-text"
             >
               {t("biz_haqimizda_p")}
-            </motion.p>
+            </p>
             <Link onClick={upBtnF} to="/bizhaqimizda" className="btn">
               {t("biz_haqimizda_btn")}
             </Link>
           </div>
-          <motion.div
+          <div
             className="bizhaqimzida-img"
             initial={{ y: 200, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -129,11 +152,11 @@ function BoshSahifa() {
             viewport={{ amount: 0.2 }}
           >
             <img src={bizhaqimizdaImg} alt="" />
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
 
-        <motion.div className="impuls">
-          <motion.div
+        <div className="impuls">
+          <div
             className="impuls-box"
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -148,9 +171,9 @@ function BoshSahifa() {
             </div>
             <h1>{t("impuls_box_h1_1")}</h1>
             <p>{t("impuls_box_p_1")}</p>
-          </motion.div>
+          </div>
 
-          <motion.div
+          <div
             className="impuls-box"
             initial={{ y: 100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -165,9 +188,9 @@ function BoshSahifa() {
             </div>
             <h1>{t("impuls_box_h1_2")}</h1>
             <p>{t("impuls_box_p_2")}</p>
-          </motion.div>
+          </div>
 
-          <motion.div
+          <div
             className="impuls-box"
             initial={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -182,11 +205,11 @@ function BoshSahifa() {
             </div>
             <h1>{t("impuls_box_h1_3")}</h1>
             <p>{t("impuls_box_p_3")}</p>
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
 
         <div className="accordion-section">
-          <motion.h1
+          <h1
             initial={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ amount: 0.2 }}
@@ -194,9 +217,9 @@ function BoshSahifa() {
             className="first"
           >
             {t("ko'p_beriladighan_savollar")}
-          </motion.h1>
+          </h1>
           <div className="accordion-box">
-            <motion.div
+            <div
               initial={{ y: 100, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ amount: 0.2 }}
@@ -204,8 +227,8 @@ function BoshSahifa() {
               className="left-menu"
             >
               <p>{t("accordion_section_p")}</p>
-            </motion.div>
-            <motion.div
+            </div>
+            <div
               initial={{ y: 100, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ amount: 0.2 }}
@@ -307,7 +330,7 @@ function BoshSahifa() {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </>
