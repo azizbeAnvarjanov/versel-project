@@ -105,8 +105,6 @@ header .img {
 
 
 
-/* litsenziya */
-
 
 .litsensiya
 {
@@ -134,21 +132,11 @@ header .img {
     object-fit: contain;
 }
 
-/* 
-.litsensiya img
-{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-} */
 
 
 
 
-/* litsenziya */
+
 
 
 
@@ -583,10 +571,6 @@ header .img {
 
 
 
-    
-
-    /* litsenziya */
-
 
     .litsensiya
     {
@@ -615,21 +599,6 @@ header .img {
         object-fit: contain;
     }
 
-    /* 
-    .litsensiya img
-    {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    } */
-
-
-
-
-    /* litsenziya */
 
 
 
@@ -726,9 +695,7 @@ header .img {
     }
 
 
-        
 
-    /* litsenziya */
 
 
     .litsensiya
@@ -760,21 +727,8 @@ header .img {
         object-fit: contain;
     }
 
-    /* 
-    .litsensiya img
-    {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    } */
+    
 
-
-
-
-    /* litsenziya */
 
 
 
