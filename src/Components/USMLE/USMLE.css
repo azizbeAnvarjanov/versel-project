@@ -118,12 +118,17 @@
         margin-left: 20px;
         margin-top: 10px;
     }
+
+    .usmle_banner
+    {
+        height: 40vh;
+    }
 }
 
 @media (max-width: 450px) {
     .usmle_banner h1
     {
-        font-size: 2em;
+        font-size: 2.5em;
         letter-spacing: 0;
         width: 100%;
     }
