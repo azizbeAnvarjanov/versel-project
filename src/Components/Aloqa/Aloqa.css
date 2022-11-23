@@ -1,7 +1,7 @@
 .banner-aloqa
 {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     background: url(../../imgs/aloqa\ img.jpg);
     background-size: cover;
     background-position: center;
@@ -10,9 +10,28 @@
     justify-content: flex-end;
     padding-right: 10%;
     font-size: 1.7em;
-    color: rgb(0, 4, 255);
     overflow: hidden;
+    position: relative;
 }
+
+.banner-aloqa h1
+{
+    z-index: 1;
+    color: #fff;
+}
+
+
+.banner-aloqa::before
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.26);
+}
+
 
 
 .form-div

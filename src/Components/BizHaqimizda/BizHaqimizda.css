@@ -8,7 +8,7 @@
 .banner
 {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,14 +22,23 @@
     overflow: hidden;
 }
 
-
+.banner::before
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.404);
+}
 
 
 .banner h1, h2 
 {
     z-index: 1;
     font-size: 3em;
-    color:  rgb(0, 4, 255);
+    color:  rgb(255, 255, 255);
 }
 
 

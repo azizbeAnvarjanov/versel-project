@@ -114,15 +114,14 @@ function BoshSahifa() {
           </div>
         </header>
 
-          <div className="litsensiya">
-            {/* <img src={litsenziya} alt="" /> */}
+          {/* <div className="litsensiya">
             <div className="lit_1">
               <img src={lit1} alt="" />
             </div>
             <div className="lit_2">
               <img src={lit2} alt="" />
             </div>
-          </div>
+          </div> */}
 
 
         <div
