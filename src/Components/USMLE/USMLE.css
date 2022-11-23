@@ -123,8 +123,9 @@
 @media (max-width: 450px) {
     .usmle_banner h1
     {
-        font-size: 1.5em;
+        font-size: 2em;
         letter-spacing: 0;
+        width: 100%;
     }
 
     .usmle_big_box
