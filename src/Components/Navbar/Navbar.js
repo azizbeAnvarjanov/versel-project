@@ -113,6 +113,11 @@ function Navbar() {
                 </Link>
               </li>
               <li>
+                <Link onClick={changePages} to="/usmle">
+                  USMLE tizimi
+                </Link>
+              </li>
+              <li>
                 <Link onClick={changePages} to="/kutibxona">
                   {t("kutibxona")}
                 </Link>

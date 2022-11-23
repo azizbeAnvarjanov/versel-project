@@ -1,5 +1,5 @@
 import React from 'react';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Img1 from '../../imgs/1.jpg';
 import Img2 from '../../imgs/2.jpg';
 import Img3 from '../../imgs/3.jpg';
@@ -38,10 +38,12 @@ const TextAnimation = {
 
 
 
+
+
 function BoshSahifa() {
 
   const { t } = useTranslation();
-    
+  const [nav, setNav] = useState(false);
     useEffect(() => {
         let imgs = document.querySelectorAll('.img');
 
@@ -67,6 +69,11 @@ function BoshSahifa() {
       document.documentElement.scrollTop = 0;
     }
 
+    function changePages() {
+      nav ? setNav(false) : setNav(true);
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
 
 
     function accordion(e) {
@@ -154,6 +161,21 @@ function BoshSahifa() {
             <img src={bizhaqimizdaImg} alt="" />
           </div>
         </div>
+
+
+        <div className="usmle">
+          <div className="usmle_box">
+            <h1>About the USMLE</h1>
+            <h4>The United States Medical Licensing Examination® (USMLE®) is a three-step examination for medical licensure in the U.S. The USMLE assesses a physician's ability to apply knowledge, concepts, and principles, and to demonstrate fundamental patient-centered skills, that are important in health and disease and that constitute the basis of safe and effective patient care. </h4>
+            <Link 
+            onClick={changePages}
+            className='link_usmle'
+            to="/usmle">
+              To know more
+            </Link>
+          </div>
+        </div>
+
 
         <div className="impuls">
           <div

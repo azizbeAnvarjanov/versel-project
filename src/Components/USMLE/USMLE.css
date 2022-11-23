@@ -1,0 +1,139 @@
+.usmle_banner
+{
+    width: 100%;
+    height: 70vh;
+    background: rgb(214, 33, 33);
+    padding-top: 20vh;
+    background: url(../../imgs/usmle.jpg);
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+
+
+.usmle_banner::before
+{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.404);
+}
+
+.usmle_banner h1
+{
+    z-index: 99!important;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translateX(-50%);
+    font-size: 3em;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+
+
+.usmle_big_box
+{
+    width: 100%;
+    height: auto;
+    padding: 40px;
+}
+
+.usmle_big_box div
+{
+    width: 70%;
+    margin: auto;
+    margin-top: 70px;
+    border-bottom: 1px solid rgb(47, 25, 250);
+    padding-bottom: 20px;
+}
+
+.usmle_big_box div:nth-child(1)
+{
+    margin-top: 20px;
+}
+
+
+.usmle_big_box div h1
+{
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: blue;
+}
+
+.usmle_big_box div p
+{
+    margin: 20px 0;
+    color:rgb(68, 68, 68);
+    font-weight: 400;
+}
+
+.usmle_big_box div p li
+{
+    list-style-type: disc;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+@media (max-width: 870px) {
+    .usmle_big_box div
+    {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 720px) {
+    .usmle_banner h1
+    {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 550px) {
+    .usmle_banner h1
+    {
+        font-size: 2em;
+    }
+
+    .usmle_big_box div
+    {
+        width: 100%;
+    }
+
+    .usmle_big_box div p li
+    {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 450px) {
+    .usmle_banner h1
+    {
+        font-size: 1.5em;
+        letter-spacing: 0;
+    }
+
+    .usmle_big_box
+    {
+        padding: 15px;
+    }
+
+    .usmle_big_box div
+    {
+        width: 100%;
+    }
+}
