@@ -361,13 +361,9 @@
    
     .nav .menu span
     {
-        background: rgb(0, 4, 255);
+        background: rgb(255, 255, 255);
     }
-
-    .navbar-brand a h1
-    {
-        color: rgb(0, 4, 255);
-    }
+   
 
     .navbar.active .navbar-brand a
     {   
