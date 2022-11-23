@@ -1,7 +1,7 @@
 .banner-aloqa
 {
     width: 100%;
-    height: 50vh;
+    height: 100vh;
     background: url(../../imgs/aloqa\ img.jpg);
     background-size: cover;
     background-position: center;
@@ -238,9 +238,11 @@ form textarea
     .banner-aloqa
     {
         padding-right: 0;
+        height: 50vh;
         justify-content: center;
         background-position: left;
     }
+    
     .banner-aloqa h1
     {
         font-size: .9em;
