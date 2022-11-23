@@ -670,11 +670,15 @@ header .img {
 
 @media (max-width: 520px) {
 
+    header
+    {
+        height: 50vh !important;
+    }
 
 
     .img h1
     {
-        font-size: 2.2em !important;
+        font-size: 1.7em !important;
     }
 
     .hamkorlar
