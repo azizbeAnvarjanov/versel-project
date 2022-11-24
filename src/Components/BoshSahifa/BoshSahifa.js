@@ -5,7 +5,7 @@ import Img2 from '../../imgs/2.jpg';
 import Img3 from '../../imgs/3.jpg';
 import Img4 from '../../imgs/4.jpg';
 import Img5 from '../../imgs/5.jpg';
-import logo from '../../imgs/22.png';
+import logo from '../../imgs/white logo.png';
 import lit2 from '../../imgs/lit2.jpg';
 import bizhaqimizdaImg from '../../imgs/bizhaqimizda img1.png';
 import impuls1Img from '../../imgs/111111.jpg';
