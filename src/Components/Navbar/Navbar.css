@@ -288,7 +288,8 @@
         left: 0;
         top: -100%;
         width: 100%!important;
-        height: 70vh;
+        height: 0;
+        overflow: hidden;
         background: rgba(255, 255, 255, 0.281);
         flex-direction: column;
         justify-content: center;
@@ -304,6 +305,7 @@
     .navigation.active
     {
         top: 0;
+        height: 70vh;
     }
     
     .navigation li a
