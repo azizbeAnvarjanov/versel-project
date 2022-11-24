@@ -81,7 +81,9 @@ function Navbar() {
         <div className={navbarClass ? "navbar active" : "navbar"}>
           <div className={navbarClass ? "nav-top-info active" : "nav-top-info"}>
             <span className="name-univer">{t("name_univer")}</span>
-            <span className="phone-univer"><a href="Tel:+998692395015">+998 69 239 50 15</a></span>
+            <span className="phone-univer">
+              <a href="Tel:+998692395015">+998 69 239 50 15</a>
+            </span>
             <span className="email-univer">
               <p>impulsedu1@gmail.com</p>
             </span>
@@ -114,7 +116,7 @@ function Navbar() {
               </li>
               <li>
                 <Link onClick={changePages} to="/usmle">
-                  USMLE tizimi
+                  {t("usmle")}
                 </Link>
               </li>
               <li>
@@ -133,7 +135,7 @@ function Navbar() {
                   <div className={lng ? "languages active" : "languages"}>
                     {languages.map((lng) => (
                       <span
-                        className='lng' 
+                        className="lng"
                         onClick={(e) => {
                           i18next.changeLanguage(lng.language);
                           changeClass();

@@ -1,107 +1,124 @@
 {
-    "name_univer": "Impuls Medical Institute",
-    "bosh_sahifa": "Main page",
-    "biz_haqimizda": "About us",
-    "kutibxona": "Library",
-    "aloqa": "Contact",
+  "name_univer": "Impuls Medical Institute",
+  "bosh_sahifa": "Main page",
+  "usmle": "USMLE",
+  "biz_haqimizda": "About us",
+  "kutibxona": "Library",
+  "aloqa": "Contact",
+
+  "img_h1_1": "We work under the USMLE program",
+  "img_h1_2": "Hybrid Education - Traditional Lessons and Videos",
+  "img_h1_3": "Work and travel in Germany - program",
+  "img_h1_4": "Training consists mainly of practice",
+  "img_h1_5": "10% student grant",
+
+  "biz_haqimzida_h1": "Impulse Medical Institute",
+  "biz_haqimizda_p": "The IMPULSE Institute is located in Uzbekistan and is designed to provide education only in the field of medicine and includes the standards of medical universities in Europe and Asia. At the IMPULS Institute, students will have the opportunity to work not only in Uzbekistan, but also in Europe and Asia, having studied medicine in English. This institute teaches on the basis of a credit-modular system. The reason why it is called the modern system of education is because 80% of the lessons in our institute are based on practice, which is completely different from public universities.",
+  "biz_haqimizda_btn": "More about us",
+
+  "impuls_box_h1_1": "Impulse",
+  "impuls_box_p_1": "open the door to world knowledge with the medical institute.",
+  "impuls_box_h1_2": "International",
+  "impuls_box_p_2": "standard medical institute now in Namangan you should be with us.",
+  "impuls_box_h1_3": "In Namangan",
+  "impuls_box_p_3": "digital medical institute based on public-private partnership for the first time.",
+
+  "ko'p_beriladighan_savollar": "Frequently asked Questions",
+  "accordion_section_p": "Impuls Institute strives for excellence in teaching, learning and research. Impuls Institute and its founder are working hard to create the most modern conditions for students and employees. Our goal is to create the best educational and research environment not only in Uzbekistan, but also in Central Asia.",
+
+  "savol_1": "Is your diploma recognized in Uzbekistan ?",
+  "javob_1": "The diploma of students who graduated from the Medical Institute IMPULSE is recognized not only in Uzbekistan, but throughout the world.",
+
+  "savol_2": "How much is the contract fee ?",
+  "javob_2": "The cost of the contract is 33,000,000 soums (3,000 US dollars), and we also have the option of paying in installments.",
+
+  "savol_3": "What languages ​​are the lessons in ?",
+  "javob_3": "All classes are held in Uzbek or English, depending on the group.",
+
+  "savol_4": "Are there scholarships ?",
+  "javob_4": "Since we are a private Institute, IMPULS Medical is self-financed and does not have the ability to provide scholarships to students.",
+
+  "savol_5": "What documents are needed for admission ?",
+  "javob_5": "One of the stages of successful admission to IMPULSE Medical is the submission of an application. To do this, you will need to provide the following: -Original school or high school diploma.",
+  "javob_5_span_1": "— A copy of the passport (2 pcs.);",
+  "javob_5_span_2": "— Picture 3x4 (6 pieces);",
+  "javob_5_span_3": "Documents can be submitted in PDF format or online at the Public Service Center in Namangan.",
+
+  "savol_6": "What are the preparatory courses ?",
+  "javob_6": "Preparatory courses are required to successfully pass the exams and receive a grant education at IMPULS Medical. The program lasts 6 months and consists of subjects of English and anatomy. Those who complete the course will have an IELTS score of 5.0. This is a great opportunity to improve your knowledge and get a budget place at the Institute.",
+
+  "savol_7": "What do we offer students ?",
+  "javob_7": "IMPULS Medical offers special grants for those who pass the exams with high scores. We conduct entrance exams to the institute, i.e., special preparation courses on anatomy and English language, the graduates of which are assigned a passing score of 4.5 on the IELTS exam ✅ All this is done in order to support the aspirations of students and increase their confidence in the future.",
+
+  "footer_h1": "Contact info",
+  "link_1": "Namangan city, Brick bridge MFY, K. Otamirzayev street, 1 house",
+  "sahifalarimiz": "Pages",
+
+  "banner_h1": "Welcome to",
+  "banner_h2": "Impulse Medical Institute",
+
+  "header_h1": "Impulse Medical Institute",
+  "header_p_1": "Impulse Institute was established on the basis of the decision of the Cabinet of Ministers of the Republic of Uzbekistan dated February 15, 2019. Our Institute strives to become the leading institution of higher education in the region and contribute to the development of Uzbekistan. we know and understand the importance of our geographic location.",
+  "header_p_2": "The mission of our Institute: to train a sufficient number of people in the areas necessary for the country, to offer solutions for the training of professional personnel, to produce new educational technologies, to develop the principles of education and training. Impulse Institute provides education to students from different countries according to internationally recognized standards. The Institute trains highly qualified specialists in fundamental, medical, special and humanitarian sciences. In addition to the MD program, the Master's program is offered by highly qualified internationally recognized academic staff.",
+
+  "header_p_3": "The educational process is carried out in cooperation with leading international research institutes, including the Gachon Institute in the field of medicine (South Korea) and our compatriots working abroad. Education is conducted in English and lasts 6 years (2 years of the preparatory course, 4 years of the medical course at the Faculty of Medicine). Graduates are awarded a diploma of higher education. Research, discovery and the search for truth are important characteristics of the Institute.",
+
+  "header_p_4": "Impulse Institute is well aware of this responsibility and strives to create an intellectual environment in which students and faculty can conduct research effectively and productively together. The Institute strives to offer its students the most modern and high-quality education. Every student who enters this long educational journey at our Institute graduates as a person, fully equipped and armed with his knowledge.",
+
+  "gallery_h1": "Interior views of our institute",
+
+  "kutibxona_banner_h1": "Impulse Institute Library",
+  "ilmiy_kitoblar": "Scientific books",
+  "adabiy_kitoblar": "Literary books",
+  "oqish_btn": "Reading",
+  "search_btn": "Search",
+
+  "message-ok": "Your message has been sent. We will contact you within 24 hours",
+
+  "aloqa_h1": "Do you have a question for us?",
+  "left_menu_h1": "We'll be in touch",
+  "left-menu_p": "Leave us a message and we will contact you within 24 hours.",
+  "manzil": "Address: Namangan city, Brick bridge MFY, K. Otamirzayev street, 1 house",
+  "pochta": "Email: impulsmedica7@gmail.com",
+  "telefon": "Phone: + 69 239 50 15",
+  "pl_1": "Your name:",
+  "pl_2": "Your email:",
+  "pl_3": "Phone number:",
+  "textarea": "Message:",
+  "form_btn": "Send",
+  "habar": "Leave your message",
+
+  "about_usmle": "About the USMLE",
+  "about_usmle_text": "The United States Medical Licensing Examination® (USMLE®) is a three-step examination for medical licensure in the U.S. The USMLE assesses a physician's ability to apply knowledge, concepts, and principles, and to demonstrate fundamental patient-centered skills, that are important in health and disease and that constitute the basis of safe and effective patient care.",
+  "about_usmle_btn": "To know more",
 
 
-    "img_h4_1": "Didn 't finish school",
-    "img_h1_1": "Become a student with us",
-    "img_h4_2": "Successfully passed the exams",
-    "img_h1_2": "Cash out student in advance",
-    "img_h4_3": "Impulse Medical Institute",
-    "img_h1_3": "Training in preparatory courses",
+  
+  "usmle_big_h1_1": "Who is USMLE?",
+  "usmle_big_h1_2": "Who Governs USMLE?",
+  "usmle_big_h1_3": "Why One National Examination?",
+  "usmle_big_h1_4": "USMLE Mission Statement",
 
+  "usmle_big_p_1": "In the United States and its territories, the individual medical licensing authorities ('state medical boards') of the various jurisdictions grant a license to practice medicine. Each medical licensing authority sets its own rules and regulations and requires passing an examination that demonstrates qualification for licensure. Results of the USMLE are reported to these authorities for use in granting the initial license to practice medicine. The USMLE provides them with a common evaluation system for applicants for initial medical licensure.",
 
-    "biz_haqimzida_h1": "Impulse Medical Institute",
-    "biz_haqimizda_p": "The IMPULSE Institute is located in Uzbekistan and is designed to provide education only in the field of medicine and includes the standards of medical universities in Europe and Asia. At the IMPULS Institute, students will have the opportunity to work not only in Uzbekistan, but also in Europe and Asia, having studied medicine in English. This institute teaches on the basis of a credit-modular system. The reason why it is called the modern system of education is because 80% of the lessons in our institute are based on practice, which is completely different from public universities.",
-    "biz_haqimizda_btn": "More about us",
+  "usmle_big_p_2": "The USMLE®, or the United States Medical Licensing Examination® program, is owned by two entities: the Federation of State Medical Boards (FSMB) and the National Board of Medical Examiners® (NBME®).",
 
+  "usmle_big_p_3": "The FSMB is a non-profit organization that represents the 70 state medical and osteopathic boards of the United States and its territories. The individual medical boards are responsible for licensing physicians, investigating patient complaints, and disciplining physicians who violate the law. The FSMB acts on behalf of its state board members in providing a national assessment program, providing tools that facilitate the documentation and distribution of credentials, sponsoring a national data base for tracking disciplinary actions, and acting as a national voice for the individual boards on issues of importance to licensing and practice.",
 
-    "impuls_box_h1_1": "Impulse",
-    "impuls_box_p_1": "open the door to world knowledge with the medical institute.",
-    "impuls_box_h1_2": "International",
-    "impuls_box_p_2": "standard medical institute now in Namangan you should be with us.",
-    "impuls_box_h1_3": "In Namangan",
-    "impuls_box_p_3": "digital medical institute based on public-private partnership for the first time.",
+  "usmle_big_p_4": "The NBME is a non-profit organization that serves the public through assessments of health professionals. The approximately 80-member board includes representation from national experts who contribute to the design of its examinations, at-large members who bring a variety of perspectives including the public, and representatives from a number of organizations including the Association of American Medical Colleges (AAMC), the American Board of Medical Specialties (ABMS), the American Medical Association (AMA), the Resident and Fellows Section of the AMA, the American Medical Student Association (AMSA), the Council of Medical Specialty Societies (CMSS), the Educational Commission for Foreign Medical Graduates (ECFMG), FSMB, the Student National Medical Association (SNMA), the uniformed services, and the Department of Veterans Affairs.",
 
+  "usmle_big_p_5": "The NBME develops a number of assessments used in medical education, licensure, and certification, domestically and internationally, and is involved in research and development intended to advance medical education and the science of assessment.",
 
+  "usmle_big_p_6": "USMLE is governed by a committee that includes members from the ECFMG, FSMB, NBME, and the public. This committee is responsible for the overall direction of the program, identifying and approving procedures for scoring and determining the pass/fail standard, and all significant policies and procedures.",
 
-    "ko'p_beriladighan_savollar": "Frequently asked Questions",
-    "accordion_section_p": "Impuls Institute strives for excellence in teaching, learning and research. Impuls Institute and its founder are working hard to create the most modern conditions for students and employees. Our goal is to create the best educational and research environment not only in Uzbekistan, but also in Central Asia.",
+  "usmle_big_p_7": "USMLE was created in response to the need for one path to medical licensure for allopathic physicians in the United States. Before USMLE, multiple examinations (the NBME Parts examination and the Federation Licensing Examination [FLEX]) offered paths to medical licensure. It was desirable to create one examination system accepted in every state, to ensure that all licensed MDs had passed the same assessment standards – no matter in which school or which country they had trained. Today all state medical boards utilize a national examination – USMLE for allopathic physicians, COMLEX-USA for osteopathic physicians.",
 
-    "savol_1": "Is your diploma recognized in Uzbekistan ?",
-    "javob_1": "The diploma of students who graduated from the Medical Institute IMPULSE is recognized not only in Uzbekistan, but throughout the world.",
+  "usmle_big_p_8": "The United States Medical Licensing Examination (USMLE) program supports medical licensing authorities in the United States through its leadership in the development, delivery, and continual improvement of high-quality assessments across the continuum of physicians' preparation for practice.",
 
-
-    "savol_2": "How much is the contract fee ?",
-    "javob_2": "The cost of the contract is 33,000,000 soums (3,000 US dollars), and we also have the option of paying in installments.",
-
-
-    "savol_3": "What languages ​​are the lessons in ?",
-    "javob_3": "All classes are held in Uzbek or English, depending on the group.",
-
-
-    "savol_4": "Are there scholarships ?",
-    "javob_4": "Since we are a private Institute, IMPULS Medical is self-financed and does not have the ability to provide scholarships to students.",
-
-
-    "savol_5": "What documents are needed for admission ?",
-    "javob_5": "One of the stages of successful admission to IMPULSE Medical is the submission of an application. To do this, you will need to provide the following: -Original school or high school diploma.",
-    "javob_5_span_1": "— A copy of the passport (2 pcs.);",
-    "javob_5_span_2": "— Picture 3x4 (6 pieces);",
-    "javob_5_span_3": "Documents can be submitted in PDF format or online at the Public Service Center in Namangan.",
-
-
-    "savol_6": "What are the preparatory courses ?",
-    "javob_6": "Preparatory courses are required to successfully pass the exams and receive a grant education at IMPULS Medical. The program lasts 6 months and consists of subjects of English and anatomy. Those who complete the course will have an IELTS score of 5.0. This is a great opportunity to improve your knowledge and get a budget place at the Institute.",
-
-
-    "savol_7": "What do we offer students ?",
-    "javob_7": "IMPULS Medical offers special grants for those who pass the exams with high scores. We conduct entrance exams to the institute, i.e., special preparation courses on anatomy and English language, the graduates of which are assigned a passing score of 4.5 on the IELTS exam ✅ All this is done in order to support the aspirations of students and increase their confidence in the future.",
-
-
-    "footer_h1":"Contact info",
-    "link_1":"Namangan city, Brick bridge MFY, K. Otamirzayev street, 1 house",
-    "sahifalarimiz": "Pages",
-
-
-    "banner_h1": "Welcome to",
-    "banner_h2": "Impulse Medical Institute",
-
-    "header_h1": "Impulse Medical Institute",
-    "header_p_1": "Impulse Institute was established on the basis of the decision of the Cabinet of Ministers of the Republic of Uzbekistan dated February 15, 2019. Our Institute strives to become the leading institution of higher education in the region and contribute to the development of Uzbekistan. we know and understand the importance of our geographic location.",
-    "header_p_2": "The mission of our Institute: to train a sufficient number of people in the areas necessary for the country, to offer solutions for the training of professional personnel, to produce new educational technologies, to develop the principles of education and training. Impulse Institute provides education to students from different countries according to internationally recognized standards. The Institute trains highly qualified specialists in fundamental, medical, special and humanitarian sciences. In addition to the MD program, the Master's program is offered by highly qualified internationally recognized academic staff.",
-
-    "header_p_3": "The educational process is carried out in cooperation with leading international research institutes, including the Gachon Institute in the field of medicine (South Korea) and our compatriots working abroad. Education is conducted in English and lasts 6 years (2 years of the preparatory course, 4 years of the medical course at the Faculty of Medicine). Graduates are awarded a diploma of higher education. Research, discovery and the search for truth are important characteristics of the Institute.",
-
-    "header_p_4": "Impulse Institute is well aware of this responsibility and strives to create an intellectual environment in which students and faculty can conduct research effectively and productively together. The Institute strives to offer its students the most modern and high-quality education. Every student who enters this long educational journey at our Institute graduates as a person, fully equipped and armed with his knowledge.",
-
-
-    "gallery_h1": "Interior views of our institute",
-
-    "kutibxona_banner_h1":"Impulse Institute Library",
-    "ilmiy_kitoblar":"Scientific books",
-    "adabiy_kitoblar":"Literary books",
-    "oqish_btn": "Reading",
-    "search_btn": "Search",
-
-
-    "message-ok": "Your message has been sent. We will contact you within 24 hours",
-
-
-    "aloqa_h1":"Do you have a question for us?",
-    "left_menu_h1": "We'll be in touch",
-    "left-menu_p": "Leave us a message and we will contact you within 24 hours.",
-    "manzil": "Address: Namangan city, Brick bridge MFY, K. Otamirzayev street, 1 house",
-    "pochta": "Email: impulsmedica7@gmail.com",
-    "telefon":"Phone: + 69 239 50 15",
-    "pl_1": "Your name:",
-    "pl_2": "Your email:",
-    "pl_3": "Phone number:",
-    "textarea": "Message:",
-    "form_btn":"Send",
-    "habar": "Leave your message"
+  "usmle_big_p_8_p":"Goals:",
+  "usmle_big_p_8_li_1":"To provide to licensing authorities meaningful information from assessments of physician characteristics—including medical knowledge, skills, values, and attitudes—that are important to the provision of safe and effective patient care.",
+  "usmle_big_p_8_li_2":"To engage medical educators and their institutions, licensing authority members, and practicing clinicians in the design and development of these assessments.",
+  "usmle_big_p_8_li_3":"To assure fairness and equity to physicians through the highest professional testing standards.",
+  "usmle_big_p_8_li_4":"To continue to develop and improve assessments for licensure with the intent of assessing physicians more accurately and comprehensively."
 
 }

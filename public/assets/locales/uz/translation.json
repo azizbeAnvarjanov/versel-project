@@ -1,116 +1,121 @@
 {
-    "name_univer": "Impuls Tibbiyot Instituti",
-    "bosh_sahifa": "Bosh Sahifa",
-    "biz_haqimizda": "Biz Haqimizda",
-    "kutibxona": "Kutubxona",
-    "aloqa": "Aloqa",
+  "name_univer": "Impuls Tibbiyot Instituti",
+  "bosh_sahifa": "Bosh Sahifa",
+  "usmle": "USMLE",
+  "biz_haqimizda": "Biz Haqimizda",
+  "kutibxona": "Kutubxona",
+  "aloqa": "Aloqa",
 
+  "img_h1_1": "USMLE dasturi asosida faoliyat olib boramiz",
+  "img_h1_2": "Gibrit ta'lim - an'anaviy darslar va videoroliklar",
+  "img_h1_3": "Work and travel Germany - dasturi",
+  "img_h1_4": "Mashg'ulotlar asosan amaliyotdan iborat",
+  "img_h1_5": "10% talaba uchun grant imkoniyati",
 
+  "biz_haqimzida_h1": "Impuls Tibbiyot Instituti",
+  "biz_haqimizda_p": "IMPULS tibbiyot instituti tibbiyot sohasida taʻlim berishga moʻljallangan. IMPULS tibbiyot instituti Oʻzbekistonda joylashgan boʻlib, Yevropa va Osiyodagi tibbiyot oliygohlari standartlarini oʻzida mujassamlashtirgan, hamda ta’lim berishning eng zamonaviy va yangicha metodlaridan foydalanadigan institutdir. IMPULS tibbiyot institutida talabalar ingiliz tilida tibbiyot mutaxassisligini mukammal oʻrganib nafaqat Oʻzbekistonda, balki Yevropa va Osiyoda ham ishlash imkoniyatiga ega boʻladilar. Bu institut kredit modul tizimiga asoslangan holda o'qitadi. Zamonaviy oʻqitish tizimi deyilishiga sabab bizning institutda 80% darslar amaliyotga asoslangan holda boʻladi bu esa davlat oliygohlaridan tubdan farq qiladi.",
+  "biz_haqimizda_btn": "Biz haqimizda batafsil",
 
-    "img_h4_1": "Maktabni bitirmasdan",
-    "img_h1_1": "Biz bilan talaba bo'ling",
-    "img_h4_2": "Imtihonlarni muvafaqqiyatli topshirib",
-    "img_h1_2": "Talabalikni oldindan naqd qilib qo'ying",
-    "img_h4_3": "Impuls Tibbiyot Instituti",
-    "img_h1_3": "Tayyorlov kurslarida o'qing",
+  "impuls_box_h1_1": "IMPULS",
+  "impuls_box_p_1": "tibbiyot instituti bilan jahon bilimlar eshigini oching.",
+  "impuls_box_h1_2": "Xalqaro",
+  "impuls_box_p_2": "standartdagi tibbiyot instituti endi Namanganda sen biz bilan bo'lishing kerak.",
+  "impuls_box_h1_3": "Namanganda",
+  "impuls_box_p_3": "ilk bor davlat xususiy sherikchiligi asosida raqamli tibbiyot instituti.",
 
+  "ko'p_beriladighan_savollar": "Ko'p Beriladigan Savollar",
+  "accordion_section_p": "Impuls universiteti o'qitish, o'rganish va tadqiqot sohasida mukammallikka intiladi. Impuls instituti va uning asoschisi talabalar, xodimlar uchun eng zamonaviy sharoitlarni yaratish ustida astoydil harakat qilmoqda. Bizning maqsadimiz nafaqat O‘zbekistonda balki Markaziy Osiyoda ham eng yaxshi ta’lim va tadqiqot muhitini yaratishdir.",
 
-    "biz_haqimzida_h1": "Impuls Tibbiyot Instituti",
-    "biz_haqimizda_p": "IMPULS tibbiyot instituti tibbiyot sohasida taʻlim berishga moʻljallangan. IMPULS tibbiyot instituti Oʻzbekistonda joylashgan boʻlib, Yevropa va Osiyodagi tibbiyot oliygohlari standartlarini oʻzida mujassamlashtirgan, hamda ta’lim berishning eng zamonaviy va yangicha metodlaridan foydalanadigan institutdir. IMPULS tibbiyot institutida talabalar ingiliz tilida tibbiyot mutaxassisligini mukammal oʻrganib nafaqat Oʻzbekistonda, balki Yevropa va Osiyoda ham ishlash imkoniyatiga ega boʻladilar. Bu institut kredit modul tizimiga asoslangan holda o'qitadi. Zamonaviy oʻqitish tizimi deyilishiga sabab bizning institutda 80% darslar amaliyotga asoslangan holda boʻladi bu esa davlat oliygohlaridan tubdan farq qiladi.",
-    "biz_haqimizda_btn": "Biz haqimizda batafsil",
+  "savol_1": "Diplomingiz O'zbekistonda tan olinadimi ?",
+  "javob_1": "IMPULS Medical institutini tamomlagan talabalar diplomi nafaqat O'zbekiston balki butun dunyoda tan olinadi.",
 
+  "savol_2": "Shartnoma toʻlovi qancha ?",
+  "javob_2": "Shartnoma toʻlovi 33 000 000 soʻm($3000) tashkil etadi, bundan tashqari bizda boʻlib toʻlash imkoniyati mavjud.",
 
-    "impuls_box_h1_1": "IMPULS",
-    "impuls_box_p_1": "tibbiyot instituti bilan jahon bilimlar eshigini oching.",
-    "impuls_box_h1_2": "Xalqaro",
-    "impuls_box_p_2": "standartdagi tibbiyot instituti endi Namanganda sen biz bilan bo'lishing kerak.",
-    "impuls_box_h1_3": "Namanganda",
-    "impuls_box_p_3": "ilk bor davlat xususiy sherikchiligi asosida raqamli tibbiyot instituti.",
+  "savol_3": "Mashgʻulotlar qaysi tillarda olib boriladi ?",
+  "javob_3": "Barcha mashgʻulotlar guruhga qarab o'zbek yoki ingliz tillarida o'tkaziladi.",
 
+  "savol_4": "Stipendiyalar bormi ?",
+  "javob_4": "Biz xususiy universitet bo'lganligimiz sababli, IMPULS Medical oʻz-o'zini moliyalashtiradi va talabalarga  stipendiya to'lash imkoniga ega emas.",
 
+  "savol_5": "Qabul uchun qanday hujjatlar kerak ?",
+  "javob_5": "IMPULS Medical ga muvaffaqiyatli qabul qilinish bosqichlaridan biri hujjat topshirishdir. Buning uchun siz quyidagilarni taqdim etishingiz kerak: —Maktab attestatining asl nusxasi yoki o'rta ta'lim diplomi",
+  "javob_5_span_1": "— Pasport nusxasi (2 dona);",
+  "javob_5_span_2": "— Rasm 3x4 (6 ta).",
+  "javob_5_span_3": "Hujjatlar PDF formatida yoki Namangan shahridagi davlat xizmatlari markazida onlayn tarzda taqdim etilishi mumkin.",
 
-    "ko'p_beriladighan_savollar": "Ko'p Beriladigan Savollar",
-    "accordion_section_p": "Impuls universiteti o'qitish, o'rganish va tadqiqot sohasida mukammallikka intiladi. Impuls instituti va uning asoschisi talabalar, xodimlar uchun eng zamonaviy sharoitlarni yaratish ustida astoydil harakat qilmoqda. Bizning maqsadimiz nafaqat O‘zbekistonda balki Markaziy Osiyoda ham eng yaxshi ta’lim va tadqiqot muhitini yaratishdir.", 
+  "savol_6": "Tayyorgarlik kurslarida nimalar o'tiladi ?",
+  "javob_6": "Imtihonlarni muvaffaqiyatli topshirish va IMPULS Medical da grant asosida taʼlim olish uchun tayyorgarlik kurslarini oʼtash kerak. Dastur 6 oy davom etadi va u ingliz tili va anatomiya fanlaridan iborat. Kursni tugatganlar uchun IELTS bali 5.0 boʻladi. Bu oʻz bilimingizni oshirish va universitetdagi byudjet o'rninni egallash uchun ajoyib imkoniyatdir.",
 
-    "savol_1": "Diplomingiz O'zbekistonda tan olinadimi ?",
-    "javob_1": "IMPULS Medical institutini tamomlagan talabalar diplomi nafaqat O'zbekiston balki butun dunyoda tan olinadi.",
-    
-    
-    "savol_2": "Shartnoma toʻlovi qancha ?",
-    "javob_2": "Shartnoma toʻlovi 33 000 000 soʻm($3000) tashkil etadi, bundan tashqari bizda boʻlib toʻlash imkoniyati mavjud.",
+  "savol_7": "Talabalarga nimalarni taklif qilayapmiz ?",
+  "javob_7": "Imtihonlarni yuqori ballga topshirganlar uchun IMPULS Medical maxsus grantlar taqdim etadi. Bizda institutga kirish imtihonlari yaʼni, anatomiya va ingliz tili bo'yicha maxsus tayyorgarlik kurslari o'tkaziladi, ularni bitirganlarga IELTS imtihonidan oʻtish bali 4.5 etib belgilanadi ✅ Bularning barchasi talabalarning intilishlarini qoʻllab-quvvatlash va kelajakka boʻlgan ishonchlarini oshirish maqsadida amalga oshiriladi.",
 
-    
-    "savol_3": "Mashgʻulotlar qaysi tillarda olib boriladi ?",
-    "javob_3": "Barcha mashgʻulotlar guruhga qarab o'zbek yoki ingliz tillarida o'tkaziladi.",
+  "footer_h1": "Aloqa ma'lumotlari",
+  "link_1": "Namangan shahar, G'isht ko'prik MFY, К. Otamirzayev ko'chasi, 1-уй",
+  "sahifalarimiz": "Sahifalarimiz",
 
-    
-    "savol_4": "Stipendiyalar bormi ?",
-    "javob_4": "Biz xususiy universitet bo'lganligimiz sababli, IMPULS Medical oʻz-o'zini moliyalashtiradi va talabalarga  stipendiya to'lash imkoniga ega emas.",
+  "banner_h1": "Impuls Tibbiyot Institutiga",
+  "banner_h2": "Hush Kelibsiz",
 
+  "header_h1": "Impuls Tibbiyot Instituti",
+  "header_p_1": "Impuls tibbiyot instituti oʻz oldiga mintaqadagi yetakchi oliy taʼlim muassasasi boʻlish maqsadini amalga oshirish va Oʻzbekiston taraqqiyotiga hissa qoʻshishni maqsad qilgan. Institutning vazifasi: Mamlakatning tibbiyot hodimlariga boʻlgan talabini hisobga olib, yetarli miqdordagi talabalarni oʻqitish, professional kadrlar tayyorlash boʻyicha yechimlar taklif qilish, yangi taʼlim texnologiyalarini ishlab chiqarish va taʼlim-tarbiya tamoyillarini ishlab chiqish. Impuls tibbiyot instituti turli mamlakatlardan kelgan talabalarga xalqaro miqyosda tan olingan standartlarda ta’lim beradi.",
+  "header_p_2": "O‘quv jarayoni yetakchi xalqaro ilmiy-tadqiqot muassasalari jumladan tibbiyot yo‘nalishidagi va xorijda mehnat qilayotgan yurtdoshlarimiz bilan hamkorlikda olib borilmoqda. O‘qish ingliz va oʻzbek tilida bo‘lib, 6 yil davom etadi. Bitiruvchilarga oliy ma’lumot toʻgʻrisidagi diplom beriladi. Impuls instituti mas’uliyatni yaxshi biladi, oʻz kuchi va imkoniyatini talabalar va professor-o‘qituvchilar birgalikda samarali tadqiqot olib borishlari mumkin bo‘lgan intellektual muhitni yaratishga bag‘ishlaydi. Institut oʻz talabalariga eng zamonaviy va eng sifatli taʻlimni taklif qilishni maqsad qilgan. Institutni ushbu uzoq ta’lim yo‘liga qadam qo‘ygan har bir talaba o‘z bilimlari bilan to‘liq ta’minlangan shaxs sifatida bitiradi.",
 
-    "savol_5": "Qabul uchun qanday hujjatlar kerak ?",
-    "javob_5": "IMPULS Medical ga muvaffaqiyatli qabul qilinish bosqichlaridan biri hujjat topshirishdir. Buning uchun siz quyidagilarni taqdim etishingiz kerak: —Maktab attestatining asl nusxasi yoki o'rta ta'lim diplomi",
-    "javob_5_span_1": "— Pasport nusxasi (2 dona);",
-    "javob_5_span_2": "— Rasm 3x4 (6 ta).",
-    "javob_5_span_3": "Hujjatlar PDF formatida yoki Namangan shahridagi davlat xizmatlari markazida onlayn tarzda taqdim etilishi mumkin.",
+  "header_p_3": "O‘quv jarayoni yetakchi xalqaro ilmiy-tadqiqot muassasalari, jumladan, tibbiyot yo‘nalishidagi va xorijda mehnat qilayotgan yurtdoshlarimiz bilan hamkorlikda olib borilmoqda. O‘qish ingliz va o'zbek tilida bo‘lib, 6 yil davom etadi. Bitiruvchilarga oliy ma'lumot to'g'risidagi diplom beriladi. Tadqiqot, kashfiyot va haqiqatni izlash institutning muhim xususiyatlari hisoblanadi.",
 
-    
-    "savol_6": "Tayyorgarlik kurslarida nimalar o'tiladi ?",
-    "javob_6": "Imtihonlarni muvaffaqiyatli topshirish va IMPULS Medical da grant asosida taʼlim olish uchun tayyorgarlik kurslarini oʼtash kerak. Dastur 6 oy davom etadi va u ingliz tili va anatomiya fanlaridan iborat. Kursni tugatganlar uchun IELTS bali 5.0 boʻladi. Bu oʻz bilimingizni oshirish va universitetdagi byudjet o'rninni egallash uchun ajoyib imkoniyatdir.",
+  "header_p_4": "Impuls instituti bu mas’uliyatni yaxshi biladi va o‘zini talabalar va professor-o‘qituvchilar birgalikda samarali va samarali tadqiqot olib borishlari mumkin bo‘lgan intellektual muhitni yaratishga bag‘ishlaydi. Institut o'z talabalariga eng zamonaviy va eng sifatli ta'limni taklif qilishni maqsad qilgan. Institutimizda ushbu uzoq ta’lim yo‘liga qadam qo‘ygan har bir talaba o‘z bilimlari bilan to‘liq ta’minlangan va to‘liq ta’minlangan shaxs sifatida bitiradi.",
 
-    
-    "savol_7": "Talabalarga nimalarni taklif qilayapmiz ?",
-    "javob_7": "Imtihonlarni yuqori ballga topshirganlar uchun IMPULS Medical maxsus grantlar taqdim etadi. Bizda institutga kirish imtihonlari yaʼni, anatomiya va ingliz tili bo'yicha maxsus tayyorgarlik kurslari o'tkaziladi, ularni bitirganlarga IELTS imtihonidan oʻtish bali 4.5 etib belgilanadi ✅ Bularning barchasi talabalarning intilishlarini qoʻllab-quvvatlash va kelajakka boʻlgan ishonchlarini oshirish maqsadida amalga oshiriladi.",
+  "gallery_h1": "Institutimiznig ichki ko'rinishlari",
 
+  "message-ok": "Xabaringiz yuborildi siz bilan 24 soat ichida boglanamiz",
 
+  "kutibxona_banner_h1": "Impuls Institut Kutubxonasi",
+  "ilmiy_kitoblar": "Ilmiy Kitoblar",
+  "adabiy_kitoblar": "Adabiy Kitoblar",
+  "oqish_btn": "O'qish",
+  "search_btn": "Qidirish",
 
+  "aloqa_h1": "Bizga savolingiz bormi ?",
+  "left_menu_h1": "Aloqaga chiqamiz",
+  "left-menu_p": "Bizga habaringizni qoldiring va biz sizga 24 soat ichida aloqaga chiqamiz.",
+  "manzil": "Manzil: Namangan shahar, G'isht ko'prik MFY, К. Otamirzayev ko'chasi, 1-уй",
+  "pochta": "Email pochta: impulsmedica7@gmail.com",
+  "telefon": "Telefon: + 69 239 50 15",
+  "pl_1": "Ismingiz:",
+  "pl_2": "Email pochtangiz:",
+  "pl_3": "Telefon raqamingiz:",
+  "textarea": "Habaringiz:",
+  "form_btn": "Yuborish",
+  "habar": "Habaringizni qoldiring",
 
+  "about_usmle": "USMLE - haqida",
+  "about_usmle_text": "US Medical Licensing Examination® (USMLE®) uch qismli AQSh tibbiy litsenziyalash imtihonidir. USMLE shifokorning bilimlar, tushunchalar va tamoyillarni qo'llash hamda salomatlik va kasallik uchun muhim bo'lgan hamda xavfsiz va samarali bemorlarni parvarish qilish asosini tashkil etuvchi asosiy bemorga yo'naltirilgan ko'nikmalarni namoyish etish qobiliyatini baholaydi.",
+  "about_usmle_btn": "Ko'proq bilish",
 
+  "usmle_big_h1_1": "USML kim?",
+  "usmle_big_h1_2": "USMLEni kim boshqaradi?",
+  "usmle_big_h1_3": "Nega bitta milliy imtihon?",
+  "usmle_big_h1_4": "USMLE missiyasi bayonoti",
 
-    "footer_h1":"Aloqa ma'lumotlari",
-    "link_1":"Namangan shahar, G'isht ko'prik MFY, К. Otamirzayev ko'chasi, 1-уй",
-    "sahifalarimiz": "Sahifalarimiz",
+  "usmle_big_p_1": "Qo'shma Shtatlar va uning hududlarida turli yurisdiktsiyalarning alohida tibbiy litsenziyalash organlari (davlat tibbiy kengashlari) tibbiyot bilan shug'ullanish uchun litsenziyalar beradi. Har bir sog'liqni saqlashni litsenziyalash organi o'z qoidalari va qoidalarini belgilaydi va litsenziya olish uchun malaka imtihonidan o'tishni talab qiladi. USMLE natijalari tibbiyot bilan shug'ullanish uchun dastlabki litsenziyani berishda foydalanish uchun ushbu organlarga xabar qilinadi. USMLE ularga dastlabki tibbiy litsenziya da'vogarlari uchun umumiy baholash tizimini taqdim etadi.",
 
-    
+  "usmle_big_p_2": "USMLE® yoki Amerika Qo'shma Shtatlari Tibbiy Litsenziyalash Imtihon® Dasturi ikkita tashkilotga tegishli: Davlat Tibbiyot Kengashlari Federatsiyasi (FSMB) va Tibbiy Ekspertlar Milliy Kengashi (NBME®).",
 
-    "banner_h1": "Impuls Tibbiyot Institutiga",
-    "banner_h2": "Hush Kelibsiz",
+  "usmle_big_p_3": "FSMB notijorat tashkilot bo'lib, AQShning 70 shtatlari va ularning hududlarining tibbiy va osteopatik kengashlarini ifodalaydi. Alohida tibbiy kengashlar shifokorlarni litsenziyalash, bemorlarning shikoyatlarini tekshirish va qonunni buzgan shifokorlarni jazolash uchun javobgardir. FSMB milliy baholash dasturini taqdim etish, hujjatlarni rasmiylashtirish va vakolatlarni taqsimlashni osonlashtirish uchun vositalarni taqdim etish, intizomiy choralarni kuzatish uchun milliy ma'lumotlar bazasiga homiylik qilish va alohida masalalar kengashlari uchun milliy ovoz sifatida harakat qilish orqali davlat maslahatchilari nomidan ishlaydi. litsenziyalash va amaliyot uchun muhim.",
 
-    "header_h1": "Impuls Tibbiyot Instituti",
-    "header_p_1": "Impuls tibbiyot instituti oʻz oldiga mintaqadagi yetakchi oliy taʼlim muassasasi boʻlish maqsadini amalga oshirish va Oʻzbekiston taraqqiyotiga hissa qoʻshishni maqsad qilgan. Institutning vazifasi: Mamlakatning tibbiyot hodimlariga boʻlgan talabini hisobga olib, yetarli miqdordagi talabalarni oʻqitish, professional kadrlar tayyorlash boʻyicha yechimlar taklif qilish, yangi taʼlim texnologiyalarini ishlab chiqarish va taʼlim-tarbiya tamoyillarini ishlab chiqish. Impuls tibbiyot instituti turli mamlakatlardan kelgan talabalarga xalqaro miqyosda tan olingan standartlarda ta’lim beradi.",
-    "header_p_2": "O‘quv jarayoni yetakchi xalqaro ilmiy-tadqiqot muassasalari jumladan tibbiyot yo‘nalishidagi va xorijda mehnat qilayotgan yurtdoshlarimiz bilan hamkorlikda olib borilmoqda. O‘qish ingliz va oʻzbek tilida bo‘lib, 6 yil davom etadi. Bitiruvchilarga oliy ma’lumot toʻgʻrisidagi diplom beriladi. Impuls instituti mas’uliyatni yaxshi biladi, oʻz kuchi va imkoniyatini talabalar va professor-o‘qituvchilar birgalikda samarali tadqiqot olib borishlari mumkin bo‘lgan intellektual muhitni yaratishga bag‘ishlaydi. Institut oʻz talabalariga eng zamonaviy va eng sifatli taʻlimni taklif qilishni maqsad qilgan. Institutni ushbu uzoq ta’lim yo‘liga qadam qo‘ygan har bir talaba o‘z bilimlari bilan to‘liq ta’minlangan shaxs sifatida bitiradi.",
+  "usmle_big_p_4": "NBME notijorat tashkilot bo'lib, sog'liqni saqlash mutaxassislarini baholash orqali jamoatchilikka xizmat qiladi. Taxminan 80 a'zodan iborat kengash tarkibiga imtihonlarni rivojlantirishga hissa qo'shadigan milliy ekspertlar vakillari, turli nuqtai nazarlarni ifodalovchi keng a'zolar, shu jumladan jamoatchilik va bir qator tashkilotlar vakillari, jumladan Amerika Tibbiyot kollejlari assotsiatsiyasi ( AAMC). ), Amerika Tibbiyot mutaxassisliklari kengashi (ABMS), Amerika tibbiyot assotsiatsiyasi (AMA), AMA rezidentlari va stipendiatlari bo'limi, Amerika tibbiyot talabalari assotsiatsiyasi (AMSA), Tibbiyot mutaxassisliklari jamiyatlari kengashi (CMSS), Xalqaro tibbiyot bitiruvchilari uchun ta'lim komissiyasi (ECFMG), FSMB, talabalar milliy tibbiyot assotsiatsiyasi (SNMA), huquqni muhofaza qilish organlari va faxriylar ishlari bo'limi.",
 
-    "header_p_3": "O‘quv jarayoni yetakchi xalqaro ilmiy-tadqiqot muassasalari, jumladan, tibbiyot yo‘nalishidagi va xorijda mehnat qilayotgan yurtdoshlarimiz bilan hamkorlikda olib borilmoqda. O‘qish ingliz va o'zbek tilida bo‘lib, 6 yil davom etadi. Bitiruvchilarga oliy ma'lumot to'g'risidagi diplom beriladi. Tadqiqot, kashfiyot va haqiqatni izlash institutning muhim xususiyatlari hisoblanadi.",
+  "usmle_big_p_5": "NBME uyda va chet elda tibbiy ta'lim, litsenziyalash va sertifikatlashda qo'llaniladigan bir qator baholashlarni ishlab chiqadi va tibbiy ta'lim va baholash fanini rivojlantirishga qaratilgan tadqiqot va ishlanmalarda ishtirok etadi.",
 
-    "header_p_4": "Impuls instituti bu mas’uliyatni yaxshi biladi va o‘zini talabalar va professor-o‘qituvchilar birgalikda samarali va samarali tadqiqot olib borishlari mumkin bo‘lgan intellektual muhitni yaratishga bag‘ishlaydi. Institut o'z talabalariga eng zamonaviy va eng sifatli ta'limni taklif qilishni maqsad qilgan. Institutimizda ushbu uzoq ta’lim yo‘liga qadam qo‘ygan har bir talaba o‘z bilimlari bilan to‘liq ta’minlangan va to‘liq ta’minlangan shaxs sifatida bitiradi.",
+  "usmle_big_p_6": "USMLE ECFMG, FSMB, NBME va jamoatchilik a'zolarini o'z ichiga olgan qo'mita tomonidan boshqariladi. Ushbu qo'mita dasturning umumiy boshqaruvi, ball olish va o'tish/qobiliyatsiz standartni aniqlash tartib-qoidalarini, shuningdek, barcha tegishli siyosat va tartiblarni belgilash va tasdiqlash uchun javobgardir.",
 
+  "usmle_big_p_7": "USMLE Qo'shma Shtatlardagi allopatik shifokorlar uchun tibbiy litsenziyaga yagona yo'l zarurligiga javoban yaratilgan. USMLE dan oldin bir nechta imtihonlar (NBME Parts imtihoni va Federatsiya litsenziyalash imtihoni [FLEX]) tibbiy litsenziya olish yo'llarini taklif qilgan. Har bir shtatda qabul qilinadigan imtihonlarning yagona tizimini yaratish, barcha litsenziyaga ega shifokorlar qaysi maktabda yoki qaysi davlatda o'qiganidan qat'i nazar, bir xil baholash standartlaridan o'tishlarini ta'minlash maqsadga muvofiq edi. Bugungi kunda barcha davlat tibbiy kengashlari milliy imtihondan foydalanadilar - allopatik shifokorlar uchun USMLE, osteopatik shifokorlar uchun COMLEX-USA.",
 
-    "gallery_h1": "Institutimiznig ichki ko'rinishlari",
+  "usmle_big_p_8": "Amerika Qo'shma Shtatlari Tibbiy Litsenziyalash Imtihon (USMLE) dasturi shifokorlarni amaliyotga tayyorlash davomida yuqori sifatli baholashni ishlab chiqish, yetkazib berish va doimiy ravishda takomillashtirish bo'yicha etakchilik orqali Qo'shma Shtatlardagi tibbiy litsenziyalash organlarini qo'llab-quvvatlaydi.",
 
-    "message-ok": "Xabaringiz yuborildi siz bilan 24 soat ichida boglanamiz",
-
-
-
-    "kutibxona_banner_h1":"Impuls Institut Kutubxonasi",
-    "ilmiy_kitoblar":"Ilmiy Kitoblar",
-    "adabiy_kitoblar":"Adabiy Kitoblar",
-    "oqish_btn": "O'qish",
-    "search_btn": "Qidirish",
-
-
-
-    "aloqa_h1":"Bizga savolingiz bormi ?",
-    "left_menu_h1": "Aloqaga chiqamiz",
-    "left-menu_p": "Bizga habaringizni qoldiring va biz sizga 24 soat ichida aloqaga chiqamiz.",
-    "manzil": "Manzil: Namangan shahar, G'isht ko'prik MFY, К. Otamirzayev ko'chasi, 1-уй",
-    "pochta": "Email pochta: impulsmedica7@gmail.com",
-    "telefon":"Telefon: + 69 239 50 15",
-    "pl_1": "Ismingiz:",
-    "pl_2": "Email pochtangiz:",
-    "pl_3": "Telefon raqamingiz:",
-    "textarea": "Habaringiz:",
-    "form_btn":"Yuborish",
-    "habar": "Habaringizni qoldiring"
-
-
+  "usmle_big_p_8_p": "Maqsadlar:",
+  "usmle_big_p_8_li_1": "Litsenziyalovchi organlarga shifokorning xususiyatlarini baholash natijasida kelib chiqadigan mazmunli ma'lumotlarni, shu jumladan bemorlarga xavfsiz va samarali yordam ko'rsatish uchun muhim bo'lgan tibbiy bilim, ko'nikma, qadriyatlar va munosabatlarni taqdim eting.",
+  "usmle_big_p_8_li_2": "Ushbu baholashlarni ishlab chiqish va ishlab chiqishda sog'liqni saqlash o'qituvchilari va ularning muassasalarini, litsenziyalovchi organlar a'zolarini va amaliyotchi klinisyenlarni jalb qiling.",
+  "usmle_big_p_8_li_3": "Eng yuqori professional test standartlari orqali shifokorlarning adolatliligi va tengligini ta'minlash.",
+  "usmle_big_p_8_li_4": "Shifokorlarni yanada aniqroq va har tomonlama baholash uchun litsenziyalash uchun baholashlarni ishlab chiqish va takomillashtirishni davom ettiring."
 }

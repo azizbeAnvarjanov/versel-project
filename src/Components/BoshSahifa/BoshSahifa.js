@@ -19,8 +19,6 @@ import './BoshSahifa.css'
 import { Link } from 'react-router-dom';
 
 
-import { motion } from 'framer-motion';
-
 import { useTranslation } from "react-i18next";
 
 
@@ -89,32 +87,30 @@ function BoshSahifa() {
 
     return (
       <>
-        <header
-          id="boshSahifa"
-        >
+        <header id="boshSahifa">
           <div className="img imgs-0 active">
-            <h1>USMLE dasturi asosida faoliyat olib boramiz</h1>
+            <h1>{t("img_h1_1")}</h1>
             <img src={Img1} alt=""></img>
           </div>
           <div className="img imgs-1">
-            <h1>Gibrit ta'lim - an'anaviy darslar va videoroliklar</h1>
+            <h1>{t("img_h1_2")}</h1>
             <img src={Img2} alt=""></img>
           </div>
           <div className="img imgs-2">
-            <h1>"Work and travel Germany" dasturi</h1>
+            <h1>{t("img_h1_3")}</h1>
             <img src={Img3} alt=""></img>
           </div>
           <div className="img imgs-2">
-            <h1>Mashg'ulotlar asosan amaliyotdan iborat</h1>
+            <h1>{t("img_h1_4")}</h1>
             <img src={Img4} alt=""></img>
           </div>
           <div className="img imgs-2">
-            <h1>10% talaba uchun grant imkoniyati</h1>
+            <h1>{t("img_h1_5")}</h1>
             <img src={Img5} alt=""></img>
           </div>
         </header>
 
-          {/* <div className="litsensiya">
+        {/* <div className="litsensiya">
             <div className="lit_1">
               <img src={lit1} alt="" />
             </div>
@@ -122,7 +118,6 @@ function BoshSahifa() {
               <img src={lit2} alt="" />
             </div>
           </div> */}
-
 
         <div
           className="biz-haqimizda reveal section"
@@ -132,18 +127,10 @@ function BoshSahifa() {
           viewport={{ amount: 0.2 }}
         >
           <div className="bizhaqimizda-text">
-            <h1
-              className="reveal-text"
-              custom={0}
-              variants={TextAnimation}
-            >
+            <h1 className="reveal-text" custom={0} variants={TextAnimation}>
               {t("biz_haqimzida_h1")}
             </h1>
-            <p
-              custom={1}
-              variants={TextAnimation}
-              className="reveal-text"
-            >
+            <p custom={1} variants={TextAnimation} className="reveal-text">
               {t("biz_haqimizda_p")}
             </p>
             <Link onClick={upBtnF} to="/bizhaqimizda" className="btn">
@@ -161,20 +148,15 @@ function BoshSahifa() {
           </div>
         </div>
 
-
         <div className="usmle">
           <div className="usmle_box">
-            <h1>About the USMLE</h1>
-            <h4>The United States Medical Licensing Examination® (USMLE®) is a three-step examination for medical licensure in the U.S. The USMLE assesses a physician's ability to apply knowledge, concepts, and principles, and to demonstrate fundamental patient-centered skills, that are important in health and disease and that constitute the basis of safe and effective patient care. </h4>
-            <Link 
-            onClick={changePages}
-            className='link_usmle'
-            to="/usmle">
-              To know more
+            <h1>{t("about_usmle")}</h1>
+            <h4>{t("about_usmle_text")} </h4>
+            <Link onClick={changePages} className="link_usmle" to="/usmle">
+              {t("about_usmle_btn")}
             </Link>
           </div>
         </div>
-
 
         <div className="impuls">
           <div
@@ -318,7 +300,7 @@ function BoshSahifa() {
                     <p>
                       {t("javob_5")}
                       <br />
-                      <span>{t('javob_5_span_1')}</span>
+                      <span>{t("javob_5_span_1")}</span>
                       <br />
                       <span>{t("javob_5_span_2")}</span>
                       <br />
