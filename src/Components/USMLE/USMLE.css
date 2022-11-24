@@ -122,6 +122,7 @@
     .usmle_banner
     {
         height: 50vh;
+        background-position: right;
     }
 }
 

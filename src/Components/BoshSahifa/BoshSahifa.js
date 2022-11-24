@@ -5,7 +5,7 @@ import Img2 from '../../imgs/2.jpg';
 import Img3 from '../../imgs/3.jpg';
 import Img4 from '../../imgs/4.jpg';
 import Img5 from '../../imgs/5.jpg';
-import lit1 from '../../imgs/lit1.jpg';
+import logo from '../../imgs/22.png';
 import lit2 from '../../imgs/lit2.jpg';
 import bizhaqimizdaImg from '../../imgs/bizhaqimizda img1.png';
 import impuls1Img from '../../imgs/111111.jpg';
@@ -41,7 +41,22 @@ const TextAnimation = {
 function BoshSahifa() {
 
   const { t } = useTranslation();
+
+
   const [nav, setNav] = useState(false);
+  const [loader, setLoader] = useState(false);
+
+
+    useEffect(() => {
+      setLoader(false);
+          
+      setTimeout(() => {
+        setLoader(true);
+      }, 5000);
+
+    }, [])
+    
+
     useEffect(() => {
         let imgs = document.querySelectorAll('.img');
 
@@ -87,6 +102,12 @@ function BoshSahifa() {
 
     return (
       <>
+
+      <div className={loader ? "loader" : "loader active"}>
+        <img src={logo} alt="" />
+        <div className='shadow'></div>
+      </div>
+
         <header id="boshSahifa">
           <div className="img imgs-0 active">
             <h1>{t("img_h1_1")}</h1>
