@@ -42,6 +42,7 @@ header .img::before {
     left: 0;
     top: 0;
     background: rgba(0, 0, 0, 0.534);
+    z-index: 99;
 }
 
 
@@ -61,7 +62,6 @@ header .img {
 .img.active {
     visibility: visible;
     opacity: 1;
-    animation: alternate 30s slider_zoom;
 }
 
 
@@ -88,12 +88,18 @@ header .img {
     font-size: 3em;
     color: rgb(255, 255, 255);
     font-weight: 500;
+    z-index: 99;
 }
 
 
 
 .img.active h1 {
     opacity: 1;
+}
+
+.img.active img {
+    animation: alternate 30s slider_zoom;
+    z-index: -1;
 }
 
 
