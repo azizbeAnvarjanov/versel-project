@@ -24,7 +24,8 @@
     left: 0;
     top: 0;
     z-index: 999;
-    backdrop-filter: blur(20px);
+    background: rgba(0, 0, 0, 0.322);
+    backdrop-filter: blur(70px);
     width: 100%;
     height: 100vh;
     visibility: hidden;
@@ -924,16 +925,5 @@ header .img {
         padding: 6px 15px;
     }
 
-
-
-    .loader img, .shadow
-    {
-        position: absolute;
-        left: 50%;
-        top: 30%;
-        transform: translate(-50%,-50%);
-        width: 200px;
-        transition: .5s;
-    }
 
 }
