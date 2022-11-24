@@ -285,12 +285,13 @@
     .navigation
     {
         position: fixed;
-        left: -100%;
-        top: 0;
-        width: 50%;
-        height: 100vh;
+        left: 0;
+        top: -700%;
+        width: 100%!important;
+        height: 70vh;
         background: rgba(255, 255, 255, 0.281);
         flex-direction: column;
+        justify-content: center;
         font-size: 1.2em;
         line-height: 50px;
         padding-top: 30px;
@@ -302,7 +303,7 @@
 
     .navigation.active
     {
-        left: 0;
+        top: 0;
     }
     
     .navigation li a
@@ -398,24 +399,17 @@
 
 
     .navigation li a {
-        font-weight: 300;
+        font-weight: 500;
     }
    
 
-    
-    .navigation
-    {
-        width: 80%;
-    }
+
 
     .contact-info a i {
-    font-size: 1em;
+        font-size: 1em;
     }   
 
-    .navigation
-    {
-        align-items: flex-start;
-    }
+ 
 
     .lng-box svg path
     {
