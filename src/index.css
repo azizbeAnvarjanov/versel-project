@@ -41,3 +41,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+ 
+:root {
+    --gb-color: #203E74;
+    --fff: #fff;
+    --blur-fff: rgba(255, 255, 255, 0.699);
+    --000: #000;
+    --border-color: rgba(231, 223, 223, 0.842);
+    --rgbaBG: rgba(0, 0, 0, 0.322);
+    --boxShadow: rgba(110, 107, 107, 0.575);
+    --avzal-cardBG: #949191;
+    --kulrang: #f3f4f5;
+    --link-color: rgb(99, 98, 98);
+}

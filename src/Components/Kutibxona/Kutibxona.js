@@ -134,7 +134,6 @@ import { useTranslation } from "react-i18next";
           {/* Books */}
 
           <div className="books">
-            {/* adabiy kitoblar */}
 
             <div
               className={

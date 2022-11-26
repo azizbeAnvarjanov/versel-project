@@ -14,7 +14,7 @@ import galleryImg8 from '../../imgs/binoni ichi rasmlar/8.jpg'
 import aboutImg_1 from '../../imgs/about 1.jpg'
 import aboutImg_2 from '../../imgs/about 2.jpg'
 
-import { motion } from "framer-motion";
+
 
 import { useTranslation } from "react-i18next";
 
@@ -43,7 +43,7 @@ function BizHaqimizda() {
 
     return (
       <>
-        <motion.div
+        <div
           className="banner"
           id="home"
           initial={{
@@ -56,23 +56,23 @@ function BizHaqimizda() {
             opacity: 0,
           }}
         >
-          <motion.h1
+          <h1
             initial={{ y: 200, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
             viewport={{ amount: 0.2 }}
-          >{t("banner_h1")}</motion.h1>
-          <motion.h2
+          >{t("banner_h1")}</h1>
+          <h2
             initial={{ y: 200, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
             viewport={{ amount: 0.2 }}
-          >{t("banner_h2")}</motion.h2>
-        </motion.div>
+          >{t("banner_h2")}</h2>
+        </div>
 
         <div className="header">
           <div className="left-header-menu">
-            <motion.div 
+            <div 
               initial={{ y: 200, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8 }}
@@ -85,26 +85,26 @@ function BizHaqimizda() {
                 <br />
                 {t("header_p_2")}
               </p>
-            </motion.div>
-            <motion.div 
+            </div>
+            <div 
               initial={{ y: 200, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8 }}
               viewport={{ amount: 0.2 }}
               >
               <img src={aboutImg_1} alt="" />
-            </motion.div>
+            </div>
           </div>
           <div className="right-header-menu">
-            <motion.div
+            <div
               initial={{ y: 200, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8 }}
               viewport={{ amount: 0.2 }}
             >
               <img src={aboutImg_2} alt="" />
-            </motion.div>
-            <motion.div
+            </div>
+            <div
               initial={{ y: 200, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8 }}
@@ -116,11 +116,11 @@ function BizHaqimizda() {
                 <br />
                 {t("header_p_4")}
               </p>
-            </motion.div>
+            </div>
           </div>
         </div>
 
-        <motion.div
+        <div
           initial={{ y: 200, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
@@ -160,7 +160,7 @@ function BizHaqimizda() {
               <GrClose />
             </span>
           </div>
-        </motion.div>
+        </div>
       </>
     );
 }

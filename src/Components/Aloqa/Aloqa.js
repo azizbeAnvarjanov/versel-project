@@ -4,7 +4,6 @@ import './Aloqa.css';
 import { MdDone } from 'react-icons/md';  
 import { useState } from 'react';
 
-import { motion } from "framer-motion";
 
 import { useTranslation } from "react-i18next";
 
@@ -59,7 +58,7 @@ function Aloqa() {
 
     return (
       <>
-        <motion.div
+        <div
           className="banner-aloqa"
           initial={{
             opacity: 0,
@@ -71,15 +70,15 @@ function Aloqa() {
             opacity: 0,
           }}
         >
-          <motion.h1
+          <h1
             initial={{ y: 200, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
             viewport={{ amount: 0.2 }}
           >
             {t("aloqa_h1")}
-          </motion.h1>
-        </motion.div>
+          </h1>
+        </div>
 
         <div className="form-div">
           <div className="left-form-menu">
