@@ -47,9 +47,9 @@
 
 form
 {
-    color: rgb(0, 4, 255);
+    color: var(--gb-color);
     width: 60%;
-    background: #fff;
+    background: var(--fff);
     height: 80vh;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -64,12 +64,12 @@ form h1
 .left-form-menu
 {
     width: 30%;
-    background: rgb(0, 4, 255);
+    background: var(--gb-color);
     height: 80vh;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     padding: 30px;
-    color: #fff;
+    color: var(--fff);
 }
 
 
@@ -103,7 +103,7 @@ form input
     width: 100%;
     border: none;
     border: 2px solid transparent;
-    border-bottom: 2px solid rgb(0, 4, 255);
+    border-bottom: 2px solid var(--gb-color);
     outline: none;
     padding: 7px;
     margin: 10px 0;
@@ -113,14 +113,14 @@ form input
 form input:focus,
 form textarea:focus
 {
-    border: 2px solid rgb(0, 4, 255);
+    border: 2px solid var(--gb-color);
 }
 
 
 form input::placeholder,
 form textarea::placeholder
 {
-    color: rgb(0, 4, 255);
+    color: var(--gb-color);
     font-weight: 500;
 }
 
@@ -128,7 +128,7 @@ form textarea
 {
     width: 100%;
     border: 2px solid transparent;
-    border-bottom: 2px solid rgb(0, 4, 255);
+    border-bottom: 2px solid var(--gb-color);
     height: 25vh;
     padding: 10px;
     outline: none;
@@ -141,7 +141,7 @@ form textarea
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background: #fff;
+    background: var(--fff);
     width: 50%;
     height: 60vh;
     border-radius: 5px;
@@ -155,7 +155,7 @@ form textarea
 
 .donebtn
 {
-    color: #fff;
+    color: var(--fff);
     font-size: 5em;
 }
 
@@ -163,7 +163,7 @@ form textarea
 {
     width: 160px;
     height: 160px;
-    background: rgb(6, 236, 17);
+    background: var(--green);
     border-radius: 50%;
     display: grid;
     place-items: center;
@@ -172,13 +172,13 @@ form textarea
 .result-popup p
 {
     margin: 20px 0;
-    color:rgb(6, 236, 17);
+    color:var(--green);
     font-size: 1.2em;
 }
 
 .result-popup button
 {
-    background: rgb(6, 236, 17);
+    background: var(--green);
     color: #fff;
     padding: 10px 20px;
     border: none;

@@ -2,7 +2,7 @@ import { useState , useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import './Navbar.css'
 
-import { GrLanguage } from 'react-icons/gr';
+
 
 
 import i18next from 'i18next';
@@ -131,8 +131,6 @@ function Navbar() {
               </li>
               <li onClick={chnangeLanguages}>
                 <span className="lng-box">
-                  <GrLanguage />
-                  <div className={lng ? "languages active" : "languages"}>
                     {languages.map((lng) => (
                       <span
                         className="lng"
@@ -146,7 +144,6 @@ function Navbar() {
                         {lng.innerHtml}
                       </span>
                     ))}
-                  </div>
                 </span>
               </li>
             </ul>

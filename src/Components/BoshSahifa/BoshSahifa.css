@@ -63,26 +63,26 @@
 @keyframes loader {
     0%
     {
-        box-shadow: 0 0 10px #000,
-        0 0 10px rgb(255, 255, 255);
+        box-shadow: 0 0 10px var(--000),
+        0 0 10px var(--fff);
     }
     50%
     {
-        box-shadow: 0 0 10px rgb(255, 255, 255),
-        0 0 20px #fff,
-        0 0 30px #fff,
-        0 0 50px #fff,
-        0 0 150px#fff,
-        0 0 200px#fff;
+        box-shadow: 0 0 10px var(--fff),
+        0 0 20px var(--fff),
+        0 0 30px var(--fff),
+        0 0 50px var(--fff),
+        0 0 150p var(--fff),
+        0 0 200p var(--fff);
     }
     100%
     {
-        box-shadow: 0 0 10px #fff,
-        0 0 20px #fff,
-        0 0 30px #fff,
-        0 0 50px #fff,
-        0 0 20px #fff,
-        0 0 150px #fff;
+        box-shadow: 0 0 10px var(--fff),
+        0 0 20px var(--fff),
+        0 0 30px var(--fff),
+        0 0 50px var(--fff),
+        0 0 20px var(--fff),
+        0 0 150px var(--fff);
     }
 }
 
@@ -167,7 +167,7 @@ header .img {
     opacity: 0;
     transition: .5s;
     font-size: 3em;
-    color: rgb(255, 255, 255);
+    color: var(--fff);
     font-weight: 500;
     z-index: 99;
 }
@@ -248,7 +248,7 @@ header .img {
     height: 90%;
     border-radius: 10px;
     background: var(--gb-color);
-    color: #fff;
+    color: var(--fff);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -276,7 +276,7 @@ header .img {
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #fff;
+    background: var(--fff);
     color: var(--gb-color);
     font-size: 1.2em;
     padding: 5px 25px;
@@ -369,10 +369,10 @@ header .img {
     margin: 0 10px;
     text-align: center;
     padding: 10px;
-    background: rgb(0, 4, 255);
-    color: #fff;
+    background: var(--gb-color);
+    color: var(--fff);
     border-radius: 7px;
-    box-shadow: 0 0 10px rgba(8, 114, 235, 0.699);
+    box-shadow: 0 0 10px var(--gb-color);
 }
 
 
@@ -382,7 +382,7 @@ header .img {
     width: 100%;
     height: 80%;
     overflow: hidden;
-    background: #fff;
+    background: var(--fff);
     position: relative;
 }
 
@@ -468,7 +468,7 @@ header .img {
 {
     font-size: 3em;
     margin-bottom: 30px;
-    color: rgb(0, 4, 255);
+    color: var(--gb-color);
 }
 
 
@@ -487,7 +487,7 @@ header .img {
     width: 100%;
     height: 10vh;
     margin: 5px auto;
-    background: rgb(0, 4, 255);
+    background: var(--gb-color);
     overflow: hidden;
     transition: .5s;
     color: var(--fff);
@@ -511,7 +511,7 @@ header .img {
 {
     width: 100%;
     height: 2px;
-    background: #fff;
+    background: var(--fff);
     position: absolute;
     border-radius: 30px;
     transition: .5s;

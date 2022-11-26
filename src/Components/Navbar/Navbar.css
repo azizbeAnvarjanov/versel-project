@@ -21,7 +21,7 @@
     display: flex;
     transition: .5s;
     height: 8vh;
-    color: rgb(255, 255, 255);
+    color: var(--fff);
 }
 
 
@@ -59,7 +59,7 @@
 
     .phone-univer a
     {
-        color:rgb(255, 255, 255)!important;
+        color:var(--fff)!important;
     }
 
 
@@ -94,7 +94,7 @@
     height: 3px;
     border-radius: 50px;
     transition: .5s;
-    background: #fff;
+    background: var(--fff);
 }
 
 .name-univer
@@ -121,7 +121,7 @@
 
 .navbar-brand a h1 {
     font-size: 2em;
-    color: rgb(255, 255, 255);
+    color: var(--fff);
 }
 
 
@@ -132,19 +132,19 @@
 
 .navbar.active .navbar-brand a h1
 {
-    color: #fff;
+    color: var(--fff);
 }
 
 .lng.active
 {
-    background: rgb(0, 4, 255);
-    color: #fff;
+    background: var(--fff);
+    color: var(--gb-color);
 }
 
 .lng
 {
     text-align: center;
-    color: #fff;
+    color: var(--fff);
     cursor: pointer;
 }
 
@@ -156,7 +156,7 @@
 
 
 .navigation li a {
-    color: rgb(255, 255, 255);
+    color: var(--fff);
     font-weight: 500;
     width: 100%;
     display: inline-block;
@@ -170,7 +170,7 @@
 
 .navbar.active .navigation li a, .navbar-brand a
 {
-    color: #fff;
+    color: var(--fff);
 }
 
 .navigation li
@@ -182,15 +182,15 @@
 
 .navbar.active .lng-box svg path
 {
-    stroke: #fff;
+    stroke: var(--fff);
 }
 
 
 
 
-.lng-box svg path
+.lng-box svg
 {
-    stroke: rgb(238, 238, 238);
+    color: var(--fff);
 }
 
 
@@ -209,35 +209,26 @@
 
 .languages
 {
-    position: absolute;
-    top: 100%;
-    left: 50%;
     transform: translateX(-42%);
-    background: #fff;
-    display: none;
-    flex-direction: column;
+    /* background: var(--fff); */
     border-radius: 2px;
-    border: 2px solid #fff;
+    /* border: 2px solid var(--fff); */
 }
 
-.languages.active
+/* .languages.active
 {
     display: flex;
+} */
+
+.lng-box span
+{
+    padding: 3px 5px;
+    border-radius: 4px;
 }
 
-.languages span
+.lng-box span
 {
-    width: 100%;
-    padding: 5px 10px;
-    cursor: default;
-    color: rgb(0, 4, 255);
-}
 
-
-.languages span:hover
-{
-    background: rgb(218, 214, 214);
-    color: #fff;
 }
 
 
@@ -279,7 +270,7 @@
 
     .navbar.active .navigation
     {
-        background: rgb(0, 4, 255);
+        background: var(--gb-color);
     }
 
     .navigation
@@ -310,7 +301,7 @@
     
     .navigation li a
     {
-        color: #fff;
+        color: var(--fff);
     }
 
 
@@ -364,17 +355,17 @@
    
     .nav .menu span
     {
-        background: rgb(255, 255, 255);
+        background: var(--fff);
     }
    
 
     .navbar.active .navbar-brand a
     {   
-        color: #fff;
+        color: var(--fff);
     }
     .navbar.active .nav .menu span
     {   
-        background: #fff;
+        background: var(--fff);
     }
 
 }
@@ -415,7 +406,7 @@
 
     .lng-box svg path
     {
-        stroke: #fff;
+        stroke: var(--fff);
     }
 
     .languages

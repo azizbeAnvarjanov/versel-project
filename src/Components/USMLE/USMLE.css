@@ -2,12 +2,11 @@
 {
     width: 100%;
     height: 90vh;
-    background: rgb(214, 33, 33);
     padding-top: 20vh;
     background: url(../../imgs/usmle.jpg);
     background-size: cover;
     text-align: center;
-    color: #fff;
+    color: var(--fff);
     position: relative;
 }
 
@@ -50,7 +49,7 @@
     width: 70%;
     margin: auto;
     margin-top: 70px;
-    border-bottom: 1px solid rgb(47, 25, 250);
+    border-bottom: 1px solid var(--gb-color);
     padding-bottom: 20px;
 }
 
@@ -64,7 +63,7 @@
 {
     font-weight: 500;
     margin-bottom: 10px;
-    color: blue;
+    color: var(--gb-color);
 }
 
 .usmle_big_box div p

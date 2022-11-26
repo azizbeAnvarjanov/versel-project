@@ -38,7 +38,7 @@
 {
     z-index: 1;
     font-size: 3em;
-    color:  rgb(255, 255, 255);
+    color:  var(--fff);
 }
 
 
@@ -80,7 +80,7 @@
 {
     font-size: 2.5em;
     margin-bottom: 30px;
-    color:  rgb(0, 4, 255);
+    color:  var(--gb-color);
     font-weight: 500;
 }
 
@@ -131,7 +131,7 @@
     position: relative;
     padding: 30px 3%;
     position: relative;
-    color:  rgb(0, 4, 255);
+    color:  var(--gb-color);
     overflow: hidden;
 }
 
@@ -433,7 +433,7 @@ body.active
     .header h1
     {
         font-size: 1.3em;
-        color:  rgb(0, 4, 255);
+        color:  var(--gb-color);
         font-weight: 500
     }
 
@@ -483,7 +483,7 @@ body.active
     .galereya h1
     {
         font-size: 1.2em;
-        color: rgb(0, 4, 255);
+        color: var(--gb-color);
     }
 
     .banner h1,h2
@@ -497,7 +497,7 @@ body.active
     {
         font-size: 1.5em;
         margin: 20px 0;
-        color: rgb(0, 4, 255);
+        color: var(--gb-color);
     }
 
     
