@@ -63,7 +63,7 @@
 @keyframes loader {
     0%
     {
-        box-shadow: 0 0 10px var(--000),
+        box-shadow: 0 0 10px var(--fff),
         0 0 10px var(--fff);
     }
     50%
@@ -72,8 +72,8 @@
         0 0 20px var(--fff),
         0 0 30px var(--fff),
         0 0 50px var(--fff),
-        0 0 150p var(--fff),
-        0 0 200p var(--fff);
+        0 0 150px var(--fff),
+        0 0 200px var(--fff);
     }
     100%
     {
